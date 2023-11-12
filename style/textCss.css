@@ -1,0 +1,75 @@
+html {
+    background-color: black;
+    background-image: url('../image/bg2.jpg');
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+body {
+    background-color: black;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    width: 600px;
+    margin: 30px auto;
+    padding: 5px 25px 0px 25px; /*上左下右*/
+    border: 5px solid white;
+    border-radius: 10px;
+}
+h1 {
+    color: white;
+    margin: 0;
+    padding: 20px 0;
+    text-shadow: 4px 4px 2px rgba(255, 255, 255, 0.527);
+    text-align: center;
+}
+h2 {
+    color: rgba(255, 255, 255, 0.911);
+    text-align: center;
+}
+p {
+    color: rgba(255, 255, 255, 0.911);
+    
+}
+img {
+    border: 2px solid rgba(255, 255, 255, 0.87);
+    border-radius: 5px;
+    display:block;
+    margin: 0 auto;
+}
+ul,ol{
+    width: 400px;
+    border: 3px solid rgba(255, 255, 255, 0.87);
+    border-radius: 5px;
+    padding: 10px 40px 10px 40px;
+    margin: 10px auto
+}
+.rightTip {
+    text-align: right;
+    font-size: x-small;
+}
+.contentText {
+    color: rgba(255, 255, 255, 0.671);
+}
+.link {
+    color: blanchedalmond;
+}
+div.functionPart {
+    width: 400px;
+    height: 300px;
+    border: 3px solid blanchedalmond;
+    border-radius: 3px;
+    padding: 10px 10px 10px 10px;
+    margin: 5px auto;
+}
+button {
+    color: pink;
+    background-color: black;
+    border: 2px dashed white;
+    border-radius: 3px;
+    transition-duration: 500ms;
+    font-size: large;
+}
+button:hover {
+    color: black;
+    background-color: pink;
+    border: 3px solid white;
+}
