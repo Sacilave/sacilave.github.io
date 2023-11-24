@@ -5,7 +5,7 @@ html {
     background-repeat:no-repeat;
     background-size:cover;
 }
-body {
+body{
     background-color: black;
     font-family: 'ZCOOL KuaiLe', cursive;
     width: 600px;
@@ -42,6 +42,10 @@ ul,ol{
     padding: 10px 40px 10px 40px;
     margin: 10px auto
 }
+a{
+    color: blanchedalmond;
+    text-decoration: none;
+}
 .rightTip {
     text-align: right;
     font-size: x-small;
@@ -55,7 +59,7 @@ ul,ol{
 div.functionPart {
     width: 400px;
     height: 300px;
-    border: 3px solid blanchedalmond;
+    border: 3px solid white;
     border-radius: 3px;
     padding: 10px 10px 10px 10px;
     margin: 5px auto;
@@ -63,9 +67,10 @@ div.functionPart {
 button {
     color: pink;
     background-color: black;
-    border: 2px dashed white;
+    border: 1px dashed white;
     border-radius: 3px;
     transition-duration: 500ms;
+    font-family: 'ZCOOL KuaiLe', cursive;
     font-size: large;
 }
 button:hover {
