@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Lave&#39;s Cabin</title>
+  
+  <subtitle>贴贴~</subtitle>
+  <link href="http://lave.fun/atom.xml" rel="self"/>
+  
+  <link href="http://lave.fun/"/>
+  <updated>2024-12-08T10:13:59.000Z</updated>
+  <id>http://lave.fun/</id>
+  
+  <author>
+    <name>Lave</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我在看的消息面</title>
+    <link href="http://lave.fun/cn/30766/"/>
+    <id>http://lave.fun/cn/30766/</id>
+    <published>2024-12-08T10:13:59.000Z</published>
+    <updated>2024-12-08T10:13:59.000Z</updated>
+    
+    
+    
+    
+    <category term="笔记" scheme="http://lave.fun/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="投资" scheme="http://lave.fun/categories/%E7%AC%94%E8%AE%B0/%E6%8A%95%E8%B5%84/"/>
+    
+    
+    <category term="投资" scheme="http://lave.fun/tags/%E6%8A%95%E8%B5%84/"/>
+    
+    <category term="笔记" scheme="http://lave.fun/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="学习" scheme="http://lave.fun/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="推荐文章" scheme="http://lave.fun/tags/%E6%8E%A8%E8%8D%90%E6%96%87%E7%AB%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Unity角色控制器Cinemachine+InputSystem</title>
+    <link href="http://lave.fun/cn/46583/"/>
+    <id>http://lave.fun/cn/46583/</id>
+    <published>2024-12-07T15:03:26.000Z</published>
+    <updated>2024-12-07T15:03:26.000Z</updated>
+    
+    
+    
+    
+    <category term="技术" scheme="http://lave.fun/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="Unity" scheme="http://lave.fun/tags/Unity/"/>
+    
+    <category term="游戏开发" scheme="http://lave.fun/tags/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="开发" scheme="http://lave.fun/tags/%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="技术" scheme="http://lave.fun/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>信息、媒体、洗脑、操纵与自主思维</title>
+    <link href="http://lave.fun/cn/18781/"/>
+    <id>http://lave.fun/cn/18781/</id>
+    <published>2024-12-06T04:15:26.000Z</published>
+    <updated>2024-12-06T04:15:26.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>深入探讨信息操纵、媒体影响和保持独立思考的重要性</p></blockquote><h1 id="一、信息操纵"><a href="#一、信息操纵" class="headerlink" title="一、信息操纵"></a>一、信息操纵</h1><h2 id="1-案例"><a href="#1-案例" class="headerlink" title="1. 案例"></a>1. 案例</h2><h3 id="1-1-社交媒体算法与信息茧房"><a href="#1-1-社交媒体算法与信息茧房" class="headerlink" title="1.1 社交媒体算法与信息茧房"></a>1.1 社交媒体算法与信息茧房</h3><p>Facebook在2014年曾进行过一项著名的”情绪传染”实验</p><p>通过调整用户新闻推送的情绪倾向，成功影响了用户的情绪状态。</p><p>这个实验引发了巨大争议，也揭示了算法推荐系统对人们认知的深远影响。</p><h3 id="1-2-政治宣传与舆论引导"><a href="#1-2-政治宣传与舆论引导" class="headerlink" title="1.2 政治宣传与舆论引导"></a>1.2 政治宣传与舆论引导</h3><ul><li>2016年美国大选中的 Cambridge Analytica 事件</li><li>各国政府对COVID-19疫情信息的不同叙事方式</li><li>战争报道中的选择性报道现象</li></ul><h1 id="二、媒体操纵"><a href="#二、媒体操纵" class="headerlink" title="二、媒体操纵"></a>二、媒体操纵</h1><h3 id="1-框架效应"><a href="#1-框架效应" class="headerlink" title="1. 框架效应"></a>1. 框架效应</h3><p>通过特定的叙事框架来影响受众理解：</p><ul><li>同样的经济数据，可以被解读为”增长放缓”或”稳健发展”</li><li>同一事件在不同立场媒体中呈现截然不同的面貌</li></ul><h3 id="2-议程设置"><a href="#2-议程设置" class="headerlink" title="2. 议程设置"></a>2. 议程设置</h3><p>媒体通过选择性报道来引导公众关注点：</p><ul><li>热点事件的”爆米花效应”</li><li>重要但不吸引眼球的议题被忽视</li></ul><h3 id="3-情感煽动"><a href="#3-情感煽动" class="headerlink" title="3. 情感煽动"></a>3. 情感煽动</h3><ul><li>标题党与情绪化用语</li><li>片面截取与去脉络化处理</li><li>视觉冲击与音效配合</li></ul><h1 id="三、认知偏差与思维陷阱"><a href="#三、认知偏差与思维陷阱" class="headerlink" title="三、认知偏差与思维陷阱"></a>三、认知偏差与思维陷阱</h1><h3 id="1-确认偏误"><a href="#1-确认偏误" class="headerlink" title="1. 确认偏误"></a>1. 确认偏误</h3><p>人们倾向于寻找支持自己已有观点的信息：</p><ul><li>股市投资者只看符合自己判断的分析</li><li>政治立场固化导致的”回音室效应”</li></ul><h3 id="2-群体极化"><a href="#2-群体极化" class="headerlink" title="2. 群体极化"></a>2. 群体极化</h3><p>在同质化群体中，观点往往向极端发展：</p><ul><li>网络社群中的极端言论</li><li>各类”圈子文化”的形成</li></ul><h1 id="四、培养独立思考能力"><a href="#四、培养独立思考能力" class="headerlink" title="四、培养独立思考能力"></a>四、培养独立思考能力</h1><h3 id="1-多元信息源"><a href="#1-多元信息源" class="headerlink" title="1. 多元信息源"></a>1. 多元信息源</h3><ul><li>主动接触不同立场的观点</li><li>关注原始数据与一手资料</li><li>培养跨文化的信息获取能力</li></ul><h3 id="2-批判性思维"><a href="#2-批判性思维" class="headerlink" title="2. 批判性思维"></a>2. 批判性思维</h3><ul><li>学会识别信息源的可靠性</li><li>理解背后的利益关系</li><li>保持怀疑精神但避免阴谋论</li></ul><h3 id="3-实践方法"><a href="#3-实践方法" class="headerlink" title="3. 实践方法"></a>3. 实践方法</h3><ul><li>定期进行信息断舍离</li><li>建立个人的信息筛选系统</li><li>培养独立验证的习惯</li></ul><h1 id="五、结语"><a href="#五、结语" class="headerlink" title="五、结语"></a>五、结语</h1><p>在信息化时代，保持清醒的头脑和独立的思考能力比任何时候都更加重要。我们需要：</p><ol><li>认识到信息操纵的普遍性</li><li>理解自身的认知局限</li><li>持续学习和完善思维方式</li><li>在开放中保持独立，在理性中包容多元</li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;深入探讨信息操纵、媒体影响和保持独立思考的重要性&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;一、信息操纵&quot;&gt;&lt;a href=&quot;#一、信息操纵&quot; class=&quot;headerlink&quot; title=&quot;一、信息操纵&quot;&gt;&lt;/a&gt;一、信息操纵&lt;/h</summary>
+      
+    
+    
+    
+    <category term="研究" scheme="http://lave.fun/categories/%E7%A0%94%E7%A9%B6/"/>
+    
+    <category term="笔记" scheme="http://lave.fun/categories/%E7%A0%94%E7%A9%B6/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="生活" scheme="http://lave.fun/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+    <category term="信息" scheme="http://lave.fun/tags/%E4%BF%A1%E6%81%AF/"/>
+    
+    <category term="认知" scheme="http://lave.fun/tags/%E8%AE%A4%E7%9F%A5/"/>
+    
+    <category term="自我提高" scheme="http://lave.fun/tags/%E8%87%AA%E6%88%91%E6%8F%90%E9%AB%98/"/>
+    
+    <category term="思考" scheme="http://lave.fun/tags/%E6%80%9D%E8%80%83/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Notion使用经验分享</title>
+    <link href="http://lave.fun/cn/40618/"/>
+    <id>http://lave.fun/cn/40618/</id>
+    <published>2024-12-05T12:23:34.000Z</published>
+    <updated>2024-12-05T12:23:34.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Notion-小组件-Indify"><a href="#Notion-小组件-Indify" class="headerlink" title="Notion 小组件 - Indify"></a>Notion 小组件 - Indify</h1><p><a href="https://indify.co/">Indify</a> | 轻量 Notion 小组件</p><p>支持一个账号创建 6 个免费组件，超出需要付费</p><p>1 分钟即可快速使用的 Notion 小组件，可自定义程度高，目前包含 7 个免费组件</p><p><img src="/.fun//40618/1.png" alt="组件列表"> </p><p><strong>使用例子：</strong> 纪念日倒计时(Countdown组件)，人生 Wishlist(Life Progress Bar)</p><h3 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h3><ol><li><p>创建账号后，左上角点击 <code>Add new widget</code> 或 在下方点击想要创建的组件类型</p></li><li><p>进入组件自定义页面后，进行自定义，完成后在左下角复制小组件链接</p></li></ol><p><img src="/.fun//40618/2.png" alt="组件自定义"></p><ol start="3"><li>进入 Notion 创建一个 embed 块，将小组件链接粘贴进去即可</li></ol><blockquote><p>注意：Indify 不仅支持 Notion，还支持多种平台，感兴趣可以访问官网看看</p></blockquote><h1 id="使用-Notion-创建恋爱共享日记"><a href="#使用-Notion-创建恋爱共享日记" class="headerlink" title="使用 Notion 创建恋爱共享日记"></a>使用 Notion 创建恋爱共享日记</h1><p><a href="https://www.notion.so/marketplace/templates/love-hub?cr=cre%253Alimitless">Love Hub</a> | 一个 Notion 恋爱共享日记模板</p><p>这个模版十分的轻量方便实用，讨论区、关系日历这两个功能挺好用的</p><p>适合安排一起的行程或者记录一些重要日子之类的等等，个人感觉挺好用的总之</p><blockquote><p>应该可以发现 这个里面的 We shared our life for 其实就是我上面推荐的 Indify 组件的 Countdown 组件<br>正好发现如果需要改时间只能自己创建一个这个小组件，然后替换掉，结果发现 Indify 还挺好用的XD</p></blockquote><p><img src="https://s3.us-west-2.amazonaws.com/public.notion-static.com/template/9cd1e4aa-0507-4799-be51-f3eb1ca795bf/1713627724258/desktop.jpg" alt="模版宣传图"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Notion-小组件-Indify&quot;&gt;&lt;a href=&quot;#Notion-小组件-Indify&quot; class=&quot;headerlink&quot; title=&quot;Notion 小组件 - Indify&quot;&gt;&lt;/a&gt;Notion 小组件 - Indify&lt;/h1&gt;&lt;p&gt;&lt;a hre</summary>
+      
+    
+    
+    
+    <category term="实用" scheme="http://lave.fun/categories/%E5%AE%9E%E7%94%A8/"/>
+    
+    
+    <category term="实用" scheme="http://lave.fun/tags/%E5%AE%9E%E7%94%A8/"/>
+    
+    <category term="软件" scheme="http://lave.fun/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我在看的技术指标</title>
+    <link href="http://lave.fun/cn/28339/"/>
+    <id>http://lave.fun/cn/28339/</id>
+    <published>2024-12-04T11:05:34.000Z</published>
+    <updated>2024-12-04T11:05:34.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>本人主要在币圈，所以有些指标可能只适用于币圈，仅供参考</p></blockquote><h1 id="一、RSI"><a href="#一、RSI" class="headerlink" title="一、RSI"></a>一、RSI</h1><p>RSI（相对强弱指标）是个动量指标，用于衡量资产的超买或超卖状态。</p><p>RSI 的取值范围在0-100之间：</p><ul><li>当 <strong>RSI &gt; 70</strong> 时，超买，价格可能 <strong>回落</strong></li><li>当 <strong>RSI &lt; 30</strong> 时，超卖，价格可能 <strong>反弹</strong></li></ul><p>注意点：</p><ul><li>RSI背离：当价格创新高而 RSI 未创新高，可能预示顶部形成；反之亦然</li><li>时间周期：不同时间周期的RSI可能给出不同的信号，建议结合多个时间周期分析</li></ul><p>常见 RSI 策略：</p><ol><li>超买超卖反转：在RSI达到极值时寻找反转机会</li><li>趋势跟随：在强势趋势中，RSI可能长期保持在高位或低位</li><li>背离交易：寻找价格与RSI之间的背离信号</li></ol><p>RSI 计算方法：</p><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable constant_">RSI</span> = <span class="number">100</span> - [<span class="number">100</span> / (<span class="number">1</span> + <span class="variable constant_">RS</span>)]</span><br><span class="line"><span class="variable constant_">RS</span> = 平均上涨点数 / 平均下跌点数</span><br></pre></td></tr></table></figure><h1 id="二、Bollinger-Bands"><a href="#二、Bollinger-Bands" class="headerlink" title="二、Bollinger Bands"></a>二、Bollinger Bands</h1><p>布林带（Bollinger Bands），由中轨（20日移动平均线）和上下轨（标准差通道）组成。</p><p>布林带的三条线：</p><ul><li><strong>中轨（Middle Band）</strong>：20日简单移动平均线（SMA）</li><li><strong>上轨（Upper Band）</strong>：中轨 + 2倍标准差</li><li><strong>下轨（Lower Band）</strong>：中轨 - 2倍标准差</li></ul><p>布林带使用要点：</p><ul><li><strong>带宽收窄</strong>：表示波动率降低，可能预示重要突破即将发生</li><li><strong>价格触及上下轨</strong>：可能出现反转信号</li><li><strong>突破上下轨</strong>：表示强势趋势的形成</li></ul><p>交易策略：</p><ol><li>当价格触及上轨时考虑卖出，触及下轨时考虑买入</li><li>带宽收窄后等待突破方向确认再进场</li></ol><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">上轨 = <span class="title function_">SMA</span>(<span class="number">20</span>) + <span class="number">2</span> * <span class="title class_">StandardDeviation</span></span><br><span class="line">中轨 = <span class="title function_">SMA</span>(<span class="number">20</span>)</span><br><span class="line">下轨 = <span class="title function_">SMA</span>(<span class="number">20</span>) - <span class="number">2</span> * <span class="title class_">StandardDeviation</span></span><br></pre></td></tr></table></figure><h1 id="三、Pi-Cycle"><a href="#三、Pi-Cycle" class="headerlink" title="三、Pi Cycle"></a>三、Pi Cycle</h1><p><a href="https://www.coinglass.com/zh-TW/pro/i/pi-cycle-top-indicator">Pi Cycle from CoinGlass</a></p><p>Pi Cycle 用于识别比特币市场周期顶部，由两条移动平均线组成：</p><ul><li>111天移动平均线（MA） × 2：较快的移动平均线</li><li>350天移动平均线（MA）：较慢的移动平均线</li></ul><p>主要观察点：</p><ul><li><strong>顶部信号</strong>：当两条线相交时，通常表示比特币价格接近周期性顶部</li><li>历史准确性：在过去的比特币市场中，该指标多次准确预测了重要高点</li></ul><p>使用注意事项：</p><ol><li>相交后不一定立即见顶，可能会有一定延迟</li><li>仅适用于识别顶部，不适合预测底部</li></ol><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">快线 = <span class="title function_">MA</span>(<span class="number">111</span>) * <span class="number">2</span></span><br><span class="line">慢线 = <span class="title function_">MA</span>(<span class="number">350</span>)</span><br><span class="line">交叉信号 = 快线与慢线相交</span><br></pre></td></tr></table></figure><h1 id="四、比特币优势指数-Bitcoin-Dominance"><a href="#四、比特币优势指数-Bitcoin-Dominance" class="headerlink" title="四、比特币优势指数 (Bitcoin Dominance)"></a>四、比特币优势指数 (Bitcoin Dominance)</h1><p>比特币优势指数反映了比特币在整个加密货币市场中的占比：</p><ul><li><strong>计算方法</strong>：比特币市值 &#x2F; 加密货币总市值 × 100%</li><li><strong>参考值</strong>：<ul><li>高于 60%：比特币市场主导，山寨币可能承压</li><li>低于 40%：山寨币活跃，市场可能处于亢奋状态</li><li>历史高点：90%以上（2017年之前）</li><li>历史低点：约33%（2018年初）</li></ul></li></ul><p>使用要点：</p><ul><li>指数上升：资金向比特币集中，可能是避险信号</li><li>指数下降：资金向山寨币扩散，市场风险偏好上升</li><li>极端值出现：可能预示市场周期转换</li></ul><h1 id="五、稳定币指标-Stablecoin-Indicators"><a href="#五、稳定币指标-Stablecoin-Indicators" class="headerlink" title="五、稳定币指标 (Stablecoin Indicators)"></a>五、稳定币指标 (Stablecoin Indicators)</h1><h2 id="1-稳定币占比指数"><a href="#1-稳定币占比指数" class="headerlink" title="1. 稳定币占比指数"></a>1. 稳定币占比指数</h2><ul><li><strong>计算方法</strong>：稳定币总市值 &#x2F; 加密货币总市值 × 100%</li><li><strong>意义</strong>：反映市场上的潜在购买力</li><li><strong>信号</strong>：<ul><li>占比上升：表示更多资金在场外等待机会</li><li>占比下降：表示资金正在入场</li></ul></li></ul><h2 id="2-稳定币供应率变化"><a href="#2-稳定币供应率变化" class="headerlink" title="2. 稳定币供应率变化"></a>2. 稳定币供应率变化</h2><ul><li><strong>计算方法</strong>：(当前稳定币供应量 - 前期稳定币供应量) &#x2F; 前期稳定币供应量 × 100%</li><li><strong>意义</strong>：反映市场资金流向</li><li><strong>信号</strong>：<ul><li>供应量增加：表示新资金进入市场的潜力增加</li><li>供应量减少：可能表示资金正在退出市场</li></ul></li></ul><h2 id="3-稳定币流动性比率"><a href="#3-稳定币流动性比率" class="headerlink" title="3. 稳定币流动性比率"></a>3. 稳定币流动性比率</h2><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">流动性比率 = 主流稳定币<span class="number">24</span>小时成交量 / 稳定币总市值</span><br></pre></td></tr></table></figure><ul><li><strong>高比率</strong>：表示市场活跃度高</li><li><strong>低比率</strong>：表示市场活跃度低</li></ul><p>使用建议：</p><ol><li>结合多个稳定币指标综合分析</li><li>关注主要稳定币（如USDT、USDC）的数据变化</li><li>注意与其他市场指标的相关性</li><li>警惕单个稳定币的异常波动</li></ol><h1 id="六、恐惧贪婪指数-Fear-Greed-Index"><a href="#六、恐惧贪婪指数-Fear-Greed-Index" class="headerlink" title="六、恐惧贪婪指数 (Fear &amp; Greed Index)"></a>六、恐惧贪婪指数 (Fear &amp; Greed Index)</h1><p>一个衡量市场情绪的综合指标，数值范围0-100：</p><ul><li>0-25：极度恐惧</li><li>26-45：恐惧</li><li>46-55：中性</li><li>56-75：贪婪</li><li>76-100：极度贪婪</li></ul><p>计算因素包括：</p><ul><li>波动性 (25%)</li><li>市场动量&#x2F;交易量 (25%)</li><li>社交媒体情绪 (15%)</li><li>调查数据 (15%)</li><li>比特币主导地位 (10%)</li><li>趋势数据 (10%)</li></ul><p>不过其实我个人觉得这个指数参考意义不大，尤其是牛熊</p><p>币圈的波动性太大了，情绪也经常被操纵</p><p>顶多作为参考，不能作为买卖的依据</p><h1 id="七、资金费率-Funding-Rate"><a href="#七、资金费率-Funding-Rate" class="headerlink" title="七、资金费率 (Funding Rate)"></a>七、资金费率 (Funding Rate)</h1><p>永续合约中的重要指标：</p><ul><li><strong>正费率</strong>：多头支付空头，表示市场看涨</li><li><strong>负费率</strong>：空头支付多头，表示市场看跌</li></ul><p>使用策略：</p><ol><li>极端费率可能预示短期反转</li><li>持续的高费率表明做多情绪强烈</li><li>持续的负费率表明做空压力大</li></ol><p>虽然可能你只玩现货，但是合约现货相关性其实挺大的</p><p>当然，超长线投资除外啦，如果是短期想要抄底或大量买卖</p><p>这个指标还是值得关注的，毕竟预示着短期波动趋势</p><h1 id="八、大户持仓比例-Whales-Holdings"><a href="#八、大户持仓比例-Whales-Holdings" class="headerlink" title="八、大户持仓比例 (Whales Holdings)"></a>八、大户持仓比例 (Whales Holdings)</h1><p>监控大额钱包地址的持仓变化：</p><ul><li><strong>增持信号</strong>：大户地址持仓增加</li><li><strong>减持信号</strong>：大户地址持仓减少</li><li><strong>分散度</strong>：top 100持仓地址的集中度变化</li></ul><p>观察重点：</p><ol><li>大户地址数量变化</li><li>大户持仓总量变化</li><li>大户转账行为模式</li></ol><p>巨鲸机构当然是很影响买压和抛压，这可能更多贴近消息面了，但是也可以当成个指标参考吧 :D</p><h1 id="九、CME期货缺口-CME-Futures-Gap"><a href="#九、CME期货缺口-CME-Futures-Gap" class="headerlink" title="九、CME期货缺口 (CME Futures Gap)"></a>九、CME期货缺口 (CME Futures Gap)</h1><p>CME（芝加哥商品交易所）比特币期货因为只在工作日交易，而加密货币市场全天候交易，所以经常会出现价格缺口：</p><ul><li><strong>形成原因</strong>：CME周末休市，而加密货币继续交易</li><li><strong>缺口类型</strong>：<ul><li>向上缺口：周一开盘价高于周五收盘价</li><li>向下缺口：周一开盘价低于周五收盘价</li></ul></li></ul><p>重要特点：</p><ul><li>统计显示约70%的CME缺口最终会被填补</li><li>缺口填补不一定立即发生，可能需要数周或更长时间</li><li>大缺口（超过3%）的填补概率更高</li></ul><p>使用策略：</p><ol><li>缺口作为潜在支撑&#x2F;阻力位</li><li>结合其他指标判断缺口填补可能性</li><li>避免过度依赖，仅作为参考指标</li></ol><h1 id="十、期货市场重要指标"><a href="#十、期货市场重要指标" class="headerlink" title="十、期货市场重要指标"></a>十、期货市场重要指标</h1><h2 id="1-未平仓合约量-Open-Interest"><a href="#1-未平仓合约量-Open-Interest" class="headerlink" title="1. 未平仓合约量 (Open Interest)"></a>1. 未平仓合约量 (Open Interest)</h2><ul><li><strong>定义</strong>：市场上未结算的期货合约总量</li><li><strong>信号</strong>：<ul><li>上升：表示新资金进场，趋势可能持续</li><li>下降：表示资金退场，可能预示趋势减弱</li><li>剧烈变化：可能预示大幅波动</li></ul></li></ul><h2 id="2-多空持仓比例"><a href="#2-多空持仓比例" class="headerlink" title="2. 多空持仓比例"></a>2. 多空持仓比例</h2><ul><li><strong>计算方法</strong>：多头持仓量 &#x2F; 空头持仓量</li><li><strong>使用要点</strong>：<ul><li>极端比例可能预示反转</li><li>需要区分不同交易所的数据</li><li>主要交易所数据更具参考价值</li></ul></li></ul><h2 id="3-期货基差-Basis"><a href="#3-期货基差-Basis" class="headerlink" title="3. 期货基差 (Basis)"></a>3. 期货基差 (Basis)</h2><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">基差 = 期货价格 - 现货价格</span><br><span class="line">基差率 = (期货价格 - 现货价格) / 现货价格 × <span class="number">100</span>%</span><br></pre></td></tr></table></figure><ul><li><strong>正基差</strong>：市场看涨，期货溢价</li><li><strong>负基差</strong>：市场看跌，期货折价</li><li><strong>基差扩大</strong>：市场情绪强烈</li><li><strong>基差收窄</strong>：市场趋于平稳</li></ul><h2 id="4-清算率-Liquidation-Rate"><a href="#4-清算率-Liquidation-Rate" class="headerlink" title="4. 清算率 (Liquidation Rate)"></a>4. 清算率 (Liquidation Rate)</h2><ul><li><strong>定义</strong>：被强制平仓的合约占未平仓合约的比例</li><li><strong>意义</strong>：<ul><li>高清算率：市场波动剧烈，可能出现连锁反应</li><li>清算集中：可能造成价格快速波动</li><li>方向性清算：反映市场情绪过度</li></ul></li></ul><p>使用建议：</p><ol><li>综合多个期货指标进行分析</li><li>关注主流交易所的数据</li><li>注意指标之间的相互验证</li><li>结合现货市场指标</li></ol><hr><blockquote><p>接下来是我不太熟悉但是币圈常用的指标汇总</p></blockquote><h1 id="一、MACD"><a href="#一、MACD" class="headerlink" title="一、MACD"></a>一、MACD</h1><p>MACD（移动平均线趋同散度）是一个重要的趋势跟踪指标，由以下三部分组成：</p><ul><li><strong>MACD线</strong>：12日EMA - 26日EMA</li><li><strong>信号线</strong>：MACD的9日EMA</li><li><strong>MACD柱状图</strong>：MACD线 - 信号线</li></ul><p>使用要点：</p><ul><li>金叉：MACD线上穿信号线，买入信号</li><li>死叉：MACD线下穿信号线，卖出信号</li><li>柱状图：反映趋势强度，柱状图越大表示趋势越强</li></ul><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable constant_">MACD</span> = <span class="title function_">EMA</span>(<span class="number">12</span>) - <span class="title function_">EMA</span>(<span class="number">26</span>)</span><br><span class="line">信号线 = <span class="title function_">EMA</span>(<span class="variable constant_">MACD</span>, <span class="number">9</span>)</span><br><span class="line">柱状图 = <span class="variable constant_">MACD</span> - 信号线</span><br></pre></td></tr></table></figure><h1 id="二、OBV-On-Balance-Volume"><a href="#二、OBV-On-Balance-Volume" class="headerlink" title="二、OBV (On-Balance Volume)"></a>二、OBV (On-Balance Volume)</h1><p>OBV是一个成交量指标，特别适合加密货币市场，用于确认价格趋势：</p><ul><li>当收盘价上涨时，当日成交量加到OBV上</li><li>当收盘价下跌时，当日成交量从OBV中减去</li></ul><p>关键观察点：</p><ul><li>OBV上升：表明买方力量占优</li><li>OBV下降：表明卖方力量占优</li><li>OBV背离：价格与OBV走势不一致时，可能预示反转</li></ul><h1 id="三、Stochastic-RSI"><a href="#三、Stochastic-RSI" class="headerlink" title="三、Stochastic RSI"></a>三、Stochastic RSI</h1><p>Stochastic RSI (StochRSI) 是RSI的改良版本，结合了随机指标的特性：</p><ul><li>取值范围：0-1（或0-100）</li><li>超买区：0.8以上</li><li>超卖区：0.2以下</li></ul><p>优势：</p><ul><li>比传统RSI更敏感</li><li>能更早发现潜在反转机会</li><li>特别适合加密货币的高波动特性</li></ul><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">StochRSI</span> = (<span class="variable constant_">RSI</span> - 最低<span class="variable constant_">RSI</span>) / (最高<span class="variable constant_">RSI</span> - 最低<span class="variable constant_">RSI</span>)</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;本人主要在币圈，所以有些指标可能只适用于币圈，仅供参考&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;一、RSI&quot;&gt;&lt;a href=&quot;#一、RSI&quot; class=&quot;headerlink&quot; title=&quot;一、RSI&quot;&gt;&lt;/a&gt;一、RSI&lt;/h1</summary>
+      
+    
+    
+    
+    <category term="笔记" scheme="http://lave.fun/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="投资" scheme="http://lave.fun/categories/%E7%AC%94%E8%AE%B0/%E6%8A%95%E8%B5%84/"/>
+    
+    
+    <category term="投资" scheme="http://lave.fun/tags/%E6%8A%95%E8%B5%84/"/>
+    
+    <category term="笔记" scheme="http://lave.fun/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="学习" scheme="http://lave.fun/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="推荐文章" scheme="http://lave.fun/tags/%E6%8E%A8%E8%8D%90%E6%96%87%E7%AB%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>投资笔记-Updating</title>
+    <link href="http://lave.fun/cn/7542/"/>
+    <id>http://lave.fun/cn/7542/</id>
+    <published>2024-12-03T12:56:21.000Z</published>
+    <updated>2024-12-03T12:56:21.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>此篇笔记将持续更新哦…</p></blockquote><h1 id="财富观"><a href="#财富观" class="headerlink" title="财富观"></a>财富观</h1><h2 id="财富的本质"><a href="#财富的本质" class="headerlink" title="财富的本质"></a>财富的本质</h2><p>财富的本质是购买力，是资产，而不是金钱本身。</p><p>金钱只是购买力的代表，而购买力才是财富的实质。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;此篇笔记将持续更新哦…&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;财富观&quot;&gt;&lt;a href=&quot;#财富观&quot; class=&quot;headerlink&quot; title=&quot;财富观&quot;&gt;&lt;/a&gt;财富观&lt;/h1&gt;&lt;h2 id=&quot;财富的本质&quot;&gt;&lt;a href=</summary>
+      
+    
+    
+    
+    <category term="笔记" scheme="http://lave.fun/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="投资" scheme="http://lave.fun/tags/%E6%8A%95%E8%B5%84/"/>
+    
+    <category term="笔记" scheme="http://lave.fun/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="认知" scheme="http://lave.fun/tags/%E8%AE%A4%E7%9F%A5/"/>
+    
+    <category term="推荐文章" scheme="http://lave.fun/tags/%E6%8E%A8%E8%8D%90%E6%96%87%E7%AB%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>对于炒外汇的认知偏差-Updating</title>
+    <link href="http://lave.fun/cn/46245/"/>
+    <id>http://lave.fun/cn/46245/</id>
+    <published>2024-12-03T12:41:04.000Z</published>
+    <updated>2024-12-03T12:41:04.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>以前一直觉得炒外汇这种投资回报率这么低，有什么必要去炒<br>现在突然意识到，炒外汇本身或许并不是投资，而是保护自己的资产<br>从保护购买力的角度，每个人都应该炒外汇</p></blockquote><h1 id="外汇交易的本质"><a href="#外汇交易的本质" class="headerlink" title="外汇交易的本质"></a>外汇交易的本质</h1><h2 id="保护购买力"><a href="#保护购买力" class="headerlink" title="保护购买力"></a>保护购买力</h2><p>外汇市场是全球流动性最强的市场，汇率的波动直接反映了各国货币购买力的变化。</p><p>通过外汇交易，将资产从可能贬值的货币转移到相对稳定或升值的货币中，</p><p>从而保护资产的实际价值不受通货膨胀或本国货币贬值的侵蚀。</p><p>例如，本国经济动荡时，将资产转化为美元或瑞士法郎等避险货币，能减少因本币贬值带来的损失。</p><p><strong>尤其对于资金体量较小的来说</strong>，因为波动相对其他投资品种较小，所以保护购买力功能会更明显。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;以前一直觉得炒外汇这种投资回报率这么低，有什么必要去炒&lt;br&gt;现在突然意识到，炒外汇本身或许并不是投资，而是保护自己的资产&lt;br&gt;从保护购买力的角度，每个人都应该炒外汇&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;外汇交易的本质&quot;&gt;&lt;a h</summary>
+      
+    
+    
+    
+    <category term="笔记" scheme="http://lave.fun/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="投资" scheme="http://lave.fun/categories/%E7%AC%94%E8%AE%B0/%E6%8A%95%E8%B5%84/"/>
+    
+    
+    <category term="投资" scheme="http://lave.fun/tags/%E6%8A%95%E8%B5%84/"/>
+    
+    <category term="认知" scheme="http://lave.fun/tags/%E8%AE%A4%E7%9F%A5/"/>
+    
+    <category term="外汇" scheme="http://lave.fun/tags/%E5%A4%96%E6%B1%87/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Unity 脚本无法拖拽到或添加到物体上</title>
+    <link href="http://lave.fun/cn/46583/"/>
+    <id>http://lave.fun/cn/46583/</id>
+    <published>2024-12-02T12:41:04.000Z</published>
+    <updated>2024-12-02T12:41:04.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><ul><li><p>脚本无法拖拽到或添加到场景中的物体上</p></li><li><p>Inspector 中无法显示 public 变量 - 解决方案</p></li><li><p>在 Inspector 中，点击 <code>Add Component</code> 按钮，添加脚本没反应或者根本无法找到脚本</p></li><li><p>出现报错:<br>  <code>Can&#39;t add script component &#39;xxx&#39; because the script class cannot be found. </code><br>  <code>Make sure that there are no compile errors and that the file name and class name match.</code></p></li></ul><h1 id="脚本无法添加-解决方案"><a href="#脚本无法添加-解决方案" class="headerlink" title="脚本无法添加 - 解决方案"></a>脚本无法添加 - 解决方案</h1><blockquote><p>我在最后一步终于解决了，很无语的问题，但是希望你能在前面几步中就解决呢 ＞︿＜</p><p>首先确保你已经尝试过最基本的：重启 Unity 和重启电脑，如果无效再看接下来几步哦</p></blockquote><h3 id="一、-文件名与类名不一致"><a href="#一、-文件名与类名不一致" class="headerlink" title="一、 文件名与类名不一致"></a>一、 文件名与类名不一致</h3><p>在 Unity 中，类名与文件名必须完全一致（包括大小写）</p><p>如果脚本的文件名是 Test.cs，那么脚本中的类名必须是 Test，且大小写匹配。</p><h3 id="二、-脚本存在编译错误"><a href="#二、-脚本存在编译错误" class="headerlink" title="二、 脚本存在编译错误"></a>二、 脚本存在编译错误</h3><p>如果脚本存在编译错误，那么无法添加到物体上。</p><h3 id="三、-脚本未保存"><a href="#三、-脚本未保存" class="headerlink" title="三、 脚本未保存"></a>三、 脚本未保存</h3><p>如果脚本未保存，那么无法添加到物体上。</p><h3 id="四、-脚本没有继承-MonoBehaviour-类"><a href="#四、-脚本没有继承-MonoBehaviour-类" class="headerlink" title="四、 脚本没有继承 MonoBehaviour 类"></a>四、 脚本没有继承 MonoBehaviour 类</h3><p>Unity 只能将继承自 MonoBehaviour 的脚本作为组件挂载到 GameObject 上。</p><p>如果你的脚本没有继承 MonoBehaviour，它将无法作为组件添加。</p><h3 id="五、-脚本文件放置位置不正确"><a href="#五、-脚本文件放置位置不正确" class="headerlink" title="五、 脚本文件放置位置不正确"></a>五、 脚本文件放置位置不正确</h3><p>Unity 只会识别放在 Assets 文件夹下的脚本文件。</p><p>如果你的脚本文件在项目的其他地方（如桌面或其他路径），Unity 也无法识别它。</p><h3 id="六、-命名空间问题"><a href="#六、-命名空间问题" class="headerlink" title="六、 命名空间问题"></a>六、 命名空间问题</h3><p>如果你的脚本在命名空间内，Unity 可能无法找到该类，除非你引用了正确的命名空间。</p><h3 id="七、-重新创建脚本"><a href="#七、-重新创建脚本" class="headerlink" title="七、 重新创建脚本"></a>七、 重新创建脚本</h3><p>如果以上方法都无法解决问题，可以尝试重新创建脚本。</p><h3 id="八、项目创建的模版问题！！！"><a href="#八、项目创建的模版问题！！！" class="headerlink" title="八、项目创建的模版问题！！！"></a>八、项目创建的模版问题！！！</h3><p>总所周知 Unity 创建项目时，有多个模版提供选择，按照渲染管线分：</p><ul><li>Unity6 之前：<ul><li>Built-in Render Pipeline</li><li>Universal Render Pipeline (URP) </li><li>High Definition Render Pipeline (HDRP)</li></ul></li></ul><p>如果你的项目正好是基于 Built-in Render Pipeline 创建的，那这可能就是问题原因</p><p>有时使用 Built-in Render Pipeline 模板创建的项目会出现一些奇怪的行为，尤其是在 脚本编译 和 渲染设置 方面</p><p>尝试使用 SRP模版（即 URP 或 HDRP） 创建项目</p><h1 id="Inspector-中无法显示-public-变量-解决方案"><a href="#Inspector-中无法显示-public-变量-解决方案" class="headerlink" title="Inspector 中无法显示 public 变量 - 解决方案"></a>Inspector 中无法显示 public 变量 - 解决方案</h1><blockquote><p>发现这个问题和上一个其实有关联</p></blockquote><h3 id="一、脚本未继承自-MonoBehaviour"><a href="#一、脚本未继承自-MonoBehaviour" class="headerlink" title="一、脚本未继承自 MonoBehaviour"></a>一、脚本未继承自 MonoBehaviour</h3><h3 id="二、字段不是可序列化的类型"><a href="#二、字段不是可序列化的类型" class="headerlink" title="二、字段不是可序列化的类型"></a>二、字段不是可序列化的类型</h3><p>可序列化的类型包括：</p><ul><li>基本类型（如 int、float、bool）</li><li>string</li><li>UnityEngine 类型（如 Vector3, GameObject 等）</li><li>标记为 [System.Serializable] 的自定义类或结构体</li></ul><h3 id="三、使用了属性（Property）而不是字段（Field）"><a href="#三、使用了属性（Property）而不是字段（Field）" class="headerlink" title="三、使用了属性（Property）而不是字段（Field）"></a>三、使用了属性（Property）而不是字段（Field）</h3><p>Unity 不会显示 get &#x2F; set 属性，只会显示字段。如果你使用了属性，即使是 public，也不会显示。</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="built_in">int</span> MyValue &#123; <span class="keyword">get</span>; <span class="keyword">set</span>; &#125; <span class="comment">// 不会显示</span></span><br></pre></td></tr></table></figure><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="built_in">int</span> myValue; <span class="comment">// 会显示</span></span><br></pre></td></tr></table></figure><h3 id="四、-字段被-HideInInspector-隐藏"><a href="#四、-字段被-HideInInspector-隐藏" class="headerlink" title="四、 字段被 [HideInInspector] 隐藏"></a>四、 字段被 [HideInInspector] 隐藏</h3><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[<span class="meta">HideInInspector</span>]</span><br><span class="line"><span class="keyword">public</span> <span class="built_in">int</span> myValue; <span class="comment">// 不会显示</span></span><br></pre></td></tr></table></figure><h3 id="五、-脚本未正常编译！！！"><a href="#五、-脚本未正常编译！！！" class="headerlink" title="五、 脚本未正常编译！！！"></a>五、 脚本未正常编译！！！</h3><blockquote><p>我也是终于在这一步发现问题了</p></blockquote><p>一般来说对脚本更改做出更新后，返回 Unity 窗口时，Unity 会自动编译脚本。</p><p>也就是会弹出一个窗口显示 Compiling…</p><p>如果这个窗口没有弹出，那么脚本将无法正常编译，也就无法添加到物体上，Inspector 中也不会显示 public 变量</p><p>那么什么情况会导致脚本没正常编译呢？</p><p>我的话，发现是因为项目创建的模版为 Built-in Render Pipeline，会导致脚本不自动编译 XD</p><blockquote><p>所以我说真的，一般情况下，尽量选择 SRP 模版创建项目，除非你真的需要 Built-in Render Pipeline</p><p>不过 Unity 6 开始，直接没有 Built-in Render Pipeline 模版了</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;问题描述&quot;&gt;&lt;a href=&quot;#问题描述&quot; class=&quot;headerlink&quot; title=&quot;问题描述&quot;&gt;&lt;/a&gt;问题描述&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;脚本无法拖拽到或添加到场景中的物体上&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Inspector 中无法显示 p</summary>
+      
+    
+    
+    
+    <category term="技术" scheme="http://lave.fun/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="Unity" scheme="http://lave.fun/tags/Unity/"/>
+    
+    <category term="游戏开发" scheme="http://lave.fun/tags/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="开发" scheme="http://lave.fun/tags/%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="技术" scheme="http://lave.fun/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>加密合约交易笔记</title>
+    <link href="http://lave.fun/cn/4341/"/>
+    <id>http://lave.fun/cn/4341/</id>
+    <published>2024-11-22T06:43:08.000Z</published>
+    <updated>2024-11-22T06:43:08.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="合约是什么"><a href="#合约是什么" class="headerlink" title="合约是什么"></a>合约是什么</h1><p>快速介绍：即永续期货合约，简称合约，轻易利用杠杆</p><p>与期货对比：</p><table><thead><tr><th>类型</th><th>特点</th></tr></thead><tbody><tr><td>期货</td><td>一般有固定期限（到期会强制结算）</td></tr><tr><td>永续合约</td><td>只要没有爆仓（保证金亏光），就可以永久持有</td></tr></tbody></table><p>优势：</p><ul><li>可无限期持有，无需交割</li><li>杠杆，提高资金利用率</li><li>用于对冲，避险</li><li>多空单，无论牛熊都能获利</li></ul><p>劣势：</p><ul><li>浮动大时，容易爆仓（如突然向下插针很多时就容易直接爆仓），爆仓后会强制平仓，也就拿不回保证金了</li></ul><h1 id="仓位"><a href="#仓位" class="headerlink" title="仓位"></a>仓位</h1><h2 id="仓位-保证金类型"><a href="#仓位-保证金类型" class="headerlink" title="仓位&#x2F;保证金类型"></a>仓位&#x2F;保证金类型</h2><h3 id="逐仓"><a href="#逐仓" class="headerlink" title="逐仓"></a>逐仓</h3><p>每次开单时，选择使用账户中多少保证金</p><h3 id="全仓"><a href="#全仓" class="headerlink" title="全仓"></a>全仓</h3><p>以合约账户总资产为保证金</p><h1 id="计价方式"><a href="#计价方式" class="headerlink" title="计价方式"></a>计价方式</h1><h2 id="U本位"><a href="#U本位" class="headerlink" title="U本位"></a>U本位</h2><p>交易盈亏以美元计价</p><p>好处：</p><ul><li>盈亏一目了然，容易计算</li></ul><h2 id="币本位"><a href="#币本位" class="headerlink" title="币本位"></a>币本位</h2><p>交易盈亏以币计价</p><p>好处：</p><ul><li>可能币价会上涨，从而盈亏相抵后还能获利</li><li>币价上涨时，杠杆倍数会降低，风险降低</li></ul><p>劣势：</p><ul><li>币价下跌时，杠杆倍数会提高，风险提高</li></ul><h1 id="价格"><a href="#价格" class="headerlink" title="价格"></a>价格</h1><h2 id="标记价格"><a href="#标记价格" class="headerlink" title="标记价格"></a>标记价格</h2><p>当前合约的价格，一般就看标记价格</p><h2 id="指数价格"><a href="#指数价格" class="headerlink" title="指数价格"></a>指数价格</h2><p>指的是当前现货市场的价格</p><blockquote><p>一般这两个价格会出现价差，根据多空比例不同，价差也会不同</p></blockquote><h2 id="资金费率"><a href="#资金费率" class="headerlink" title="资金费率"></a>资金费率</h2><p>永续合约的结算方式：每8小时根据资金费率结算一次</p><p>例如：现在市场是多头强，空头弱，那么资金费率就会是正的，多头需要付一笔资金费率给空头</p><p>通过这个机制，可以促使多空比例趋于平衡，抑制市场价格偏离现货价格</p><h1 id="爆仓"><a href="#爆仓" class="headerlink" title="爆仓"></a>爆仓</h1><p>保证金比率到达100%时，就会爆仓，强制平仓</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;合约是什么&quot;&gt;&lt;a href=&quot;#合约是什么&quot; class=&quot;headerlink&quot; title=&quot;合约是什么&quot;&gt;&lt;/a&gt;合约是什么&lt;/h1&gt;&lt;p&gt;快速介绍：即永续期货合约，简称合约，轻易利用杠杆&lt;/p&gt;
+&lt;p&gt;与期货对比：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;</summary>
+      
+    
+    
+    
+    <category term="笔记" scheme="http://lave.fun/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="投资" scheme="http://lave.fun/categories/%E7%AC%94%E8%AE%B0/%E6%8A%95%E8%B5%84/"/>
+    
+    
+    <category term="投资" scheme="http://lave.fun/tags/%E6%8A%95%E8%B5%84/"/>
+    
+    <category term="笔记" scheme="http://lave.fun/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="加密货币" scheme="http://lave.fun/tags/%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>语言学习经验分享</title>
+    <link href="http://lave.fun/cn/36183/"/>
+    <id>http://lave.fun/cn/36183/</id>
+    <published>2024-11-17T06:46:58.000Z</published>
+    <updated>2024-11-17T06:46:58.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="动机"><a href="#动机" class="headerlink" title="动机"></a>动机</h1><blockquote><p>So this is really simple. Basically u need to know the motivation for learning anything right?</p><p>Same for the language learning. What for?</p></blockquote><p>对于我来说，动机是：</p><ul><li>获取更多信息 -&gt; 如果你只会一种语言，你也只能获取这一种语言的信息 + 少量二手翻译过的信息</li><li>拥有更多选择 -&gt; 只会一种语言，你也只能选择这一种语言的工作或特定地区的创业</li></ul><blockquote><p>基本上来说，就是为了获取更多的资源，无论信息、机会、朋友圈等等…</p></blockquote><h1 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h1><blockquote><p>在这里我会分享一些我常用和推荐的工具。</p></blockquote><h2 id="浏览器插件"><a href="#浏览器插件" class="headerlink" title="浏览器插件"></a>浏览器插件</h2><h3 id="Trancy"><a href="#Trancy" class="headerlink" title="Trancy"></a>Trancy</h3><p><strong>⭐️⭐️⭐️⭐️⭐️ | <a href="https://www.trancy.org/zh-cn">官网地址</a> | <a href="https://chromewebstore.google.com/detail/ai-%E5%8F%8C%E8%AF%AD%E5%AD%97%E5%B9%95%E7%BD%91%E9%A1%B5%E6%B2%89%E6%B5%B8%E7%BF%BB%E8%AF%91-%E2%80%94-trancy-%E8%AF%AD%E8%A8%80/mjdbhokoopacimoekfgkcoogikbfgngb">Chrome 商店地址</a></strong></p><blockquote><p>AI 双语字幕&amp;网页沉浸翻译 — Trancy 语言学习</p><p>为主流视频网站提供双语字幕和沉浸翻译，边看视频边学语言</p><p>划句划词翻译、生词本、视频双语字幕、视频总结、AI 字幕、导出字幕、标准发音</p><p>支持 YouTube, Netflix, Udemy, Coursera,  等主流视频平台</p></blockquote><p>推荐原因：</p><ul><li>免费</li><li>衔接丝滑</li><li><strong>语料学习</strong> 方法最佳示范工具（下面方法中会提到这个学习方法）</li><li>发音很标准，不会跟个人机一样</li></ul><h1 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h1><h1 id="资源"><a href="#资源" class="headerlink" title="资源"></a>资源</h1>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;动机&quot;&gt;&lt;a href=&quot;#动机&quot; class=&quot;headerlink&quot; title=&quot;动机&quot;&gt;&lt;/a&gt;动机&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;So this is really simple. Basically u need to know the mo</summary>
+      
+    
+    
+    
+    
+    <category term="实用" scheme="http://lave.fun/tags/%E5%AE%9E%E7%94%A8/"/>
+    
+    <category term="自我提高" scheme="http://lave.fun/tags/%E8%87%AA%E6%88%91%E6%8F%90%E9%AB%98/"/>
+    
+    <category term="学习" scheme="http://lave.fun/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Chinese Learning Tips from a native</title>
+    <link href="http://lave.fun/en/25874/"/>
+    <id>http://lave.fun/en/25874/</id>
+    <published>2024-11-15T08:41:42.000Z</published>
+    <updated>2024-11-15T08:41:42.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>Hihi my friend, Here is a native Chinese speaker called Lave</p><p>And I’m write this just I think this may would be helpful for who’s learning Chinese</p><p>Basically just some really small and not organized tips, hope this will help u ~</p></blockquote><h2 id="Oral-Chinese"><a href="#Oral-Chinese" class="headerlink" title="Oral Chinese"></a>Oral Chinese</h2><h4 id="1-Repeating-questions-phrase-twice-usually-indicates-Intensification-of-tone-And-it’s-widely-use"><a href="#1-Repeating-questions-phrase-twice-usually-indicates-Intensification-of-tone-And-it’s-widely-use" class="headerlink" title="1. Repeating questions phrase twice usually indicates Intensification of tone And it’s widely use."></a>1. Repeating questions phrase twice usually indicates Intensification of tone And it’s widely use.</h4><p>Example: </p><pre><code>“不会吧” -&gt; Is that possible?“不会吧不会吧” -&gt; That can&#39;t be possiable right?!ps: this is actually a meme, like a friendly sarcasm...“不会吧不会吧，2024 年了还真有人不知道可以用ChatGPT写论文？”-&gt; &quot;No way... it&#39;s 2024 and there are still people who don&#39;t know that you can write a paper in ChatGPT?&quot;</code></pre><p>So… basically u just say it twice with no pause, widely use widely use bro :D</p><p>Also if u say in a slow tone even strengthen the feeling.</p><p>but I guess this is the same almost in every language hehe.</p><h2 id="Writing-Chinese"><a href="#Writing-Chinese" class="headerlink" title="Writing Chinese"></a>Writing Chinese</h2>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;Hihi my friend, Here is a native Chinese speaker called Lave&lt;/p&gt;
+&lt;p&gt;And I’m write this just I think this may would be helpfu</summary>
+      
+    
+    
+    
+    <category term="Learning" scheme="http://lave.fun/categories/Learning/"/>
+    
+    
+    <category term="Learning" scheme="http://lave.fun/tags/Learning/"/>
+    
+    <category term="Useful" scheme="http://lave.fun/tags/Useful/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>代币经济学笔记</title>
+    <link href="http://lave.fun/cn/29486/"/>
+    <id>http://lave.fun/cn/29486/</id>
+    <published>2024-11-12T16:34:41.000Z</published>
+    <updated>2024-11-12T16:34:41.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="一、发行方式"><a href="#一、发行方式" class="headerlink" title="一、发行方式"></a>一、发行方式</h1><h2 id="ICO"><a href="#ICO" class="headerlink" title="ICO"></a>ICO</h2><p>Initial Coin Offering类似于 Stock 中的 IPO，只是把项目方出售的 标的 从股票换成了代币</p><p>IEO: Initial exchange offering </p><p>IDO: Initial DEX offering </p><p>都是通过向投资者出售代币，来筹集资金</p><h2 id="私募"><a href="#私募" class="headerlink" title="私募"></a>私募</h2><p>项目方在代币公开发行前，向特定投资者出售代币</p><p>目前大部分机构币都是这种方式</p><h2 id="空投"><a href="#空投" class="headerlink" title="空投"></a>空投</h2><p>项目方将一定数量代币免费赠送给用户或潜在用户，来吸引关注</p><h2 id="铭文-符文"><a href="#铭文-符文" class="headerlink" title="铭文&#x2F;符文"></a>铭文&#x2F;符文</h2><p>用户都需要公开铸造来获得相应份额的代币</p><h1 id="二、分发方式"><a href="#二、分发方式" class="headerlink" title="二、分发方式"></a>二、分发方式</h1><h2 id="预挖"><a href="#预挖" class="headerlink" title="预挖"></a>预挖</h2><p>项目发正式发行前，开发商、项目方或特定群体先行挖掘一定数量的代币</p><p>通常被视为垄断，因为不用多少成本可以获得大量代币，存在信任危机</p><h2 id="公平分发"><a href="#公平分发" class="headerlink" title="公平分发"></a>公平分发</h2><p>公开透明的分发给所有人</p><p>例如 ETH</p><h1 id="三、流通"><a href="#三、流通" class="headerlink" title="三、流通"></a>三、流通</h1><h2 id="MC"><a href="#MC" class="headerlink" title="MC"></a>MC</h2><p>Market Cap 流通值：已经流通代币的总价值</p><h2 id="FDV"><a href="#FDV" class="headerlink" title="FDV"></a>FDV</h2><p>Fully Diluted Value - 全稀释估值（总市值）：代币总供应量x代币现价 得出的 总价值</p><h2 id="Circulating-Supply"><a href="#Circulating-Supply" class="headerlink" title="Circulating Supply"></a>Circulating Supply</h2><p>当前代币的已流通量</p><h2 id="Total-Supply"><a href="#Total-Supply" class="headerlink" title="Total Supply"></a>Total Supply</h2><p>总供应量，包含已流通和未流通的总量</p><h2 id="相互关系"><a href="#相互关系" class="headerlink" title="$相互关系"></a>$相互关系</h2><p>Circulating Supply x 现价 &#x3D; MC</p><p>Total Supply x 现价 &#x3D; FDV</p><h2 id="规律"><a href="#规律" class="headerlink" title="$规律"></a>$规律</h2><ol><li><p>未上交易所的项目：不接盘高 FDV 和 低流通 的项目</p><p> 因为上交易所前已经透支了估值上限，同时有定期大额 代币Unlock</p></li></ol><h1 id="四、解锁"><a href="#四、解锁" class="headerlink" title="四、解锁"></a>四、解锁</h1><h2 id="TGE"><a href="#TGE" class="headerlink" title="TGE"></a>TGE</h2><p>Token Generation Event （代币生成事件）：发币</p><h2 id="Vesting"><a href="#Vesting" class="headerlink" title="Vesting"></a>Vesting</h2><p>归属机制</p><p>逐步稀释代币给相关方</p><h2 id="Cliff"><a href="#Cliff" class="headerlink" title="Cliff"></a>Cliff</h2><p>悬崖期：TGE之后 ~ 下一次Vesting 之前的时期（锁定期）</p><h2 id="Linear-Unlock"><a href="#Linear-Unlock" class="headerlink" title="Linear Unlock"></a>Linear Unlock</h2><p>线性解锁：代币通过了 Cliff 之后，以固定周期来解锁</p><h2 id="规律-1"><a href="#规律-1" class="headerlink" title="$规律"></a>$规律</h2><ol><li>因为一般机构在获取到代币后会选择抛售，造成大量抛压，导致币价下跌</li></ol><h1 id="五、供给"><a href="#五、供给" class="headerlink" title="五、供给"></a>五、供给</h1><h2 id="Inflation-通胀"><a href="#Inflation-通胀" class="headerlink" title="Inflation 通胀"></a>Inflation 通胀</h2><p>代币供应会增加，通常导致币价逐渐下跌</p><p>例如 $DOGE</p><h2 id="Deflation-通缩"><a href="#Deflation-通缩" class="headerlink" title="Deflation 通缩"></a>Deflation 通缩</h2><p>通常包含销毁机制，供应量会随着时间推移减少</p><p>如项目方回购代币并销毁</p><p>如 $ETH，但 $ETH 会根据：因为交易要消耗Gas，</p><p>销毁的Gas（燃烧代币数量）和新产生代币数量关系变化，而改变模型</p><p>如果说：当前 Gas极低，且生态日渐衰落，就会进入通胀</p><h1 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h1><p>这个对价格的影响会比 <strong>供给</strong> 要更大</p><h2 id="价值存储"><a href="#价值存储" class="headerlink" title="价值存储"></a>价值存储</h2><p>如 $BTC</p><h2 id="共识驱动"><a href="#共识驱动" class="headerlink" title="共识驱动"></a>共识驱动</h2><p>如热门 MEME Coin，社区和文化共识带动币价</p><h2 id="代币用例-Utility"><a href="#代币用例-Utility" class="headerlink" title="代币用例(Utility)"></a>代币用例(Utility)</h2><p>如ETH被用于以太坊生态链的质押等需求</p><p>或是如 VEToken（Vote Escrow）：用户需将持有原生代币锁仓一段时间，来获取VEToken</p><p>VEToken 用于对社区生态的投票和治理权，有助于项目稳定发展</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;一、发行方式&quot;&gt;&lt;a href=&quot;#一、发行方式&quot; class=&quot;headerlink&quot; title=&quot;一、发行方式&quot;&gt;&lt;/a&gt;一、发行方式&lt;/h1&gt;&lt;h2 id=&quot;ICO&quot;&gt;&lt;a href=&quot;#ICO&quot; class=&quot;headerlink&quot; title=&quot;ICO</summary>
+      
+    
+    
+    
+    <category term="笔记" scheme="http://lave.fun/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="投资" scheme="http://lave.fun/tags/%E6%8A%95%E8%B5%84/"/>
+    
+    <category term="笔记" scheme="http://lave.fun/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="加密货币" scheme="http://lave.fun/tags/%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>实用app工具推荐</title>
+    <link href="http://lave.fun/cn/18427/"/>
+    <id>http://lave.fun/cn/18427/</id>
+    <published>2024-11-12T02:57:06.000Z</published>
+    <updated>2024-11-12T02:57:06.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="实用-App-工具-推荐（不断更新）"><a href="#实用-App-工具-推荐（不断更新）" class="headerlink" title="实用 App &amp; 工具 推荐（不断更新）"></a>实用 App &amp; 工具 推荐（不断更新）</h1><blockquote><p>这里会写一些平时觉得好用的 App，工具，工作流程，解决方案等</p></blockquote><h2 id="笔记类软件"><a href="#笔记类软件" class="headerlink" title="笔记类软件"></a>笔记类软件</h2><h3 id="1-个人笔记-Notion"><a href="#1-个人笔记-Notion" class="headerlink" title="1. 个人笔记 - Notion"></a>1. 个人笔记 - Notion</h3><p><a href="https://www.notion.so/">点击进入官网</a></p><blockquote><p>Notion整合了笔记、任务管理、项目规划、知识库和数据库等多种功能。</p><p>因为是一个在线笔记平台，可以实现完全的实时同步，和网页端使用</p><p>但是也导致了无法本地保存，只能导出笔记成特定格式（PDF、HTML等）</p></blockquote><p><strong>一、自定义模版，满足个性化需求</strong><br>Notion允许你根据需求创建和定制模版。例如：</p><ul><li><strong>工作日志模板</strong>：记录每日工作任务和完成情况，确保任务按时完成。</li><li><strong>项目管理模板</strong>：通过看板视图（类似Trello）、表格视图、日历视图等多种视图管理项目，实时跟踪进度。</li><li><strong>知识库模板</strong>：收集和整理各类学习资料和文档，便于查找和使用。</li></ul><p><strong>二、多人协作，提高团队效率</strong></p><ul><li><strong>实时编辑</strong>：团队成员可以同时在线编辑文档，修改实时同步，避免版本冲突。</li><li><strong>评论功能</strong>：在文档中直接添加评论，讨论具体问题，提高沟通效率。</li><li><strong>任务分配</strong>：为团队成员分配任务，设定截止日期，确保每个人都清楚自己的职责。</li></ul><blockquote><p>但是 Notion免费版最高只支持 1000个 Block（可以简单理解为1000行）<br>所以如果有长篇项目需要注意，我的选择是使用了 Anytype 做协同，Notion 做个人笔记</p></blockquote><p><strong>三、跨平台支持，随时随地工作</strong><br>Notion支持在网页、桌面端（Windows和macOS）、移动端（iOS和Android）等多个平台上使用。</p><p><strong>四、不断更新，社区支持</strong></p><ul><li><strong>Notion社区分享</strong>：浏览和下载其他用户分享的优秀模版，快速应用到自己的工作中。</li></ul><p><strong>五、应用实例</strong></p><ol><li><strong>个人管理</strong>：将Notion用于日常待办事项、计划、读书笔记等，全面提升个人管理能力。</li><li><strong>团队协作</strong>：用于团队项目管理、会议记录、任务分配等，增强团队协作和沟通。</li><li><strong>企业知识库</strong>：建立公司内部知识库，集中管理各类文档和资料，便于员工查阅和使用。</li></ol><p><strong>六、总结</strong><br>免费版下：适合用于个人笔记<br>付费版下：全能适用<br>缺陷：不能本地保存，服务器崩溃会和完蛋</p><h3 id="2-团队协同-个人笔记-Anytype"><a href="#2-团队协同-个人笔记-Anytype" class="headerlink" title="2. 团队协同&#x2F;个人笔记 - Anytype"></a>2. 团队协同&#x2F;个人笔记 - Anytype</h3><p>明白了，我们来为Anytype做一个总体介绍，同时参考你提到的关键点。以下是一个完整的评测范例：</p><p><strong>一、概述</strong><br>Anytype是一款新兴的全方位生产力工具，旨在为用户提供一个高度安全和自由定制的工作空间。它结合了本地保存、快速同步、区块链安全以及直观的数据管理方式，为个人和团队用户提供了强大的功能支持。</p><p><strong>二、主要特点</strong></p><ol><li><p><strong>本地保存</strong><br>Anytype允许用户将数据保存在本地，确保隐私和数据安全。这种方式减少了对云服务的依赖，适合需要高安全性和数据控制的用户。</p></li><li><p><strong>快速同步</strong><br>Anytype的同步速度非常快，无论是笔记、任务还是项目，都能实现实时同步，保证工作流畅进行。这对需要频繁更新和协作的团队特别有用。</p><p>甚至如果是同局域网，会直接登录设备间实时同步。</p></li><li><p><strong>区块链模式</strong><br>使用区块链技术进行数据加密和身份验证，只需助记词即可登录。这种方式大大提高了账户的安全性，确保数据不会被未经授权的访问。</p></li><li><p><strong>数据管理</strong><br>Anytype采用了关联图（Graph）的表现形式，用户可以直观地查看和管理不同数据之间的关系。这种可视化的方式有助于用户更好地理解和组织信息。</p></li><li><p><strong>1G 存储</strong><br> 提供了 1G 存储空间，除非你有大量图片需要上传，还是挺够用的，这个容量用完后，依旧会保存至本地，而不会同步云端</p></li><li><p><strong>免费版团队协同</strong></p><p> 最高支持 3个，10人&#x2F;个 的空间（有点像工作区）</p></li></ol><p><strong>三、与Notion的对比</strong></p><table><thead><tr><th>功能</th><th>Anytype</th><th>Notion</th></tr></thead><tbody><tr><td>本地保存</td><td>支持</td><td>不支持</td></tr><tr><td>同步速度</td><td>快</td><td>中等</td></tr><tr><td>数据安全</td><td>区块链加密</td><td>云服务</td></tr><tr><td>数据管理</td><td>关联图</td><td>拖拽式</td></tr><tr><td>自定义程度</td><td>高</td><td>高</td></tr><tr><td>社区支持</td><td>较少</td><td>丰富</td></tr></tbody></table><p><strong>四、用户评价与缺点</strong></p><ol><li><p><strong>界面学习曲线（很沟槽的复杂！！）</strong><br>Anytype真的是很需要较长时间适应！相比于 Notion 复杂了太多，但是当你熟悉了之后真的是很好用</p></li><li><p><strong>功能限制</strong><br>虽然 Anytype 提供了许多核心功能，但与Notion相比，某些高级功能和集成仍有待完善。例如，API集成和第三方应用的支持相对较少。</p></li><li><p><strong>社区和资源</strong><br>由于 Anytype 是相对较新的工具，其用户社区和在线资源相对较少。用户在遇到问题时可能难以找到足够的支持和解决方案。</p></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;实用-App-工具-推荐（不断更新）&quot;&gt;&lt;a href=&quot;#实用-App-工具-推荐（不断更新）&quot; class=&quot;headerlink&quot; title=&quot;实用 App &amp;amp; 工具 推荐（不断更新）&quot;&gt;&lt;/a&gt;实用 App &amp;amp; 工具 推荐（不断更新）&lt;/</summary>
+      
+    
+    
+    
+    <category term="实用" scheme="http://lave.fun/categories/%E5%AE%9E%E7%94%A8/"/>
+    
+    
+    <category term="实用" scheme="http://lave.fun/tags/%E5%AE%9E%E7%94%A8/"/>
+    
+    <category term="信息" scheme="http://lave.fun/tags/%E4%BF%A1%E6%81%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>二手备用笔电ThinkPadX390评测</title>
+    <link href="http://lave.fun/cn/39481/"/>
+    <id>http://lave.fun/cn/39481/</id>
+    <published>2024-11-10T14:32:07.000Z</published>
+    <updated>2024-11-10T14:32:07.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="二手笔电推荐：ThinkPad-X390"><a href="#二手笔电推荐：ThinkPad-X390" class="headerlink" title="二手笔电推荐：ThinkPad X390"></a>二手笔电推荐：ThinkPad X390</h1><blockquote><p>去年淘了台二手笔电 ThinkPad X390，作为备用便携电脑顶中顶啊</p><p>说不定当你在选购二手笔电的时候可以考虑这一款</p></blockquote><p><img src="https://www.pcworld.com/wp-content/uploads/2023/04/thinkpadx390-100797062-orig.jpg?resize=1240,826&quality=50&strip=all" alt="pcworld.com-X390"></p><h2 id="重点参数"><a href="#重点参数" class="headerlink" title="重点参数"></a>重点参数</h2><p>CPU: i5-8365U</p><p>GPU: 核显 UHD620</p><p>内存: 16G </p><p>硬盘: 256G</p><p>接口：</p><ol><li>USB3.1 x 2</li><li>MicroSD(TF)&#x2F;nano-SIM插槽 x 1</li><li>HDMI x 1</li><li>3.5耳机口 x 1</li><li>雷电3-USB-C(TypeC) x 1</li><li>Mini 以太网接口</li><li>Kensington 安全锁插槽</li></ol><p>电池：48Wh（实际容量51Wh）</p><p>尺寸重量：311.9mm×217.0mm×16.9mm&#x2F;1.254kg</p><p>其他：指纹解锁模块，C口支持 PD快充</p><h2 id="续航：6h"><a href="#续航：6h" class="headerlink" title="续航：6h"></a>续航：6h</h2><p>便携便携，最重要的先说说续航</p><p>满电后屏幕亮度最高情况下（电池健康度85%以上）：</p><ul><li>最高性能模式下：基本 2h 左右</li><li>较长续航模式下：基本 6h 左右</li><li>省点模式下：基本 7h 左右</li></ul><p>基本上开较长续航模式，能保持在6小时续航左右</p><p>主要是还支持 PD 快充，而且它的充电口也是个 C 口！</p><h2 id="价格：1200CNY"><a href="#价格：1200CNY" class="headerlink" title="价格：1200CNY"></a>价格：1200CNY</h2><p>备用电脑最重要的还有价格，闲鱼现在均价在1200左右能买到成色不错的</p><h2 id="性能：日常办公-代码需求"><a href="#性能：日常办公-代码需求" class="headerlink" title="性能：日常办公+代码需求"></a>性能：日常办公+代码需求</h2><p>长续航模式功耗下表现：办公类app，编译器app等都相对流畅，可能编译一瞬间会卡顿一下下<br>性能模式下：甚至能运行 Unity，虽然有点卡XD</p><h2 id="综合"><a href="#综合" class="headerlink" title="综合"></a>综合</h2><p>总的来讲，适合：日常办公，代码需求</p><p>游戏的话还真试过 CS2，8帧 XD；Muse dash</p><p>视觉小说的这种轻量游戏倒是性能模式下无压力</p><p>所以你要是拿来推galgame也是很OK的</p><p>主要是这个指纹解锁真的很方便，摄像头也有手动防窥设计</p><p>ThinkPad yyds ✌</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;二手笔电推荐：ThinkPad-X390&quot;&gt;&lt;a href=&quot;#二手笔电推荐：ThinkPad-X390&quot; class=&quot;headerlink&quot; title=&quot;二手笔电推荐：ThinkPad X390&quot;&gt;&lt;/a&gt;二手笔电推荐：ThinkPad X390&lt;/h1&gt;&lt;</summary>
+      
+    
+    
+    
+    <category term="实用" scheme="http://lave.fun/categories/%E5%AE%9E%E7%94%A8/"/>
+    
+    
+    <category term="实用" scheme="http://lave.fun/tags/%E5%AE%9E%E7%94%A8/"/>
+    
+    <category term="生活" scheme="http://lave.fun/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+    <category term="信息" scheme="http://lave.fun/tags/%E4%BF%A1%E6%81%AF/"/>
+    
+    <category term="评测" scheme="http://lave.fun/tags/%E8%AF%84%E6%B5%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Samsung Galaxy S24 个人评测</title>
+    <link href="http://lave.fun/cn/30212/"/>
+    <id>http://lave.fun/cn/30212/</id>
+    <published>2024-11-10T14:18:06.000Z</published>
+    <updated>2024-11-10T14:18:06.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="S24-评测"><a href="#S24-评测" class="headerlink" title="S24 评测"></a>S24 评测</h1><blockquote><p>首发预购买入的，用了这么久了，该写个小评测了</p><p>网上参数信息已经太多了，这里直接说使用感受</p></blockquote><p><img src="https://images.samsung.com/hk/smartphones/galaxy-s24/images/galaxy-s24-highlights-kv.jpg?imbypass=true" alt="s24官网宣传图"></p><h2 id="主推原因"><a href="#主推原因" class="headerlink" title="主推原因"></a>主推原因</h2><h3 id="Google"><a href="#Google" class="headerlink" title="Google"></a>Google</h3><p>国行版也直接支持 Google 全套服务，只需要一个梯子即可，不用Root，不用装个GMS装半天 XD</p><p>所以可以直接使用 Google Play 下载到超多软件，不用天天网上找盗版了</p><p>而且还有很多Google的快捷服务，比如直接Google账户快速登录，app的密码管理器</p><h3 id="自定义"><a href="#自定义" class="headerlink" title="自定义"></a>自定义</h3><p>众所周知三星不用Root可以自定义的就很多，而且官方提供功能也很多（如 GoodLock）</p><p>比如你可以使用 NotiStar记录下撤回的消息，你甚至可以更改任意一个动画播放的时间</p><h3 id="三星生活助手"><a href="#三星生活助手" class="headerlink" title="三星生活助手"></a>三星生活助手</h3><p>这个是买之前都不知道的，原来有如此好用的功能</p><p>比如我今天到机场了，就能自动提醒我航班信息，下飞机了提醒我托运轮盘是几号</p><p>有快递要取，根本不用打开任何软件，直接右滑能看到全部快递信息</p><p>我进了某个商场会自动给我推荐好吃的餐厅</p><p>加上三星做的是全球市场，国内都如此好用了，国外估计也超好用</p><p>当然如果你想要隐私安全，也可以把这些服务全关了</p><p>三星拥有太多的功能了，但也都是可选项，交由用户去选择</p><h3 id="性价比"><a href="#性价比" class="headerlink" title="性价比"></a>性价比</h3><p>现在双十一打折只要不到 3600，这对一款小屏旗舰来说很香啊，功能如此丰富</p><h3 id="细节到位"><a href="#细节到位" class="headerlink" title="细节到位"></a>细节到位</h3><p>使用了这么久下来，综合感受就是这个手机真的很人性化，非常体贴和细节，</p><p>比如你复制一个链接，右侧就会弹出小菜单栏问你要不要打开浏览器或者总结网页等</p><h3 id="丝滑文件传输"><a href="#丝滑文件传输" class="headerlink" title="丝滑文件传输"></a>丝滑文件传输</h3><p>S互传，三星的文件传输工具，真的也是顶中顶，虽然不及 Apple 的 Airdrop</p><p>但是也一样可以在电脑上下个 S互传，然后直接文件分享</p><p>！！还有最重要的，你甚至可以直接对一个文件创建分享链接，任何人浏览器直接可以下载</p><p>这太爽了我说真的，整个文件传输体验就是很丝滑</p><hr><h2 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h2><h3 id="硬件层面"><a href="#硬件层面" class="headerlink" title="硬件层面"></a>硬件层面</h3><ul><li>大小： 真的是小屏旗舰，作为一个小屏手机刚刚好，完美单手操作但也不会太小了</li><li>屏幕：小杯也有 120Hz 刷新率，平时使用十分流畅</li><li>音响：音响最高分贝可以很高，中高频表现较好，低频表现不咋样</li><li>外观：外观设计十分好看，简直工业瑰宝，尤其是淡蓝色，淡绿色，黄色这三款</li><li>屏幕：屏幕素质很高，对HDR照片解析力很强</li><li>耐造：很耐摔和防水啊，买到现在少说摔了20多次了，而且都是起码1.4m起摔下去的，还泡过几次水</li></ul><h3 id="软件层面"><a href="#软件层面" class="headerlink" title="软件层面"></a>软件层面</h3><ul><li><p>系统：先说说 OneUI，网上经常把 OneUI说的难用至极不是给人用的</p><p>  实际上，个人体验下来只是因为功能太多了导致的，三星一直自定义功能很强</p><p>  然后很多设置会藏在比较深的位置，比较难找到（这好像是个缺点？？）</p><p>  综合来说，系统还是很丝滑的，而且其实挺好用 XD</p></li><li><p>“模式” 功能：有个很强大的模式功能，基本就是个自定义自动执行计划</p><p>  可以根据时间、位置、app是否打开等很多操作自动执行比如开启免打扰等功能</p><p>  比如我经常用在学校，设置教学楼那边自动开启震动，寝室这边自动开启铃声，晚上睡觉自动开启免打扰等等</p></li><li><p>隐私：右上角有个小绿点来表示当前麦克风或摄像头是否被使用中，嘎嘎保护隐私啊</p></li><li><p>NFC：NFC功能很丝滑，比如绑了一张卡，平时熄屏下直接在底部向上滑就可以打开默认卡片</p><p>然后指纹解锁一下直接开门，全过程不到2秒</p></li><li><p>解锁：平时都习惯用指纹解锁，S24屏下超声波指纹解锁，嘎嘎快，手指刚放上屏幕就开锁了，识别也很精准</p></li><li><p>安全文件夹内不仅可以放文件，有点像是单独的系统，可以直接使用安全文件夹的相机等直接拍进安全文件夹</p></li><li><p>相册功能：会自动根据人脸甚至宠物脸分类标记，可以快速查找到包含一个或几个的人物或宠物；</p><p>还会自动根据照片类型分类，比如我上次需要我身份证照片但我根本找不到在哪里，</p><p>我直接可以查找证件类型照片，直接找到照片 XD 太实用了</p><p>还有能创建共享相册也很好用</p></li></ul><hr><h2 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h2><h3 id="硬件层面-1"><a href="#硬件层面-1" class="headerlink" title="硬件层面"></a>硬件层面</h3><ul><li>过热：夏天气温30°以上后比较容易过热，过热后显然会变得卡顿啊</li></ul><h3 id="软件层面-1"><a href="#软件层面-1" class="headerlink" title="软件层面"></a>软件层面</h3><ul><li><p>相机：这个是最沟槽的问题，因为屏幕显示有HDR还是什么原因</p><p>  拍照片时看到的，和拍出来后照片看起来，和你把照片发到其他设备看</p><p>  都是不一样的 XD，这很逆天啊，尤其是人像的时候，实测适合化妆后人像拍摄</p><p>  然后最好在 GoodLock 里面下载 Camera Assistant，把照片柔滑开到最大</p></li><li><p>三星输入法：为了能够享用那个翻译和文本帮写和改写优化功能啊，虽然基本并没有用过几次</p><p>  可能其实为的是三星输入法真的很好看吧，那个动效也可以在 Good Lock 里设置超好看</p><p>  导致一直强制自己用三星输入法，为什么说 “强制” 呢，因为这个中文输入是真的神经啊</p><p>  首当其冲的，你没法直接打 “傻逼”，你敢信吗，宝宝输入法吗 😅，无论你打了多少遍，永远要翻很久候选词才能找到</p><p>  导致我一直都只能打 “傻逼啊” 然后在把这个啊给删掉，逆天</p><p>  这个例子已经很明显了，就是说真的很难受，很多热门词都没有，烂完了，而且根本不人性化，打字天天候选框选半天</p><p>  真的神经，建议就是最好还是别用三星输入法了</p></li></ul><p>其他… 草，好像真找不到什么缺点… 差不多就这样吧</p><h2 id="差点忘了，还有主打的-AI-功能"><a href="#差点忘了，还有主打的-AI-功能" class="headerlink" title="差点忘了，还有主打的 AI 功能"></a>差点忘了，还有主打的 AI 功能</h2><p>简单来说吧，我觉得真的好用的只有：</p><ol><li>AI 图片编辑功能</li><li>录音音频转文字 AI 总结功能（这个真的超好用）</li></ol><h2 id="Anyway-3600-这个价格可以无脑入手，说真的"><a href="#Anyway-3600-这个价格可以无脑入手，说真的" class="headerlink" title="Anyway, 3600 这个价格可以无脑入手，说真的"></a>Anyway, 3600 这个价格可以无脑入手，说真的</h2><blockquote><p>S24 对我来说是个 工业瑰宝 in a nutshell</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;S24-评测&quot;&gt;&lt;a href=&quot;#S24-评测&quot; class=&quot;headerlink&quot; title=&quot;S24 评测&quot;&gt;&lt;/a&gt;S24 评测&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;首发预购买入的，用了这么久了，该写个小评测了&lt;/p&gt;
+&lt;p&gt;网上参数信息已经太多了</summary>
+      
+    
+    
+    
+    <category term="实用" scheme="http://lave.fun/categories/%E5%AE%9E%E7%94%A8/"/>
+    
+    
+    <category term="实用" scheme="http://lave.fun/tags/%E5%AE%9E%E7%94%A8/"/>
+    
+    <category term="生活" scheme="http://lave.fun/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+    <category term="信息" scheme="http://lave.fun/tags/%E4%BF%A1%E6%81%AF/"/>
+    
+    <category term="评测" scheme="http://lave.fun/tags/%E8%AF%84%E6%B5%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>仅用一个域名拥有无限邮箱，实现邮箱注册平台账号注册自由</title>
+    <link href="http://lave.fun/cn/19407/"/>
+    <id>http://lave.fun/cn/19407/</id>
+    <published>2024-11-09T17:08:36.000Z</published>
+    <updated>2024-11-09T17:08:36.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="使用-cloudflare-邮箱转发功能拥有无限邮箱地址"><a href="#使用-cloudflare-邮箱转发功能拥有无限邮箱地址" class="headerlink" title="使用 cloudflare 邮箱转发功能拥有无限邮箱地址"></a>使用 cloudflare 邮箱转发功能拥有无限邮箱地址</h1><h1 id="Twitter-等平台-无限账号注册"><a href="#Twitter-等平台-无限账号注册" class="headerlink" title="Twitter 等平台 无限账号注册"></a>Twitter 等平台 无限账号注册</h1><h2 id="一、将域名托管到-Cloudflare"><a href="#一、将域名托管到-Cloudflare" class="headerlink" title="一、将域名托管到 Cloudflare"></a>一、将域名托管到 Cloudflare</h2><p>这个网上已经有很多教程了，这里直接跳过</p><h2 id="二、设置电子邮件路由"><a href="#二、设置电子邮件路由" class="headerlink" title="二、设置电子邮件路由"></a>二、设置电子邮件路由</h2><ol><li><p>进入 <a href="https://dash.cloudflare.com/">Cloudflare控制台</a></p></li><li><p>点击你的域名进入后，会看到左侧有 <strong>电子邮件</strong> 的选项</p></li><li><p>选择 <strong>路由规则</strong> 在下方 <strong>自定义地址</strong> 中点击 <strong>创建地址</strong></p><p> <img src="/.fun//19407/1.png"></p><p> <img src="/.fun//19407/2.png"></p></li><li><p>自定义地址：你要创建的邮箱叫什么</p><p> 目标位置：邮件转发到哪个邮箱</p></li><li><p>比如我可以新建一个 <a href="mailto:&#104;&#101;&#x6c;&#108;&#111;&#64;&#x6c;&#x61;&#x76;&#x65;&#46;&#x66;&#117;&#110;">&#104;&#101;&#x6c;&#108;&#111;&#64;&#x6c;&#x61;&#x76;&#x65;&#46;&#x66;&#117;&#110;</a> 邮箱地址，转发到 我的 Gmail 邮箱</p></li><li><p>此时理论上来说你可以新建接近无数个邮箱地址</p></li></ol><blockquote><p>顺带一提，此功能原本是用于不想暴露自己邮箱或是想要做收件分类用的</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;使用-cloudflare-邮箱转发功能拥有无限邮箱地址&quot;&gt;&lt;a href=&quot;#使用-cloudflare-邮箱转发功能拥有无限邮箱地址&quot; class=&quot;headerlink&quot; title=&quot;使用 cloudflare 邮箱转发功能拥有无限邮箱地址&quot;&gt;&lt;/a&gt;使用</summary>
+      
+    
+    
+    
+    <category term="实用" scheme="http://lave.fun/categories/%E5%AE%9E%E7%94%A8/"/>
+    
+    
+    <category term="实用" scheme="http://lave.fun/tags/%E5%AE%9E%E7%94%A8/"/>
+    
+    <category term="信息" scheme="http://lave.fun/tags/%E4%BF%A1%E6%81%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>对Four-dimensionalSpace的一些想法</title>
+    <link href="http://lave.fun/cn/59758/"/>
+    <id>http://lave.fun/cn/59758/</id>
+    <published>2024-11-05T08:34:22.000Z</published>
+    <updated>2024-11-05T08:34:22.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="对Four-dimensionalSpace的一些想法"><a href="#对Four-dimensionalSpace的一些想法" class="headerlink" title="对Four-dimensionalSpace的一些想法"></a>对Four-dimensionalSpace的一些想法</h1><blockquote><p>前段时间跟朋友聊天提到了个游戏叫 “4D Miner”, 他就顺便给我科普了下</p><p>当然指的是 Four-Dimensional Space，而不是时间上来说</p><p>因为没有参考任何相关资料且无相关领域知识，以下内容均为个人理解</p></blockquote><h2 id="由低维度向高维度引入"><a href="#由低维度向高维度引入" class="headerlink" title="由低维度向高维度引入"></a>由低维度向高维度引入</h2><h3 id="First-Dimensional"><a href="#First-Dimensional" class="headerlink" title="First Dimensional"></a>First Dimensional</h3><p>在 1 维度中，事物仅存在于 单个轴上（例如 X Axis）</p><p>即为物体存在于一条直线中。</p><p>想像一条单线的铁轨，主角视角为火车视角</p><p>主角的运动上限：只有 前和后(即 X++, X–)</p><p>所以主角的认知上限：只有 前和后(即 X&#x3D;N)</p><h3 id="Second-Dimensional"><a href="#Second-Dimensional" class="headerlink" title="Second Dimensional"></a>Second Dimensional</h3><p>到了 2 维度中，事物存在于 两个轴上（例如 X Axis, Y Axis）</p><p>因为两条轴可以构成一个平面，即为物体存在于一张平面中。</p><p>想像一张白纸，主角视角为一个可以移动的黑点</p><p>主角的运动上限：只有 上下左右（即 X+N, Y+N）</p><p>所以主角的认知上限：只有 上下左右（即为 X&#x3D;N, Y&#x3D;N）</p><h3 id="Third-Dimensional"><a href="#Third-Dimensional" class="headerlink" title="Third Dimensional"></a>Third Dimensional</h3><p>到了 3 维度中，事物存在于 三个轴上（例如 X Axis, Y Axis, Z Axis）</p><p>三条轴构成一个空间，所以物体存在于了三维空间。</p><p>也就是在我们的世界中，主角是你自己这个人</p><p>主角的运动上限：只有上下左右前后（即 X+N, Y+N, Z+N）</p><blockquote><p>如果此时没有理解运动上限，此时可能就可以理解了</p><p>你可以改变运动状态：你的确可以往任何方向奔跑（X+N, Y+N）并跳跃（Z+N），<br>但都是局限在三维空间</p><p>也可以改变运动方式：走路坐车即便是坐火箭也可以被XYZ三轴来标记</p><p>但是不能改变运动上限：你不在第四条轴上所以也无法有更多的运动</p></blockquote><p>主角的认知上限：只有 上下左右前后（即为 X&#x3D;N, Y&#x3D;N, Z&#x3D;N）</p><blockquote><p>此时也更好理解认知上限了，上方提到了不能改变运动上限，<br>即便告诉你你可以有一种新的轴给你运动，你一时间并不会知道这个轴在哪里什么样<br>这就是认知上限，无法自然的想到超出三维的运动模式</p><p>再更形象的例子，蚂蚁一直被称为认知二维生物，对于人类来说他是个三维的个体<br>但是对于蚂蚁来说，再一个平面上爬行，只有XY两个轴向移动<br>也就是为什么你画个圈把蚂蚁圈住，它在碰到后会迟疑</p></blockquote><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>说了不少，我们来捋一捋吧</p><p>我们可以寻找到一些固定规律：</p><ol><li>一个维度是否存在 与 一种生物认知中是否有这个维度 是无关联的</li><li>一个维度无法自然的认知高维度的世界观</li><li>一个维度升为一个更高的维度后，规律来说仅为增加了一个坐标轴</li></ol><h2 id="The-Four-Dimentional-Space"><a href="#The-Four-Dimentional-Space" class="headerlink" title="The Four-Dimentional Space"></a>The Four-Dimentional Space</h2><p>好了，前期构建了一些设定，接下来是我的 4th Dimentional Space 理解</p><p>Now it’s the tricky part hehe</p><p>以三维为基础，再加入一条轴（W Axis），此时为 XYZW 四条轴了</p><ol><li>想像一个三维坐标系，以原点为中心射出三条轴 XYZ</li><li>但是你在一个屏幕(二维)上看这个三维坐标系</li><li>想像有一个方块，再 X&#x3D;0 Y&#x3D;0 Z&#x3D;0</li><li>然后这个屏幕本身是 W&#x3D;0</li><li>然后我们对屏幕这个面进行前后的叠加</li><li>基本也就是一个四维坐标系的样子</li></ol><p>也可以理解为：对一个三维物体的定向叠加</p><p>还可以想象到如果在玩一个 3D 解密游戏：</p><ol><li>你拿起了一个可以旋转的物体</li><li>想像这个可旋转物体的在 面向你和反向你的方向（即 W Axis）<br>其实叠加了无数个同样的物体</li><li>但是当其映射到你的眼睛中时，因为重叠所以你只能看到这一个</li><li>当你旋转时，W 轴上的每一片因为本身都是物体本身所以也会跟着旋转<br>最终映射出的依旧是这个物体</li><li>你也无法看到其在4D中的样子</li></ol><h2 id="跨维显示"><a href="#跨维显示" class="headerlink" title="跨维显示"></a>跨维显示</h2><p>我有想过如果如果三维可以映射到二维上并能被好好理解<br>（如2D屏幕玩3D游戏，你依旧能好好的理解深度信息）</p><p>是不是意味着四维也可以好好映射到三维中</p><p>比如 Apple Vision Pro 这种空间计算平台</p><p>后来被朋友提醒这会成为一个更好的表现形式</p><p>但并不能成为一个打破维度理解的方式</p><p>因为人眼本身的上限就是三维，所以认知范围也只有三维。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;对Four-dimensionalSpace的一些想法&quot;&gt;&lt;a href=&quot;#对Four-dimensionalSpace的一些想法&quot; class=&quot;headerlink&quot; title=&quot;对Four-dimensionalSpace的一些想法&quot;&gt;&lt;/a&gt;对Four</summary>
+      
+    
+    
+    
+    <category term="研究" scheme="http://lave.fun/categories/%E7%A0%94%E7%A9%B6/"/>
+    
+    
+    <category term="思考" scheme="http://lave.fun/tags/%E6%80%9D%E8%80%83/"/>
+    
+    <category term="设定灵感" scheme="http://lave.fun/tags/%E8%AE%BE%E5%AE%9A%E7%81%B5%E6%84%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Some thoughts on Four-dimensionalSpace</title>
+    <link href="http://lave.fun/en/44773/"/>
+    <id>http://lave.fun/en/44773/</id>
+    <published>2024-11-05T08:34:22.000Z</published>
+    <updated>2024-11-05T08:34:22.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Some-thoughts-on-Four-dimensionalSpace"><a href="#Some-thoughts-on-Four-dimensionalSpace" class="headerlink" title="Some thoughts on Four-dimensionalSpace"></a>Some thoughts on Four-dimensionalSpace</h1><blockquote><p>some time ago, I was chatting with a friend and mentioned a game called “4D Miner”, and he gave me a science popularization by the way</p><p>of course refers to Four-Dimensional Space, not to time</p><p>Because I have not referred to any relevant materials and have no knowledge of the relevant field, the following is my personal understanding</p></blockquote><h2 id="Introduced-from-low-dimensions-to-high-dimensions"><a href="#Introduced-from-low-dimensions-to-high-dimensions" class="headerlink" title="Introduced from low dimensions to high dimensions"></a>Introduced from low dimensions to high dimensions</h2><h3 id="First-Dimensional"><a href="#First-Dimensional" class="headerlink" title="First Dimensional"></a>First Dimensional</h3><p>In the 1-dimension, things only exist on a single axis (e.g. X Axis)</p><p>That is, the object exists in a straight line.</p><p>Imagine a single-line railroad track, with the main character’s perspective being a train</p><p>Character’s maximum movement: only front and back (i.e. X++, X–)</p><p>So the upper limit of the protagonist’s cognition: only before and after (i.e. X&#x3D;N)</p><h3 id="Second-Dimensional"><a href="#Second-Dimensional" class="headerlink" title="Second Dimensional"></a>Second Dimensional</h3><p>In 2 dimensions, things exist on two axes (e.g. X Axis, Y Axis)</p><p>Because two axes can form a plane, that is, the object exists in a plane.</p><p>Imagine a blank piece of paper with the main character’s perspective on a black dot that can be moved</p><p>The main character’s upper limit of movement: only up, down, left, right (i.e. X+N, Y+N)</p><p>So the upper limit of the protagonist’s cognition: only up, down, left and right (i.e. X&#x3D;N, Y&#x3D;N)</p><h3 id="Third-Dimensional"><a href="#Third-Dimensional" class="headerlink" title="Third Dimensional"></a>Third Dimensional</h3><p>In the 3 dimensions, things exist on three axes (e.g. X Axis, Y Axis, Z Axis)</p><p>The three axes form a space, so the object exists in a three-dimensional space.</p><p>That is, in our world, the protagonist is yourself</p><p>The upper limit of the protagonist’s movement: only up, down, left, right, front and back (i.e. X+N, Y+N, Z+N)</p><blockquote><p>if you don’t understand the upper limit of exercise at this point, you may be able to understand it at this point</p><p>you can change the state of movement: you can indeed run in any direction (X+N, Y+N) and jump (Z+N),<br>but they are all confined to three-dimensional space</p><p>can also change the way of movement: walking, riding in a car, or even riding a rocket can be marked by the XYZ triaxes</p><p>but you can’t change the upper limit of movement: you’re not on the fourth axis and you can’t have more movement</p></blockquote><p>The upper limit of the protagonist’s cognition: only up, down, left, right, front and back (i.e. X&#x3D;N, Y&#x3D;N, Z&#x3D;N)</p><blockquote><p>also better understand the upper limit of cognition at this time, as mentioned above, the upper limit of exercise cannot be changed.<br>even if you were told that you could have a new axis for you to move, you wouldn’t know where that axis was for a while<br>this is the upper limit of cognition, and it is not natural to think of movement patterns beyond three dimensions</p><p>more vivid example, the ant has always been known as a cognitive two-dimensional creature, and for humans it is a three-dimensional individual<br>But for ants, crawling on another plane, there are only two axial movements of XY<br>That’s why if you draw a circle to enclose an ant, it will hesitate when it touches it</p></blockquote><h3 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h3><p>Having said a lot, let’s take a look</p><p>We can find some fixed patterns:</p><ol><li>The existence of a dimension is irrelevant to the existence of such a dimension in a biological cognition</li><li>A high-dimensional worldview that cannot be naturally cognitive</li><li>When a dimension is upgraded to a higher dimension, only one coordinate axis is added to it</li></ol><h2 id="The-Four-Dimentional-Space"><a href="#The-Four-Dimentional-Space" class="headerlink" title="The Four-Dimentional Space"></a>The Four-Dimentional Space</h2><p>Okay, so I’ve built some settings upfront, and then here’s my 4th Dimentional Space understanding</p><p>Now it’s the tricky part hehe</p><p>Based on the 3D, add one more axis (W axis), which is now XYZW four axes</p><ol><li>Imagine a 3D coordinate system with three axes XYZ centered on the origin</li><li>But you’re looking at this 3D coordinate system on a screen (2D).</li><li>Imagine a square with X&#x3D;0 Y&#x3D;0 Z&#x3D;0</li><li>Then this screen itself is W&#x3D;0</li><li>Then we overlay the front and back of this side of the screen</li><li>It’s basically what a four-dimensional coordinate system looks like</li></ol><p>It can also be understood as: the directional superposition of a three-dimensional object</p><p>It is also conceivable if you are playing a 3D puzzle game:</p><ol><li>You pick up an object that can be rotated</li><li>Imagine the rotatable object facing you and facing you in the opposite direction (i.e. W Axis)<br>In fact, there are countless of the same objects superimposed</li><li>But when it is mapped to your eye, you can only see this one because it overlaps</li><li>When you rotate, each piece on the W axis rotates because it is the object itself<br>In the end, it was still the object that was mapped</li><li>You can’t see what it looks like in 4D</li></ol><h2 id="Cross-dimensional-display"><a href="#Cross-dimensional-display" class="headerlink" title="Cross-dimensional display"></a>Cross-dimensional display</h2><p>I’ve thought about what if 3D could be mapped to 2D and be well understood<br>(For example, if you play a 3D game on a 2D screen, you can still understand the depth information well)</p><p>Does it mean that 4D can also be mapped to 3D well?</p><p>For example, the Apple Vision Pro is a spatial computing platform</p><p>Later I was reminded by a friend that this would be a better form of expression</p><p>But it doesn’t become a way to break down dimensional understanding</p><p>Because the upper limit of the human eye itself is three-dimensional, the cognitive range is only three-dimensional.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Some-thoughts-on-Four-dimensionalSpace&quot;&gt;&lt;a href=&quot;#Some-thoughts-on-Four-dimensionalSpace&quot; class=&quot;headerlink&quot; title=&quot;Some thoughts on</summary>
+      
+    
+    
+    
+    <category term="Studing" scheme="http://lave.fun/categories/Studing/"/>
+    
+    
+    <category term="Thinking" scheme="http://lave.fun/tags/Thinking/"/>
+    
+    <category term="SettingsInspiration" scheme="http://lave.fun/tags/SettingsInspiration/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>抑郁、症与人格分裂</title>
+    <link href="http://lave.fun/cn/48579/"/>
+    <id>http://lave.fun/cn/48579/</id>
+    <published>2024-11-04T03:08:36.000Z</published>
+    <updated>2024-11-04T03:08:36.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="预计发布日期-2024-12-X"><a href="#预计发布日期-2024-12-X" class="headerlink" title="预计发布日期 2024-12-X"></a>预计发布日期 2024-12-X</h2>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;预计发布日期-2024-12-X&quot;&gt;&lt;a href=&quot;#预计发布日期-2024-12-X&quot; class=&quot;headerlink&quot; title=&quot;预计发布日期 2024-12-X&quot;&gt;&lt;/a&gt;预计发布日期 2024-12-X&lt;/h2&gt;</summary>
+      
+    
+    
+    
+    <category term="研究" scheme="http://lave.fun/categories/%E7%A0%94%E7%A9%B6/"/>
+    
+    
+    <category term="思考" scheme="http://lave.fun/tags/%E6%80%9D%E8%80%83/"/>
+    
+    <category term="心理" scheme="http://lave.fun/tags/%E5%BF%83%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Depressions, Disorders &amp; Split Personalities</title>
+    <link href="http://lave.fun/en/36146/"/>
+    <id>http://lave.fun/en/36146/</id>
+    <published>2024-11-04T03:08:36.000Z</published>
+    <updated>2024-11-04T03:08:36.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Scheduled-2024-12-X"><a href="#Scheduled-2024-12-X" class="headerlink" title="Scheduled 2024-12-X"></a>Scheduled 2024-12-X</h2>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Scheduled-2024-12-X&quot;&gt;&lt;a href=&quot;#Scheduled-2024-12-X&quot; class=&quot;headerlink&quot; title=&quot;Scheduled 2024-12-X&quot;&gt;&lt;/a&gt;Scheduled 2024-12-X&lt;/h2&gt;</summary>
+      
+    
+    
+    
+    <category term="Studing" scheme="http://lave.fun/categories/Studing/"/>
+    
+    
+    <category term="Thinking" scheme="http://lave.fun/tags/Thinking/"/>
+    
+    <category term="Mental" scheme="http://lave.fun/tags/Mental/"/>
+    
+  </entry>
+  
+</feed>
