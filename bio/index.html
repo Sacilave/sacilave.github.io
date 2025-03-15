@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lave - Links</title>
+  <link href="https://fonts.cdnfonts.com/css/kite-one" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  
+  <!-- 预加载关键图片 -->
+  <link rel="preload" href="https://lave.fun/img/LavesCabin.png" as="image">
+  
+  <style>
+    :root {
+      --primary-color: #ff89ac; /* 恢复最早的主色 */
+      --primary-dark: #ff6699;
+      --primary-light: #ffcce6;
+      --background-color: #ffcae0;
+      --text-color: #333;
+      --text-light: #666;
+      --card-bg: rgba(255, 240, 245, 0.85);
+      --panel-bg: rgb(255, 215, 236);
+      --shadow: rgba(0, 0, 0, 0.096);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --primary-color: #ff89ac; /* 恢复最早的主色 */
+        --text-color: #333;
+        --text-light: #666;
+        --card-bg: rgba(255, 242, 247, 0.85);
+        --panel-bg: rgb(255, 215, 236);
+        --shadow: rgba(0, 0, 0, 0.08);
+      }
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Kite One', sans-serif;
+    }
+
+    @keyframes gradientFlow1 {
+      0% {
+        background-position: 0% 0%;
+      }
+      25% {
+        background-position: 100% 0%;
+      }
+      50% {
+        background-position: 100% 100%;
+      }
+      75% {
+        background-position: 0% 100%;
+      }
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+    
+    @keyframes gradientFlow2 {
+      0% {
+        background-position: 100% 100%;
+      }
+      25% {
+        background-position: 0% 100%;
+      }
+      50% {
+        background-position: 0% 0%;
+      }
+      75% {
+        background-position: 100% 0%;
+      }
+      100% {
+        background-position: 100% 100%;
+      }
+    }
+    
+    @keyframes gradientFlow3 {
+      0% {
+        background-position: 100% 0%;
+      }
+      25% {
+        background-position: 0% 100%;
+      }
+      50% {
+        background-position: 100% 100%;
+      }
+      75% {
+        background-position: 0% 0%;
+      }
+      100% {
+        background-position: 100% 0%;
+      }
+    }
+
+    body {
+      color: var(--text-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      min-height: 100vh;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(45deg, 
+                  rgba(255, 105, 180, 0.6), 
+                  rgba(255, 182, 193, 0.5), 
+                  rgba(255, 228, 225, 0.4), 
+                  rgba(255, 255, 255, 0.3));
+      background-size: 400% 400%;
+      animation: gradientFlow1 20s ease infinite;
+      z-index: -3;
+    }
+    
+    body::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at 30% 70%, 
+                  rgba(255, 105, 180, 0.4) 0%, 
+                  rgba(255, 182, 193, 0.3) 30%, 
+                  rgba(255, 228, 225, 0.2) 60%, 
+                  transparent 100%),
+                  radial-gradient(circle at 70% 30%, 
+                  rgba(255, 20, 147, 0.3) 0%, 
+                  rgba(255, 105, 180, 0.2) 30%, 
+                  rgba(255, 182, 193, 0.1) 60%, 
+                  transparent 100%);
+      background-size: 200% 200%, 200% 200%;
+      animation: gradientFlow2 25s ease infinite, gradientFlow3 30s ease-in-out infinite;
+      filter: blur(20px);
+      z-index: -2;
+    }
+    
+    .smooth-gradient {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, 
+                  rgba(255, 105, 180, 0.3) 0%, 
+                  rgba(255, 182, 193, 0.2) 50%, 
+                  rgba(255, 228, 225, 0.1) 100%);
+      background-size: 300% 300%;
+      animation: gradientFlow3 18s ease infinite;
+      filter: blur(30px);
+      z-index: -1;
+    }
+
+    .glass-panel {
+      background: var(--panel-bg);
+      backdrop-filter: blur(12px);
+      border-radius: 24px;
+      border: 2px solid rgba(255, 105, 180, 0.5);
+      box-shadow: 0 10px 30px rgba(255, 105, 180, 0.3);
+      padding: 25px;
+      max-width: 480px;
+      width: 100%;
+      margin: 20px auto;
+      opacity: 0; /* 初始透明度 */
+      animation: fadeIn 0.5s forwards; /* 加入淡入动画 */
+      position: relative;
+      z-index: 1;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1; /* 最终透明度 */
+      }
+    }
+
+    .container {
+      width: 100%;
+    }
+
+    .profile {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .avatar {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 4px solid var(--primary-color);
+      box-shadow: 0 6px 15px rgba(255, 163, 189, 0.3);
+      background-color: #f0f0f0; /* 占位背景色 */
+    }
+
+    .name {
+      font-size: 26px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--text-color);
+    }
+
+    .bio {
+      font-size: 15px;
+      color: var(--text-light);
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 5px;
+    }
+
+    .social-icons a {
+      color: var(--primary-dark);
+      font-size: 22px;
+      transition: all 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: var(--primary-color);
+      transform: translateY(-3px);
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 25px;
+    }
+
+    .link-card {
+      display: flex;
+      align-items: center;
+      padding: 14px 16px;
+      background-color: var(--card-bg);
+      border-radius: 14px;
+      border: 1px solid rgba(255, 105, 180, 0.5);
+      box-shadow: 0 4px 10px var(--shadow);
+      color: var(--text-color);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .link-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(255, 105, 180, 0.2);
+    }
+
+    .link-card img {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      object-fit: cover;
+      margin-right: 16px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .link-card span {
+      font-size: 16.5px;
+      font-weight: 500;
+    }
+
+    /* 新增图片卡片样式 */
+    .link-card-image {
+      position: relative;
+      display: block;
+      height: 180px;
+      background-color: var(--card-bg);
+      border-radius: 14px;
+      border: 1px solid rgba(255, 105, 180, 0.5);
+      box-shadow: 0 4px 10px var(--shadow);
+      color: var(--text-color);
+      text-decoration: none;
+      transition: all 0.3s ease;
+      overflow: hidden;
+      margin-bottom: 12px;
+    }
+    
+    .link-card-image:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 6px 15px rgba(255, 105, 180, 0.2);
+    }
+    
+    .link-card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    
+    .link-card-image:hover img {
+      transform: scale(1.05);
+    }
+    
+    .link-card-image span {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      font-size: 18px;
+      font-weight: 500;
+      color: white;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+      z-index: 2;
+    }
+    
+    .link-card-image::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 50%;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+      border-radius: 0 0 14px 14px;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 10px;
+      color: var(--text-light);
+      font-size: 14px;
+    }
+
+    .footer a {
+      color: var(--primary-dark);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer a:hover {
+      color: var(--primary-color);
+    }
+
+    /* 加载指示器样式 */
+    .loading-indicator {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 40px;
+      height: 40px;
+      border: 3px solid rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      border-top-color: var(--primary-color);
+      animation: spin 1s ease-in-out infinite;
+      z-index: 3;
+    }
+
+    @keyframes spin {
+      to {
+        transform: translate(-50%, -50%) rotate(360deg);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .glass-panel {
+        padding: 20px 15px;
+      }
+      
+      .avatar {
+        width: 90px;
+        height: 90px;
+      }
+      
+      .name {
+        font-size: 22px;
+      }
+      
+      .bio {
+        font-size: 14px;
+      }
+      
+      .social-icons {
+        gap: 12px;
+      }
+      
+      .social-icons a {
+        font-size: 20px;
+      }
+      
+      .links {
+        gap: 10px;
+      }
+      
+      .link-card {
+        padding: 12px;
+      }
+      
+      .link-card img {
+        width: 38px;
+        height: 38px;
+        margin-right: 14px;
+      }
+      
+      .link-card span {
+        font-size: 15px;
+      }
+      
+      .link-card-image {
+        height: 150px;
+      }
+      
+      .link-card-image span {
+        font-size: 16px;
+        bottom: 12px;
+        left: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <script>
+    // 配置信息
+    
+    const config = {
+      name: "Lave",
+      bio: "INFP 📷 ❤️ 💻 Dev, Photography, Literature, ACG, GameDev, Investing",
+      avatar: "https://lave.fun/img/LavesCabin.png",
+      links: [
+        {
+          href: "https://lave.fun",
+          img: "https://pic.superbed.cc/item/67d52fde218de299ca8ce7e7.jpg",
+          name: "Lave's Cabin - My Site"
+        },
+        {
+          href: "https://lave.fun/gallery/",
+          img: "https://pic.superbed.cc/item/67d52fdc218de299ca8ce7e5.jpg",
+          name: "Gallery"
+        },
+        {
+          href: "https://steamcommunity.com/id/sacilave",
+          img: "https://pic.superbed.cc/item/67d52fdf218de299ca8ce7e8.jpg",
+          name: "Steam"
+        },
+        {
+          href: "https://github.com/sacilave",
+          img: "https://pic.superbed.cc/item/67d52fde218de299ca8ce7e6.jpg",
+          name: "Github"
+        }
+      ],
+      year: 2024
+    };
+ /*   
+    const config = {
+      name: "阳光开朗的土豆",
+      bio: "嗨！我是土豆，一个热爱生活的创作者。我喜欢摄影、文学和游戏开发，热衷于探索新事物和分享我的经历。无论是在我的网站上，还是在社交媒体上，我都希望能与大家分享我的热情和灵感！",
+      avatar: "https://p3-pc-sign.douyinpic.com/tos-cn-i-0813c001/oAfOa6PAAACEAugW6GDACmQZzIALKx9fWFAAGA~tplv-dy-aweme-images:q75.webp?biz_tag=aweme_images&from=327834062&lk3s=138a59ce&s=PackSourceEnum_SEARCH&sc=image&se=false&x-expires=1744592400&x-signature=G8dRbdR3OQtdIAu4O5MOptArECs%3D",
+      links: [
+        {
+          href: "https://lave.fun",
+          img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLQZQBbs5j2QnxNmOk0HNFWvjuiVhAGmgrBqQH-ARwrUyWzwRnLso0vXEgoVDEaWbmfrw&usqp=CAU",
+          name: "你的网站"
+        },
+        {
+          href: "https://lave.fun/gallery/",
+          img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWoHYWf6aK0iztI8VYcV-6eXZrx4YzQpCDLbJONkr_uoYhRrDJyNvoqHt3Ik7zIPcdmOE&usqp=CAU",
+          name: "相册"
+        },
+        {
+          href: "https://steamcommunity.com/id/sacilave",
+          img: "https://p3-pc-sign.douyinpic.com/tos-cn-i-0813c001/oca9b9DDvAfKr2NkAv5KvogEnbADeAApYCAlrI~tplv-dy-aweme-images-v2:3000:3000:q75.webp?biz_tag=aweme_images&from=327834062&lk3s=138a59ce&s=PackSourceEnum_SEARCH&sc=image&se=false&x-expires=1744585200&x-signature=UJOn52ryz%2F2c75ebgvYJDeHDTZk%3D",
+          name: "微信"
+        },
+        {
+          href: "https://github.com/sacilave",
+          img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-nLp3R2BKFt5Halo4O9GfmL0NUq0D34i1uVUhn3xDHjOyZ1KB4Z41IUQs5J2icrRn1aM&usqp=CAU",
+          name: "QQ"
+        }
+      ],
+      year: 2024
+    };
+*/
+    // 动态更新页面内容
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelector('.avatar').src = config.avatar; // 设置头像
+      document.getElementById('name').textContent = config.name;
+      document.getElementById('bio').textContent = config.bio;
+      document.getElementById('year').textContent = config.year;
+
+      const linkElements = document.querySelectorAll('.link-card-image, .link-card');
+      linkElements.forEach((link, index) => {
+        if (config.links[index]) {
+          link.href = config.links[index].href;
+          const img = link.querySelector('img');
+          img.dataset.src = config.links[index].img;
+          img.alt = config.links[index].name;
+          link.querySelector('span').textContent = config.links[index].name;
+        }
+      });
+    });
+  </script>
+
+  <div class="smooth-gradient"></div>
+
+  <div class="glass-panel">
+    <div class="container">
+      <div class="profile">
+        <img class="avatar" src="" alt="Lave" loading="eager">
+        <h1 class="name" id="name"></h1>
+        <p class="bio" id="bio"></p>
+        
+        <div class="social-icons">
+          <a href="https://t.me/sacilave" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram"></i></a>
+          <a href="https://twitter.com/sacilave2" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.threads.net/@sacilaves" target="_blank" rel="noopener noreferrer"><i class="fab fa-threads"></i></a>
+          <a href="https://www.youtube.com/@sacilave" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.instagram.com/sacilaves" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+          <a href="https://discord.gg/vS6GU9K4ee" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord"></i></a>
+        </div>
+      </div>
+      
+      <!-- 图片卡片样式的链接 -->
+      <a class="link-card-image" href="" target="_blank">
+        <div class="loading-indicator"></div>
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="" alt="" loading="lazy">
+        <span id="link1-name"></span>
+      </a>
+
+      <a class="link-card-image" href="" target="_blank">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="" alt="" loading="lazy">
+        <span id="link2-name"></span>
+      </a>
+      
+      <div class="links">
+        <a class="link-card-image" href="" target="_blank">
+          <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="" alt="" loading="lazy">
+          <span id="link3-name"></span>
+        </a>
+        
+        <a class="link-card" href="" target="_blank">
+          <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="" alt="" loading="lazy">
+          <span id="link4-name"></span>
+        </a>
+      </div>
+      
+      <div class="footer">
+        <p>&copy; <span id="year"></span> <a href="https://lave.fun">Lave</a> • Made with 💕</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // 简单页面过渡效果
+    document.addEventListener('DOMContentLoaded', function() {
+      document.body.style.opacity = 0;
+      
+      setTimeout(function() {
+        document.body.style.transition = 'opacity 0.5s ease';
+        document.body.style.opacity = 1;
+      }, 100);
+      
+      // 懒加载图片
+      const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+      
+      if ('IntersectionObserver' in window) {
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const img = entry.target;
+              img.src = img.dataset.src;
+              img.onload = function() {
+                // 图片加载完成后，移除加载指示器
+                const parent = img.closest('.link-card, .link-card-image');
+                const indicator = parent.querySelector('.loading-indicator');
+                if (indicator) indicator.style.display = 'none';
+              };
+              imageObserver.unobserve(img);
+            }
+          });
+        });
+        
+        lazyImages.forEach(img => {
+          imageObserver.observe(img);
+          // 为每个懒加载图片的父容器添加加载指示器
+          const parent = img.closest('.link-card, .link-card-image');
+          if (!parent.querySelector('.loading-indicator')) {
+            const indicator = document.createElement('div');
+            indicator.className = 'loading-indicator';
+            parent.appendChild(indicator);
+          }
+        });
+      } else {
+        // 回退方案：对于不支持 IntersectionObserver 的浏览器
+        lazyImages.forEach(img => {
+          img.src = img.dataset.src;
+        });
+      }
+    });
+    
+    // 为链接添加点击效果
+    const links = document.querySelectorAll('.link-card, .link-card-image, .social-icons a');
+    links.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const href = this.getAttribute('href');
+        
+        this.style.transform = 'scale(0.95)';
+        setTimeout(() => {
+          window.open(href, '_blank');
+          this.style.transform = '';
+        }, 300);
+      });
+    });
+  </script>
+</body>
+</html>
