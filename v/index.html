@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lave's Cabin Terminal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="terminal-container" id="terminal">
+        <div class="crt-overlay"></div>
+        <div class="glare"></div>
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <span class="terminal-button close"></span>
+                <span class="terminal-button minimize"></span>
+                <span class="terminal-button maximize"></span>
+            </div>
+            <div class="terminal-title">Lave's Cabin Terminal</div>
+        </div>
+        <div class="terminal-screen">
+            <div class="scan-effect"></div>
+            <div class="terminal-output" id="output"></div>
+            <div class="terminal-input-line">
+                <span class="prompt">> UnknownLovely@lave.fun/Terminal:/v/$ </span>
+                <input type="text" id="terminal-input" autofocus>
+            </div>
+        </div>
+        <div class="noise"></div>
+        <div class="scan-lines"></div>
+    </div>
+    <canvas id="snakeCanvas"></canvas>
+    <script src="sound.js"></script>
+    <script src="system.js"></script>
+    <script src="heart.js"></script>
+    <script src="matrix.js"></script>
+    <script src="code-rain.js"></script>
+    <script src="minesweeper.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const terminal = document.getElementById('terminal');
+            const input = document.getElementById('terminal-input');
+            
+            terminal.addEventListener('click', () => {
+                input.focus();
+            });
+
+            input.addEventListener('click', (e) => {
+                e.stopPropagation();
+            });
+        });
+    </script>
+    <script src="terminal.js"></script>
+</body>
+</html> 

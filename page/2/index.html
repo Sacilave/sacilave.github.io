@@ -1,0 +1,448 @@
+<!DOCTYPE html><html lang="[&quot;en&quot;,&quot;cn&quot;]" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Lave's Cabin - 贴贴~</title><meta name="author" content="Lave"><meta name="copyright" content="Lave"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffa3bD"><meta name="description" content="Tech, Web3, Photography, Literature, ACG, IndieDev, GameDev..EN(6&#x2F;10), CN(10&#x2F;10), JP(1&#x2F;50)">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Lave&#39;s Cabin">
+<meta property="og:url" content="http://lave.fun/page/2/">
+<meta property="og:site_name" content="Lave&#39;s Cabin">
+<meta property="og:description" content="Tech, Web3, Photography, Literature, ACG, IndieDev, GameDev..EN(6&#x2F;10), CN(10&#x2F;10), JP(1&#x2F;50)">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://lave.fun/img/LavesCabin.png">
+<meta property="article:author" content="Lave">
+<meta property="article:tag" content="sacilave, lave, tech, otaku, photography, anime, indiedev, gamer, gamedev, depression, explore, 技术宅, 二次元, 个人网站, hexo, butterfly, 前端, 抑郁">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://lave.fun/img/LavesCabin.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://lave.fun/page/2/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!true && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        if (name && globalFn[key][name]) return
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#430311')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffa3bD')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          const mediaQueryDark = window.matchMedia('(prefers-color-scheme: dark)')
+          const mediaQueryLight = window.matchMedia('(prefers-color-scheme: light)')
+          
+          if (theme === undefined) {
+            if (mediaQueryLight.matches) activateLightMode()
+            else if (mediaQueryDark.matches) activateDarkMode()
+            else {
+              const hour = new Date().getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            mediaQueryDark.addEventListener('change', () => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else {
+            theme === 'light' ? activateLightMode() : activateDarkMode()
+          }
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=[object Object]"></script><script>window.dataLayer = window.dataLayer || []
+function gtag(){dataLayer.push(arguments)}
+gtag('js', new Date())
+gtag('config', '[object Object]')
+btf.addGlobalFn('pjaxComplete', () => {
+  gtag('config', '[object Object]', {'page_path': window.location.pathname})
+}, 'google_analytics')
+</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"No results found for: ${query}","hits_stats":"${hits} articles found"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Failed',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: 'days',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: {"limitCount":250,"languages":{"author":"Author: Lave","link":"Link: ","source":"Source: Lave's Cabin","info":"Copyright belongs to the author. For commercial use, please contact the author for authorization. For non-commercial use, please indicate the source."}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isAnchor: true,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Lave\'s Cabin',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2025-05-05 01:16:39'
+}</script><link rel="stylesheet" href="/css/custom.css"><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="Lave's Cabin" type="application/rss+xml">
+</head><body><div id="web_bg" style="background-image: url(img/topImg.jpg);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "/img/Loading.png" data-lazy-src="/img/LavesCabin.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">43</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">30</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">10</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/bio/"><i class="fa-fw fa-solid fa-id-card"></i><span> 名片</span></a></div><div class="menus_item"><a class="site-page" href="/v/"><i class="fa-fw fas fa-terminal"></i><span> 终端</span></a></div><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-solid fa-newspaper"></i><span> 文章</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 类别</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-solid fa-sitemap"></i><span> 本站</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/old/"><i class="fa-fw fa-regular fa-window-restore"></i><span> 旧版</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></li><li><a class="site-page child" href="/shuoshuo/"><i class="fa-fw fa-brands fa-rocketchat"></i><span> 说说</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> 图册</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://www.travellings.cn/go.html"><i class="fa-fw fa-solid fa-bus"></i><span> 开往</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-solid fa-language"></i><span> Lang</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/cn/"><span> 中文</span></a></li><li><a class="site-page child" href="/en/"><span> English</span></a></li><li><a class="site-page child" href="/"><span> Global</span></a></li></ul></div></div></div></div><div class="page" id="body-wrap"><header class="full_page fixed" id="page-header" style="background-image: url(/img/topImg.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><img class="site-icon" src= "/img/Loading.png" data-lazy-src="/img/logo.png" alt="Logo"><span class="site-name">Lave's Cabin</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/bio/"><i class="fa-fw fa-solid fa-id-card"></i><span> 名片</span></a></div><div class="menus_item"><a class="site-page" href="/v/"><i class="fa-fw fas fa-terminal"></i><span> 终端</span></a></div><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-solid fa-newspaper"></i><span> 文章</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 类别</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-solid fa-sitemap"></i><span> 本站</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/old/"><i class="fa-fw fa-regular fa-window-restore"></i><span> 旧版</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></li><li><a class="site-page child" href="/shuoshuo/"><i class="fa-fw fa-brands fa-rocketchat"></i><span> 说说</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> 图册</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://www.travellings.cn/go.html"><i class="fa-fw fa-solid fa-bus"></i><span> 开往</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-solid fa-language"></i><span> Lang</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/cn/"><span> 中文</span></a></li><li><a class="site-page child" href="/en/"><span> English</span></a></li><li><a class="site-page child" href="/"><span> Global</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="site-info"><h1 id="site-title">Lave's Cabin</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/sacilave" target="_blank" title="Github"><i class="fab fa-github" style="color: #hdhfbb;"></i></a><a class="social-icon" href="mailto:work@lave.fun" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #hdhfbb;"></i></a><a class="social-icon" href="https://t.me/sacilave" target="_blank" title="Telegram"><i class="fa-brands fa-telegram" style="color: #hdhfbb;"></i></a><a class="social-icon" href="https://steamcommunity.com/id/sacilave" target="_blank" title="Steam"><i class="fa-brands fa-steam" style="color: #hdhfbb;"></i></a><a class="social-icon" href="https://x.com/Sacilave2" target="_blank" title="Twitter/X"><i class="fa-brands fa-twitter" style="color: #hdhfbb;"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts nc" id="recent-posts"><div class="recent-post-items"><div class="recent-post-item"><div class="post_cover left"><a href="/cn/42312/" title="付鹏汇丰中国经济演讲/摘要总结"><img class="post-bg" src= "/img/Loading.png" data-lazy-src="/gallery/sacilave/GenerativeImg/sakuraNeko3.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="付鹏汇丰中国经济演讲/摘要总结"></a></div><div class="recent-post-info"><a class="article-title" href="/cn/42312/" title="付鹏汇丰中国经济演讲/摘要总结">付鹏汇丰中国经济演讲/摘要总结</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2025-01-01T15:47:36.000Z" title="Created 2025-01-01 23:47:36">2025-01-01</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%8A%95%E8%B5%84/">投资</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="disqus-count" href="http://lave.fun/cn/42312/#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span class="article-meta-label"> comments</span></span></div><div class="content"> 付鹏汇丰演讲原文  总结摘要一、经济反馈机制与阶层差异 底层反馈滞后：疫情后，底层劳动者（如网约车司机、外卖员等）首当其冲地感受到经济冲击。然而，整体的宏观经济数据却没有立刻反映这些变化。底层劳动者的生计直接受到影响，而这些群体的消费能力下降并未在经济数据中及时体现出来。   中产阶级的经济压力：到了2023年，中产阶级开始承受来自降本增效、裁员的压力。许多中产家庭缩减消费，放缓了经济增长。中产阶级对于“降级消费”的感受尤为明显，过往的消费模式不再适用。   消费降级现象：消费降级不仅在低收入群体中表现明显，在中产阶级中也同样显现。以“拼多多”为代表的低价电商平台成为低收入群体的选择，而原本服务于中产阶级的高端消费市场也开始显现降级趋势。  二、宏观经济中的供需问题 PPI（生产者价格指数）为负：生产者价格指数的负增长意味着生产环节的价格在持续下降。企业整体的利润在下降，很多行业面临价格战，且需求不足。企业盈利减少，加剧了行业间的竞争，供给过剩与需求不足的矛盾加剧。 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/cn/38912/" title="Unity中fbx批量提取animationClip动画脚本(适用mixamo)"><img class="post-bg" src= "/img/Loading.png" data-lazy-src="https://www.orangean.com.tw/wp-content/uploads/2021/05/%E6%9C%AA%E5%91%BD%E5%90%8D-1.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Unity中fbx批量提取animationClip动画脚本(适用mixamo)"></a></div><div class="recent-post-info"><a class="article-title" href="/cn/38912/" title="Unity中fbx批量提取animationClip动画脚本(适用mixamo)">Unity中fbx批量提取animationClip动画脚本(适用mixamo)</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-12-24T14:44:45.000Z" title="Created 2024-12-24 22:44:45">2024-12-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="disqus-count" href="http://lave.fun/cn/38912/#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span class="article-meta-label"> comments</span></span></div><div class="content">Unity中fbx批量提取animationClip动画(Unity|适用mixamo)问题描述 在 Unity 中，如何批量提取 fbx 文件（mixamo 下载的 fbx 文件）中的 animationClip 动画切片？   注意！转载自 reddit@VR_Raccoonteur 感谢~  解决方案 添加以下脚本（放在任何位置都可以）  12345678910111213141516171819202122232425262728293031323334353637383940using System.Collections;using System.Collections.Generic;using UnityEditor;using UnityEngine;public class ExtractAnimations : MonoBehaviour&#123;  [MenuItem(&quot;Tools/ExtractAnimations&quot;)]  static void ExtractAnims()  &#123;    string s;   ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/cn/47536/" title="Cursor无限免费续杯最新方法"><img class="post-bg" src= "/img/Loading.png" data-lazy-src="https://brianchristner.io/content/images/size/w1200/2024/09/Cursor-AI.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Cursor无限免费续杯最新方法"></a></div><div class="recent-post-info"><a class="article-title" href="/cn/47536/" title="Cursor无限免费续杯最新方法">Cursor无限免费续杯最新方法</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-12-23T11:38:18.000Z" title="Created 2024-12-23 19:38:18">2024-12-23</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%AE%9E%E7%94%A8/">实用</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="disqus-count" href="http://lave.fun/cn/47536/#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span class="article-meta-label"> comments</span></span></div><div class="content"> 虽然这个方法可以无限续杯，但完全不建议这么做，支持正版才能让项目方继续有能力开发更新，也是对作者的尊重去 Cursor 官网支持正版👍 | 感谢项目作者 yuaotian | 如果实在没有经济能力，这个可以作为暂时的过渡  不废话，直接跳转去原 Github仓库 yuaotian&#x2F;Github-go-cursor-help 直接命令行输入就可以了，不需要安装任何依赖 海外用户Linux&#x2F;macOS 1curl -fsSL https://raw.githubusercontent.com/yuaotian/go-cursor-help/master/scripts/install.sh | sudo bash  Windows 1irm https://raw.githubusercontent.com/yuaotian/go-cursor-help/master/scripts/install.ps1 | iex  国内用户（推荐）macOS 1curl -fsSL...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/cn/41518/" title="大学生报销和奖金保姆指南"><img class="post-bg" src= "/img/Loading.png" data-lazy-src="/gallery/sacilave/cuties/Lave_CutieDogs.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="大学生报销和奖金保姆指南"></a></div><div class="recent-post-info"><a class="article-title" href="/cn/41518/" title="大学生报销和奖金保姆指南">大学生报销和奖金保姆指南</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-12-20T07:31:10.000Z" title="Created 2024-12-20 15:31:10">2024-12-20</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%AE%9E%E7%94%A8/">实用</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="disqus-count" href="http://lave.fun/cn/41518/#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span class="article-meta-label"> comments</span></span></div><div class="content">1. 报销 想要参加比赛之前就应该看的指南哦！当然如果你已经参加了比赛，那么你可能更需要看这个   钱！这对比赛来说，真的是个很重要的部分了，异地赛区的比赛，交通住宿恰饭都是一笔不小的开销啊而且毕竟对于我来说比赛除了锻炼能力，添加履历，还有最主要的就是 公费旅游 XD踩了不少坑，刚开始参加比赛的你，最好事先看看这些建议哦！  根据学校不同，报销的规则可能不同哦，但跟着接下来的步骤走，基本可以保证不会踩坑出错  首先！查看学校报销规则 学校官网查找相关文件 询问学长学姐、老师 或 学校财务处、学生事务中心，报销规则和流程    查看完你们学校的报销规则后，接下来参考着你们的报销规则，来看我接下来的指南 1.1 行程前的准备发票信息准备 一般在商户开发票，都提供学校的这两个信息，开 企业发票   抬头单位名称：学校名称 纳税人识别号或统一社会信用代码：学校税号  个人信息准备 这些一般是你去学校报销时，学校会 要求你提供 的信息   个人基本信息 开户银行名称：一般都是 某某银行某某支行 开户银行账号  1.2...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/cn/15091/" title="Origin is unreachable Error code 523 / ipv4访问正常但域名访问失败"><img class="post-bg" src= "/img/Loading.png" data-lazy-src="https://images.ctfassets.net/nan8gu4ivyzc/41dFcci5lqB3ft7H05Mofw/727527e21eea908a6043ab5919280075/cloudflare-cover.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Origin is unreachable Error code 523 / ipv4访问正常但域名访问失败"></a></div><div class="recent-post-info"><a class="article-title" href="/cn/15091/" title="Origin is unreachable Error code 523 / ipv4访问正常但域名访问失败">Origin is unreachable Error code 523 / ipv4访问正常但域名访问失败</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-12-17T13:40:15.000Z" title="Created 2024-12-17 21:40:15">2024-12-17</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%AE%9E%E7%94%A8/">实用</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="disqus-count" href="http://lave.fun/cn/15091/#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span class="article-meta-label"> comments</span></span></div><div class="content">问题描述 Cloudflare 报错 Origin is unreachable Error code 523 ipv4 访问正常但域名访问失败解决方案 Cloudflare host Error &#x2F; 无法连接到源服务器  我想要添加个子域名解析到另外一个 ipv4 地址，浏览器直接访问 ipv4 地址是正常的 但是通过域名访问失败，报错 Origin is unreachable Error code 523，显示 Browser Working，Cloudflare Working，但是 Host Error 先说结果：因为 SSL 证书问题，Cloudflare 到服务器的连接失败，所以 ip 可以访问，但是域名访问就显示 Host Error 解决方案1. 确保低级错误 是否添加域名解析记录 服务器本身是否正常运行（直接通过 ip地址 是否能访问） 域名解析是否正常  2. 检查配置 你的根域名是否通过 https 连接 -&gt; 如果是 你的子域名解析的服务器，是否服务器有 SSL 证书 -&gt; 如果没有 你的 Cloudflare 的...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/cn/61489/" title="火车纸质票丢失补办或车票发票办理的终极指南"><img class="post-bg" src= "/img/Loading.png" data-lazy-src="https://www.web2mi.com/attached/image/20190322/20190322164632_489.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="火车纸质票丢失补办或车票发票办理的终极指南"></a></div><div class="recent-post-info"><a class="article-title" href="/cn/61489/" title="火车纸质票丢失补办或车票发票办理的终极指南">火车纸质票丢失补办或车票发票办理的终极指南</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-12-12T06:12:19.000Z" title="Created 2024-12-12 14:12:19">2024-12-12</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="disqus-count" href="http://lave.fun/cn/61489/#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span class="article-meta-label"> comments</span></span></div><div class="content">火车纸质票丢失补办的终极指南 相信大家一般都直接使用身份证或扫码进站，并不会在售票处打印纸质票，或是在人工窗口购买但如果你需要报销，或是需要纸质票，那么你就需要补办纸质票了  1. 确保你的 车次时间-现在时间 在 180天 以内2. 如果你的行程： 在30天内且只需电子版：前往 12306 App，点击 订单，选择 本人车票，如果能查询到车票，则可以点击电子发票直接开具电子发票 在30天外或需要纸质票：只能准备直接 前往距离你最近的火车站，进行补办 咯，记得！！带上身份证！！！身 份 证  3. 到达火车站，直接去售票处： 可以先去 自助售票机 上进行补办，选择 补办车票&#x2F;打印车票凭证 (具体叫法可能有偏差) 如果查询不到车票信息，需要去 人工窗口 补办咯  4. 在人工窗口补办时： 直接告诉工作人员你需要补办车票，然后给他身份证，如果能查询到你的车票信息，就可以补办成功啦  5. 如果工作人员跟你说查询不到车票记录， 这种情况一般因为已经时间间隔过久了，需要 恢复订单记录    a. 他可能让你打电话给 12306 客服，但 12306...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/cn/54177/" title="三星玩机指南2024 - 待更新"><img class="post-bg" src= "/img/Loading.png" data-lazy-src="https://images.samsung.com/hk/smartphones/galaxy-s24/images/galaxy-s24-highlights-kv.jpg?imbypass=true" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="三星玩机指南2024 - 待更新"></a></div><div class="recent-post-info"><a class="article-title" href="/cn/54177/" title="三星玩机指南2024 - 待更新">三星玩机指南2024 - 待更新</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-12-10T02:59:58.000Z" title="Created 2024-12-10 10:59:58">2024-12-10</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%AE%9E%E7%94%A8/">实用</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="disqus-count" href="http://lave.fun/cn/54177/#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span class="article-meta-label"> comments</span></span></div><div class="content"></div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/cn/30766/" title="我在看的消息面 - 待更新"><img class="post-bg" src= "/img/Loading.png" data-lazy-src="https://www.dbs.com.cn/iwov-resources/media/images/investments/unit-trust/unit-trust-service-684x630.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="我在看的消息面 - 待更新"></a></div><div class="recent-post-info"><a class="article-title" href="/cn/30766/" title="我在看的消息面 - 待更新">我在看的消息面 - 待更新</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-12-08T10:13:59.000Z" title="Created 2024-12-08 18:13:59">2024-12-08</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%8A%95%E8%B5%84/">投资</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="disqus-count" href="http://lave.fun/cn/30766/#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span class="article-meta-label"> comments</span></span></div><div class="content"></div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/cn/46583/" title="Unity6 角色控制器 Cinemachine+InputSystem - 更新中"><img class="post-bg" src= "/img/Loading.png" data-lazy-src="https://www.orangean.com.tw/wp-content/uploads/2021/05/%E6%9C%AA%E5%91%BD%E5%90%8D-1.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Unity6 角色控制器 Cinemachine+InputSystem - 更新中"></a></div><div class="recent-post-info"><a class="article-title" href="/cn/46583/" title="Unity6 角色控制器 Cinemachine+InputSystem - 更新中">Unity6 角色控制器 Cinemachine+InputSystem - 更新中</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-12-07T15:03:26.000Z" title="Created 2024-12-07 23:03:26">2024-12-07</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="disqus-count" href="http://lave.fun/cn/46583/#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span class="article-meta-label"> comments</span></span></div><div class="content">基于 Cinemachine 和 InputSystem 的 Unity 第三人称角色控制器 这里分享下我的解决方案适用 Unity 6;最新的输入方式 InputSystem;最新的摄像头控制方式 Cinemachine;适用第三人称同时适用于第一人称;  安装必需插件 打开 Package Manager ( Window -&gt; Package Manager ) 搜索 Cinemachine 和 InputSystem 并安装  创建玩家物体 在 Hierarchy 中创建一个胶囊体（Capsule），命名为 Player 对 Player 组件进行如下设置： 删除 Capsule Collider 组件 添加 Character Controller 组件 新建脚本 PlayerMotor.cs 和 InputManager.cs 并挂载到 Player 上   最终 Player 的 Inspector 应该是这样的   对 Player 物体的子物体： 将场景中的 Main Camera 拖拽到 Player 上（作为 Player 的子物体），命名为...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/cn/18781/" title="信息、媒体、洗脑、操纵与自主思维 - 待更新"><img class="post-bg" src= "/img/Loading.png" data-lazy-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsq_HPCvoo5dU-Amwav7i_Gcgra8Boc7816g&amp;s" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="信息、媒体、洗脑、操纵与自主思维 - 待更新"></a></div><div class="recent-post-info"><a class="article-title" href="/cn/18781/" title="信息、媒体、洗脑、操纵与自主思维 - 待更新">信息、媒体、洗脑、操纵与自主思维 - 待更新</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-12-06T04:15:26.000Z" title="Created 2024-12-06 12:15:26">2024-12-06</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%A0%94%E7%A9%B6/">研究</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="disqus-count" href="http://lave.fun/cn/18781/#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span class="article-meta-label"> comments</span></span></div><div class="content"> 深入探讨信息操纵、媒体影响和保持独立思考的重要性  一、信息操纵1. 案例1.1 社交媒体算法与信息茧房Facebook在2014年曾进行过一项著名的”情绪传染”实验 通过调整用户新闻推送的情绪倾向，成功影响了用户的情绪状态。 这个实验引发了巨大争议，也揭示了算法推荐系统对人们认知的深远影响。 1.2 政治宣传与舆论引导 2016年美国大选中的 Cambridge Analytica 事件 各国政府对COVID-19疫情信息的不同叙事方式 战争报道中的选择性报道现象  二、媒体操纵1. 框架效应通过特定的叙事框架来影响受众理解：  同样的经济数据，可以被解读为”增长放缓”或”稳健发展” 同一事件在不同立场媒体中呈现截然不同的面貌  2. 议程设置媒体通过选择性报道来引导公众关注点：  热点事件的”爆米花效应” 重要但不吸引眼球的议题被忽视  3. 情感煽动 标题党与情绪化用语 片面截取与去脉络化处理 视觉冲击与音效配合  三、认知偏差与思维陷阱1. 确认偏误人们倾向于寻找支持自己已有观点的信息：  股市投资者只看符合自己判断的分析 政治立场固化导致的”回音室效应”  2....</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/cn/40618/" title="Notion使用经验分享"><img class="post-bg" src= "/img/Loading.png" data-lazy-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7vLysTO1Z3RxGQRv4Q9dlAHx2E33tteGUlg&amp;s" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Notion使用经验分享"></a></div><div class="recent-post-info"><a class="article-title" href="/cn/40618/" title="Notion使用经验分享">Notion使用经验分享</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-12-05T12:23:34.000Z" title="Created 2024-12-05 20:23:34">2024-12-05</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%AE%9E%E7%94%A8/">实用</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="disqus-count" href="http://lave.fun/cn/40618/#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span class="article-meta-label"> comments</span></span></div><div class="content">Notion 小组件 - IndifyIndify | 轻量 Notion 小组件 支持一个账号创建 6 个免费组件，超出需要付费 1 分钟即可快速使用的 Notion 小组件，可自定义程度高，目前包含 7 个免费组件   使用例子： 纪念日倒计时(Countdown组件)，人生 Wishlist(Life Progress Bar) 使用方法 创建账号后，左上角点击 Add new widget 或 在下方点击想要创建的组件类型  进入组件自定义页面后，进行自定义，完成后在左下角复制小组件链接     进入 Notion 创建一个 embed 块，将小组件链接粘贴进去即可   注意：Indify 不仅支持 Notion，还支持多种平台，感兴趣可以访问官网看看  使用 Notion 创建恋爱共享日记Love Hub | 一个 Notion 恋爱共享日记模板 这个模版十分的轻量方便实用，讨论区、关系日历这两个功能挺好用的 适合安排一起的行程或者记录一些重要日子之类的等等，个人感觉挺好用的总之  应该可以发现 这个里面的 We shared our life for...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/en/50399/" title="Technical Indicators I Watch"><img class="post-bg" src= "/img/Loading.png" data-lazy-src="https://www.dbs.com.cn/iwov-resources/media/images/investments/unit-trust/unit-trust-service-684x630.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Technical Indicators I Watch"></a></div><div class="recent-post-info"><a class="article-title" href="/en/50399/" title="Technical Indicators I Watch">Technical Indicators I Watch</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-12-04T11:05:34.000Z" title="Created 2024-12-04 19:05:34">2024-12-04</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Investment/">Investment</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="disqus-count" href="http://lave.fun/en/50399/#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span class="article-meta-label"> comments</span></span></div><div class="content"> Since I primarily trade in the crypto market, some indicators may only be applicable to cryptocurrency trading. This is for reference only.  I. RSIThe RSI (Relative Strength Index) is a momentum indicator used to measure whether an asset is overbought or oversold. RSI values range from 0 to 100:  When RSI &gt; 70, the asset is overbought, suggesting a potential price decline When RSI &lt; 30, the asset is oversold, suggesting a potential price rebound  Key points:  RSI Divergence: When...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/cn/46245/" title="对于炒外汇的认知偏差 - 待更新"><img class="post-bg" src= "/img/Loading.png" data-lazy-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWbV9MCX3ffjhIJJOZpm75TLEifDIwgB6l5w&amp;s" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="对于炒外汇的认知偏差 - 待更新"></a></div><div class="recent-post-info"><a class="article-title" href="/cn/46245/" title="对于炒外汇的认知偏差 - 待更新">对于炒外汇的认知偏差 - 待更新</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-12-03T12:41:04.000Z" title="Created 2024-12-03 20:41:04">2024-12-03</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%8A%95%E8%B5%84/">投资</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="disqus-count" href="http://lave.fun/cn/46245/#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span class="article-meta-label"> comments</span></span></div><div class="content"> 以前一直觉得炒外汇这种投资回报率这么低，有什么必要去炒现在突然意识到，炒外汇本身或许并不是投资，而是保护自己的资产从保护购买力的角度，每个人都应该炒外汇  外汇交易的本质保护购买力外汇市场是全球流动性最强的市场，汇率的波动直接反映了各国货币购买力的变化。 通过外汇交易，将资产从可能贬值的货币转移到相对稳定或升值的货币中， 从而保护资产的实际价值不受通货膨胀或本国货币贬值的侵蚀。 例如，本国经济动荡时，将资产转化为美元或瑞士法郎等避险货币，能减少因本币贬值带来的损失。 尤其对于资金体量较小的来说，因为波动相对其他投资品种较小，所以保护购买力功能会更明显。 </div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/cn/46583/" title="Unity 脚本无法拖拽到或添加到物体上"><img class="post-bg" src= "/img/Loading.png" data-lazy-src="https://www.orangean.com.tw/wp-content/uploads/2021/05/%E6%9C%AA%E5%91%BD%E5%90%8D-1.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Unity 脚本无法拖拽到或添加到物体上"></a></div><div class="recent-post-info"><a class="article-title" href="/cn/46583/" title="Unity 脚本无法拖拽到或添加到物体上">Unity 脚本无法拖拽到或添加到物体上</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-12-02T12:41:04.000Z" title="Created 2024-12-02 20:41:04">2024-12-02</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="disqus-count" href="http://lave.fun/cn/46583/#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span class="article-meta-label"> comments</span></span></div><div class="content">问题描述 脚本无法拖拽到或添加到场景中的物体上  Inspector 中无法显示 public 变量 - 解决方案  在 Inspector 中，点击 Add Component 按钮，添加脚本没反应或者根本无法找到脚本  出现报错:  Can&#39;t add script component &#39;xxx&#39; because the script class cannot be found.   Make sure that there are no compile errors and that the file name and class name match.   脚本无法添加 - 解决方案 我在最后一步终于解决了，很无语的问题，但是希望你能在前面几步中就解决呢 ＞︿＜ 首先确保你已经尝试过最基本的：重启 Unity 和重启电脑，如果无效再看接下来几步哦  一、 文件名与类名不一致在 Unity 中，类名与文件名必须完全一致（包括大小写） 如果脚本的文件名是 Test.cs，那么脚本中的类名必须是 Test，且大小写匹配。 二、...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/cn/4341/" title="加密合约交易笔记"><img class="post-bg" src= "/img/Loading.png" data-lazy-src="https://media.cryptoforinnovation.org/2023/10/shutterstock_2159962175-1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="加密合约交易笔记"></a></div><div class="recent-post-info"><a class="article-title" href="/cn/4341/" title="加密合约交易笔记">加密合约交易笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-11-22T06:43:08.000Z" title="Created 2024-11-22 14:43:08">2024-11-22</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%8A%95%E8%B5%84/">投资</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="disqus-count" href="http://lave.fun/cn/4341/#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span class="article-meta-label"> comments</span></span></div><div class="content">...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/cn/36183/" title="语言学习经验分享 - 待更新"><img class="post-bg" src= "/img/Loading.png" data-lazy-src="/gallery/tomosaki_TimeTravel.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="语言学习经验分享 - 待更新"></a></div><div class="recent-post-info"><a class="article-title" href="/cn/36183/" title="语言学习经验分享 - 待更新">语言学习经验分享 - 待更新</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-11-17T06:46:58.000Z" title="Created 2024-11-17 14:46:58">2024-11-17</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="disqus-count" href="http://lave.fun/cn/36183/#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span class="article-meta-label"> comments</span></span></div><div class="content">动机 So this is really simple. Basically u need to know the motivation for learning anything right? Same for the language learning. What for?  对于我来说，动机是：  获取更多信息 -&gt; 如果你只会一种语言，你也只能获取这一种语言的信息 + 少量二手翻译过的信息 拥有更多选择 -&gt; 只会一种语言，你也只能选择这一种语言的工作或特定地区的创业   基本上来说，就是为了获取更多的资源，无论信息、机会、朋友圈等等…  工具 在这里我会分享一些我常用和推荐的工具。  浏览器插件Trancy⭐️⭐️⭐️⭐️⭐️ | 官网地址 | Chrome 商店地址  AI 双语字幕&amp;网页沉浸翻译 — Trancy 语言学习 为主流视频网站提供双语字幕和沉浸翻译，边看视频边学语言 划句划词翻译、生词本、视频双语字幕、视频总结、AI 字幕、导出字幕、标准发音 支持 YouTube, Netflix, Udemy, Coursera, ...</div></div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/#content-inner">3</a><a class="extend next" rel="next" href="/page/3/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info is-center"><div class="avatar-img"><img src= "/img/Loading.png" data-lazy-src="/img/LavesCabin.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Lave</div><div class="author-info-description">Tech, Web3, Photography, Literature, ACG, IndieDev, GameDev..<br>EN(6/10), CN(10/10), JP(1/50)</div><div class="site-data"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">43</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">30</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">10</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://x.com/Sacilave2"><i class="fa-brands fa-twitter"></i><span>Follow Me!</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/sacilave" target="_blank" title="Github"><i class="fab fa-github" style="color: #hdhfbb;"></i></a><a class="social-icon" href="mailto:work@lave.fun" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #hdhfbb;"></i></a><a class="social-icon" href="https://t.me/sacilave" target="_blank" title="Telegram"><i class="fa-brands fa-telegram" style="color: #hdhfbb;"></i></a><a class="social-icon" href="https://steamcommunity.com/id/sacilave" target="_blank" title="Steam"><i class="fa-brands fa-steam" style="color: #hdhfbb;"></i></a><a class="social-icon" href="https://x.com/Sacilave2" target="_blank" title="Twitter/X"><i class="fa-brands fa-twitter" style="color: #hdhfbb;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">Thanks for the visit o(*°▽°*)o<br>Lave probably will post some blogs in the future.<br>可以在 右上角的Gallery 中找到我的摄影集~<br>还可以使用右上角语言切换来看特定语言的帖子，然后...有些帖子可能只是开坑了还没写或没写完哦~</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Posts</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/cn/44363/" title="python2"><img src= "/img/Loading.png" data-lazy-src="/gallery/sacilave/cuties/Lave_CutieDogs.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="python2"/></a><div class="content"><a class="title" href="/cn/44363/" title="python2">python2</a><time datetime="2025-04-11T23:58:04.000Z" title="Updated 2025-04-12 07:58:04">2025-04-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/cn/5613/" title="pythonRevive"><img src= "/img/Loading.png" data-lazy-src="/gallery/tomosaki_TimeTravel.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="pythonRevive"/></a><div class="content"><a class="title" href="/cn/5613/" title="pythonRevive">pythonRevive</a><time datetime="2025-04-11T16:19:10.000Z" title="Updated 2025-04-12 00:19:10">2025-04-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/cn/22493/" title="Python 康复训练"><img src= "/img/Loading.png" data-lazy-src="https://www.python.org/static/img/python-logo.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Python 康复训练"/></a><div class="content"><a class="title" href="/cn/22493/" title="Python 康复训练">Python 康复训练</a><time datetime="2025-03-06T03:47:08.000Z" title="Updated 2025-03-06 11:47:08">2025-03-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/cn/46722/" title="五人定律的闲谈 - 更新中"><img src= "/img/Loading.png" data-lazy-src="/gallery/tomosaki_AfterClass.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="五人定律的闲谈 - 更新中"/></a><div class="content"><a class="title" href="/cn/46722/" title="五人定律的闲谈 - 更新中">五人定律的闲谈 - 更新中</a><time datetime="2025-01-23T18:07:01.000Z" title="Updated 2025-01-24 02:07:01">2025-01-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/cn/33368/" title="C# 中传参关键字 ref 和 out 笔记"><img src= "/img/Loading.png" data-lazy-src="https://www.jetbrains.com/guide/assets/csharp-logo-265a149e.svg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C# 中传参关键字 ref 和 out 笔记"/></a><div class="content"><a class="title" href="/cn/33368/" title="C# 中传参关键字 ref 和 out 笔记">C# 中传参关键字 ref 和 out 笔记</a><time datetime="2025-01-15T08:46:29.000Z" title="Updated 2025-01-15 16:46:29">2025-01-15</time></div></div></div></div><div class="card-widget" id="card-newest-comments"><div class="item-headline"><i class="fas fa-comment-dots"></i><span>Latest Comments</span></div><div class="aside-list"><span>Loading...</span></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>Categories</span>
+            <a class="card-more-btn" href="/categories/" title="View More">
+      <i class="fas fa-angle-right"></i></a>
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Casual/"><span class="card-category-list-name">Casual</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Investment/"><span class="card-category-list-name">Investment</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Learning/"><span class="card-category-list-name">Learning</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Studing/"><span class="card-category-list-name">Studing</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0/"><span class="card-category-list-name">学习</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%AE%9E%E7%94%A8/"><span class="card-category-list-name">实用</span><span class="card-category-list-count">10</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%8A%80%E6%9C%AF/"><span class="card-category-list-name">技术</span><span class="card-category-list-count">4</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%8A%95%E8%B5%84/"><span class="card-category-list-name">投资</span><span class="card-category-list-count">9</span></a></li>
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><div id="myCanvasContainer"><canvas id="tagCanvas" width="200" height="200"></canvas><div id="tagList"><a href="/tags/%E4%BF%A1%E6%81%AF/">信息</a><a href="/tags/%E5%AE%9E%E7%94%A8/">实用</a><a href="/tags/%E7%AC%94%E8%AE%B0/">笔记</a><a href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a><a href="/tags/%E8%BD%AF%E4%BB%B6/">软件</a><a href="/tags/%E6%8A%95%E8%B5%84/">投资</a><a href="/tags/%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81/">加密货币</a><a href="/tags/Unity/">Unity</a><a href="/tags/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/">游戏开发</a><a href="/tags/%E5%BC%80%E5%8F%91/">开发</a><a href="/tags/%E6%8A%80%E6%9C%AF/">技术</a><a href="/tags/%E7%94%9F%E6%B4%BB/">生活</a><a href="/tags/%E8%AF%84%E6%B5%8B/">评测</a><a href="/tags/%E8%AE%A4%E7%9F%A5/">认知</a><a href="/tags/%E6%8E%A8%E8%8D%90%E6%96%87%E7%AB%A0/">推荐文章</a><a href="/tags/%E6%80%9D%E8%80%83/">思考</a><a href="/tags/%E8%87%AA%E6%88%91%E6%8F%90%E9%AB%98/">自我提高</a><a href="/tags/%E7%AB%9E%E8%B5%9B/">竞赛</a><a href="/tags/%E8%AE%BE%E5%AE%9A%E7%81%B5%E6%84%9F/">设定灵感</a><a href="/tags/%E5%A4%96%E6%B1%87/">外汇</a><a href="/tags/%E5%BF%83%E7%90%86/">心理</a><a href="/tags/Learning/">Learning</a><a href="/tags/Useful/">Useful</a><a href="/tags/Living/">Living</a><a href="/tags/Thinking/">Thinking</a><a href="/tags/SettingsInspiration/">SettingsInspiration</a><a href="/tags/Investment/">Investment</a><a href="/tags/Notes/">Notes</a><a href="/tags/Recommend/">Recommend</a><a href="/tags/Mental/">Mental</a></div></div></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>Archives</span>
+      
+    </div>
+    <ul class="card-archive-list">
+  
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2025/04/">
+          <span class="card-archive-list-date">April 2025</span>
+          <span class="card-archive-list-count">2</span>
+        </a>
+      </li>
+    
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2025/03/">
+          <span class="card-archive-list-date">March 2025</span>
+          <span class="card-archive-list-count">1</span>
+        </a>
+      </li>
+    
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2025/01/">
+          <span class="card-archive-list-date">January 2025</span>
+          <span class="card-archive-list-count">7</span>
+        </a>
+      </li>
+    
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2024/12/">
+          <span class="card-archive-list-date">December 2024</span>
+          <span class="card-archive-list-count">16</span>
+        </a>
+      </li>
+    
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2024/11/">
+          <span class="card-archive-list-date">November 2024</span>
+          <span class="card-archive-list-count">12</span>
+        </a>
+      </li>
+    
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2024/10/">
+          <span class="card-archive-list-date">October 2024</span>
+          <span class="card-archive-list-count">5</span>
+        </a>
+      </li>
+    </ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Website Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article Count :</div><div class="item-count">43</div></div><div class="webinfo-item"><div class="item-name">Runtime :</div><div class="item-count" id="runtimeshow" data-publishDate="2024-10-28T00:00:00.000Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Total Word Count :</div><div class="item-count">58.3k</div></div><div class="webinfo-item"><div class="item-name">Unique Visitors :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Page Views :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Update :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-05-04T17:16:38.949Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background: transparent;"><div id="footer-wrap"><div class="copyright">&copy;2024 - 2025 By Lave</div><div class="footer_custom_text">Wish u all the best ❤</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="Toggle Between Traditional and Simplified Chinese">繁</button><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle Between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script>(() => {
+  const panguFn = () => {
+    if (typeof pangu === 'object') pangu.autoSpacingPage()
+    else {
+      btf.getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+        .then(() => {
+          pangu.autoSpacingPage()
+        })
+    }
+  }
+
+  const panguInit = () => {
+    if (false){
+      GLOBAL_CONFIG_SITE.isPost && panguFn()
+    } else {
+      panguFn()
+    }
+  }
+
+  btf.addGlobalFn('pjaxComplete', panguInit, 'pangu')
+  document.addEventListener('DOMContentLoaded', panguInit)
+})()</script><div class="js-pjax"><script>(() => {
+  const getCount = async () => {
+    try {
+      const eleGroup = document.querySelectorAll('#recent-posts .disqus-count')
+      const cleanedLinks = Array.from(eleGroup).map(i => `thread:link=${i.href.replace(/#post-comment$/, '')}`);
+
+      const res = await fetch(`https://disqus.com/api/3.0/threads/set.json?forum=sacilave&api_key=TvqBZmQi3EWmbZEvSbeGzwL32DNT4VRgl73gfZ3UDyFPbZ76HiqFi4FTX3FQ5nVL&${cleanedLinks.join('&')}`,{
+        method: 'GET'
+      })
+      const result = await res.json()
+
+      eleGroup.forEach(i => {
+        const cleanedLink = i.href.replace(/#post-comment$/, '')
+        const urlData = result.response.find(data => data.link === cleanedLink) || { posts: 0 }
+        i.textContent = urlData.posts
+      })
+    } catch (err) {
+      console.error(err)
+    }
+  }
+
+  window.pjax ? getCount() : window.addEventListener('load', getCount)
+})()</script><script>window.typedJSFn = {
+  init: str => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, null))
+  },
+  run: subtitleType => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
+      } else {
+        btf.getScript('https://cdn.jsdelivr.net/npm/typed.js/dist/typed.umd.min.js').then(subtitleType)
+      }
+    } else {
+      subtitleType()
+    }
+  }
+}
+btf.addGlobalFn('pjaxSendOnce', () => { typed.destroy() }, 'typedDestroy')
+</script><script>function subtitleType () {
+  fetch('https://v1.hitokoto.cn')
+    .then(response => response.json())
+    .then(data => {
+      if (true) {
+        const from = '出自 ' + data.from
+        const sub = ["人生是曠野，Live for fun and Have fun. - lave.fun","Hi sweetie~ Still keep updating the site. But thanks for the visit !ヾ(•ω•`)o","安安~ 持续更新中哦，感谢访问~ ヾ(•ω•`)o","お疲れ様！","心に花を咲かせ、夢を追い続けることができますように。","生きるとは、呼吸をすることではない。心が震える瞬間を待つことだ。- 芥川龍之介","Sacrifice for what I love... Sacilave"]
+        sub.unshift(data.hitokoto, from)
+        typedJSFn.init(sub)
+      } else {
+        document.getElementById('subtitle').textContent = data.hitokoto
+      }
+    })
+}
+typedJSFn.run(subtitleType)
+</script></div><script>window.newestComments = {
+  changeContent: content => {
+    if (content === '') return content
+
+    content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[Image]') // replace image link
+    content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[Link]') // replace url
+    content = content.replace(/<pre><code>.*?<\/pre>/gi, '[Code]') // replace code
+    content = content.replace(/<code>.*?<\/code>/gi, '[Code]') // replace code      
+    content = content.replace(/<[^>]+>/g, "") // remove html tag
+
+    if (content.length > 150) {
+      content = content.substring(0, 150) + '...'
+    }
+    return content
+  },
+
+  generateHtml: (array, ele) => {
+    let result = ''
+
+    if (array.length) {
+      for (let i = 0; i < array.length; i++) {
+        result += '<div class="aside-list-item">'
+
+        if (true && array[i].avatar) {
+          const imgAttr = 'data-lazy-src'
+          result += `<a href="${array[i].url}" class="thumbnail"><img ${imgAttr}="${array[i].avatar}" alt="${array[i].nick}"></a>`
+        }
+
+        result += `<div class="content">
+        <a class="comment" href="${array[i].url}" title="${array[i].content}">${array[i].content}</a>
+        <div class="name"><span>${array[i].nick} / </span><time datetime="${array[i].date}">${btf.diffDate(array[i].date, true)}</time></div>
+        </div></div>`
+      }
+    } else {
+      result += 'No comments'
+    }
+
+    ele.innerHTML = result
+    window.lazyLoadInstance && window.lazyLoadInstance.update()
+    window.pjax && window.pjax.refresh(ele)
+  },
+
+  newestCommentInit: (name, getComment) => {
+    const $dom = document.querySelector('#card-newest-comments .aside-list')
+    if ($dom) {
+      const data = btf.saveToLocal.get(name)
+      if (data) {
+        newestComments.generateHtml(JSON.parse(data), $dom)
+      } else {
+        getComment($dom)
+      }
+    }
+  },
+
+  run: (name, getComment) => {
+    newestComments.newestCommentInit(name, getComment)
+    btf.addGlobalFn('pjaxComplete', () => newestComments.newestCommentInit(name, getComment), name)
+  }
+}</script><script>window.addEventListener('load', () => {
+  const keyName = 'disqus-newest-comments'
+  const { changeContent, generateHtml, run } = window.newestComments
+
+  const getComment = ele => {
+    fetch('https://disqus.com/api/3.0/forums/listPosts.json?forum=sacilave&related=thread&limit=3&api_key=TvqBZmQi3EWmbZEvSbeGzwL32DNT4VRgl73gfZ3UDyFPbZ76HiqFi4FTX3FQ5nVL')
+      .then(response => response.json())
+      .then(data => {
+        const disqusArray = data.response.map(item => {
+          return {
+            'avatar': item.author.avatar.cache,
+            'content': changeContent(item.message),
+            'nick': item.author.name,
+            'url': item.url,
+            'date': item.createdAt
+          }
+        })
+
+        btf.saveToLocal.set(keyName, JSON.stringify(disqusArray), 10/(60*24))
+        generateHtml(disqusArray, ele)
+      }).catch(e => {
+        console.error(e)
+        ele.textContent= "Unable to retrieve comments, please check the configuration"
+      })
+  }
+
+  run(keyName, getComment)
+})</script><script src="/js/tagcanvas.js"></script><script src="/js/tagcloud.js"></script><script defer src="/js/cursor-effects.js"></script><script defer src="/js/loading.js"></script><script defer src="/js/transition.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = false;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js" data-mobile="false" data-text="贴贴♡,揉揉♡,抱抱♡,捏捏♡,٩(๑&gt; ₃ &lt;)۶,(´•ω•)♡" data-fontsize="12px" data-random="true" async="async"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>(() => {
+  const pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+  window.pjax = new Pjax({
+    elements: 'a:not([target="_blank"]):not([href="/link/"]):not([href="/music/"]):not([href="/no-pjax/"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: true,
+    scrollRestoration: false
+  })
+
+  const triggerPjaxFn = (val) => {
+    if (!val) return
+    Object.values(val).forEach(fn => fn())
+  }
+
+  document.addEventListener('pjax:send', () => {
+    // removeEventListener
+    btf.removeGlobalFnEvent('pjaxSendOnce')
+    btf.removeGlobalFnEvent('themeChange')
+
+    // reset readmode
+    const $bodyClassList = document.body.classList
+    if ($bodyClassList.contains('read-mode')) $bodyClassList.remove('read-mode')
+
+    triggerPjaxFn(window.globalFn.pjaxSend)
+  })
+
+  document.addEventListener('pjax:complete', () => {
+    btf.removeGlobalFnEvent('pjaxCompleteOnce')
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || item.innerHTML || ""
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+    })
+
+    triggerPjaxFn(window.globalFn.pjaxComplete)
+  })
+
+  document.addEventListener('pjax:error', e => {
+    if (e.request.status === 404) {
+      pjax.loadUrl('/404')
+    }
+  })
+})()</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">Search</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  Loading Database</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>

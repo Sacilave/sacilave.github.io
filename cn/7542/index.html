@@ -1,0 +1,686 @@
+<!DOCTYPE html><html lang="[&quot;en&quot;,&quot;cn&quot;]" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>投资笔记 &amp; 任何人都要学的经济认知 | Lave's Cabin</title><meta name="author" content="Lave"><meta name="copyright" content="Lave"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffa3bD"><meta name="description" content="任何人都要学的经济认知，适用于经济小白，大学生等对经济学零基础的人，增加和保护你的资产">
+<meta property="og:type" content="article">
+<meta property="og:title" content="投资笔记 &amp; 任何人都要学的经济认知">
+<meta property="og:url" content="http://lave.fun/cn/7542/">
+<meta property="og:site_name" content="Lave&#39;s Cabin">
+<meta property="og:description" content="任何人都要学的经济认知，适用于经济小白，大学生等对经济学零基础的人，增加和保护你的资产">
+<meta property="og:locale">
+<meta property="og:image" content="https://www.dbs.com.cn/iwov-resources/media/images/investments/unit-trust/unit-trust-service-684x630.png">
+<meta property="article:published_time" content="2024-12-03T12:56:21.000Z">
+<meta property="article:modified_time" content="2024-12-03T12:56:21.000Z">
+<meta property="article:author" content="Lave">
+<meta property="article:tag" content="笔记">
+<meta property="article:tag" content="投资">
+<meta property="article:tag" content="认知">
+<meta property="article:tag" content="推荐文章">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.dbs.com.cn/iwov-resources/media/images/investments/unit-trust/unit-trust-service-684x630.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://lave.fun/cn/7542/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!true && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        if (name && globalFn[key][name]) return
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#430311')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffa3bD')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          const mediaQueryDark = window.matchMedia('(prefers-color-scheme: dark)')
+          const mediaQueryLight = window.matchMedia('(prefers-color-scheme: light)')
+          
+          if (theme === undefined) {
+            if (mediaQueryLight.matches) activateLightMode()
+            else if (mediaQueryDark.matches) activateDarkMode()
+            else {
+              const hour = new Date().getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            mediaQueryDark.addEventListener('change', () => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else {
+            theme === 'light' ? activateLightMode() : activateDarkMode()
+          }
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=[object Object]"></script><script>window.dataLayer = window.dataLayer || []
+function gtag(){dataLayer.push(arguments)}
+gtag('js', new Date())
+gtag('config', '[object Object]')
+btf.addGlobalFn('pjaxComplete', () => {
+  gtag('config', '[object Object]', {'page_path': window.location.pathname})
+}, 'google_analytics')
+</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"No results found for: ${query}","hits_stats":"${hits} articles found"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Failed',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: 'days',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: {"limitCount":250,"languages":{"author":"Author: Lave","link":"Link: ","source":"Source: Lave's Cabin","info":"Copyright belongs to the author. For commercial use, please contact the author for authorization. For non-commercial use, please indicate the source."}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isAnchor: true,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '投资笔记 & 任何人都要学的经济认知',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-12-03 20:56:21'
+}</script><link rel="stylesheet" href="/css/custom.css"><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="Lave's Cabin" type="application/rss+xml">
+</head><body><div id="web_bg" style="background-image: url(img/topImg.jpg);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "/img/Loading.png" data-lazy-src="/img/LavesCabin.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">43</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">30</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">10</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/bio/"><i class="fa-fw fa-solid fa-id-card"></i><span> 名片</span></a></div><div class="menus_item"><a class="site-page" href="/v/"><i class="fa-fw fas fa-terminal"></i><span> 终端</span></a></div><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-solid fa-newspaper"></i><span> 文章</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 类别</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-solid fa-sitemap"></i><span> 本站</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/old/"><i class="fa-fw fa-regular fa-window-restore"></i><span> 旧版</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></li><li><a class="site-page child" href="/shuoshuo/"><i class="fa-fw fa-brands fa-rocketchat"></i><span> 说说</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> 图册</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://www.travellings.cn/go.html"><i class="fa-fw fa-solid fa-bus"></i><span> 开往</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-solid fa-language"></i><span> Lang</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/cn/"><span> 中文</span></a></li><li><a class="site-page child" href="/en/"><span> English</span></a></li><li><a class="site-page child" href="/"><span> Global</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg fixed" id="page-header" style="background-image: url(https://www.dbs.com.cn/iwov-resources/media/images/investments/unit-trust/unit-trust-service-684x630.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><img class="site-icon" src= "/img/Loading.png" data-lazy-src="/img/logo.png" alt="Logo"><span class="site-name">Lave's Cabin</span></a><a class="nav-page-title" href="/"><span class="site-name">投资笔记 &amp; 任何人都要学的经济认知</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/bio/"><i class="fa-fw fa-solid fa-id-card"></i><span> 名片</span></a></div><div class="menus_item"><a class="site-page" href="/v/"><i class="fa-fw fas fa-terminal"></i><span> 终端</span></a></div><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-solid fa-newspaper"></i><span> 文章</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 类别</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-solid fa-sitemap"></i><span> 本站</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/old/"><i class="fa-fw fa-regular fa-window-restore"></i><span> 旧版</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></li><li><a class="site-page child" href="/shuoshuo/"><i class="fa-fw fa-brands fa-rocketchat"></i><span> 说说</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> 图册</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://www.travellings.cn/go.html"><i class="fa-fw fa-solid fa-bus"></i><span> 开往</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-solid fa-language"></i><span> Lang</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/cn/"><span> 中文</span></a></li><li><a class="site-page child" href="/en/"><span> English</span></a></li><li><a class="site-page child" href="/"><span> Global</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">投资笔记 &amp; 任何人都要学的经济认知</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-12-03T12:56:21.000Z" title="发表于 2024-12-03 20:56:21">2024-12-03</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-12-03T12:56:21.000Z" title="更新于 2024-12-03 20:56:21">2024-12-03</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%8A%95%E8%B5%84/">投资</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">5.3k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>15分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">评论数:</span><a class="disqus-comment-count" href="http://lave.fun/cn/7542/#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><blockquote>
+<p>此篇笔记将持续慢慢更新哦…<br>后面会在 bilibili频道 上更新，欢迎关注 <a target="_blank" rel="noopener" href="https://space.bilibili.com/3546814099753673">bilibili@冷库书</a></p>
+</blockquote>
+<h1 id="一、资产认知"><a href="#一、资产认知" class="headerlink" title="一、资产认知"></a>一、资产认知</h1><h2 id="1-购买力"><a href="#1-购买力" class="headerlink" title="1. 购买力"></a>1. 购买力</h2><p>资产的本质是 <strong>购买力</strong>，而不是金钱本身。</p>
+<p>你的资产取决于你的购买力，而不是你的收入数量。</p>
+<p>购买力，也可以通过物价来去理解，我们都知道：</p>
+<ul>
+<li>现在的工资也比 20 年前涨了不知道几倍</li>
+</ul>
+<p>此时，你如果觉得这说明只是因为国家强盛所以大家工资涨这么多</p>
+<p>那你就大错特错了，因为我们也都很容易发现：</p>
+<ul>
+<li>20 年前的物价比现在不知道低了多少</li>
+</ul>
+<p>最简单的例子：</p>
+<p>你爹 20 年前给你爆了 1000 元人民币，你当时存了 500 元在存钱罐</p>
+<p>剩下 500 你当时去大餐厅吃了整整一周的大餐，现在你掏出来发现</p>
+<p>欸！只能吃个两顿大餐了，在这段时间里，金币本身没变，但是购买力下降了</p>
+<p>需要摆脱的思维是：</p>
+<ol>
+<li>你不能拿单一收入的金钱数量来去衡量你的资产，而是用你的购买力来去衡量</li>
+<li>也就是同时考察 收入 和 物价 两个指标，你的资产能去购买的能力是多少，即购买力</li>
+</ol>
+<h2 id="2-对资产的认知偏差"><a href="#2-对资产的认知偏差" class="headerlink" title="2. 对资产的认知偏差"></a>2. 对资产的认知偏差</h2><p>理解了 <code>资产本质是购买力</code> 这个概念，我就可以来讲讲我们的资产了</p>
+<p>毋庸置疑基本所有人都倾向于希望自己的资产增加，但是其实很多人还是忽视了：</p>
+<ul>
+<li>资产是购买力，不是你有多少自己国家的法币！！！</li>
+</ul>
+<p>为什么这么说，我猜… 你肯定习惯把钱存银行里对吧，是不是觉得：</p>
+<ul>
+<li>我存银行里，钱也不会变少，银行还给我利息，我不是赚麻了吗！</li>
+</ul>
+<p>这是好的，但是只在特定情况是好的：</p>
+<ul>
+<li><strong>银行利息的盈利部分</strong> 高于 <strong>你购买力被削弱的部分</strong>（物价上涨的速度）时</li>
+</ul>
+<p>而问题就在于，一般绝大部分时间，这是不可能的</p>
+<p>银行的利息几乎永远难以补足你购买力缩水的那部分价值</p>
+<p><strong>所以其实：你自以为聪明存在银行里的钱数字是慢慢增加，其实购买力一直在缩水</strong></p>
+<p>为什么造成这个原因，可以继续看下去，也可以直接跳到 <a href="#1-%E9%80%9A%E8%86%A8">通膨板块</a></p>
+<p>然后，再强调一遍，资产是购买力，不是你余额的数字！！！</p>
+<p>所以你除了每天疯狂的想着怎么增加自己的资产，<strong>更应该，想想怎么保护你的资产</strong></p>
+<p>去保护住你的购买力，而不是一味的想着怎么提高你收入的数字，增加你的余额</p>
+<p>到这里相信你会对资产有了一个正确的认知，接下来让 Lave 给你聊聊资产保护吧</p>
+<h2 id="3-资产保护"><a href="#3-资产保护" class="headerlink" title="3. 资产保护"></a>3. 资产保护</h2><p>既然存钱在银行最终导致的还是资产缩水，你肯定会想完蛋啦那我该怎么办，难道全花光吗？？</p>
+<p>这其实的确是个最好的办法，但是并不是花在我们所熟知的商品上，而是花在 <strong>资产</strong> 上</p>
+<p>也就是把我们会缩水的资产，换成不会缩水的资产或是缩水更小更慢的资产</p>
+<p>比如：</p>
+<ul>
+<li>黄金</li>
+<li>房产</li>
+<li>股票</li>
+<li>基金</li>
+<li>债券</li>
+<li>外汇</li>
+<li>…</li>
+</ul>
+<p>这也便是投资的第一个首要目标，保护你的购买力，保护你的资产</p>
+<p>这也是为什么 Lave 一直强调的，投资是任何人都要去学的一门课</p>
+<p>相信你肯定已经开始期待去了解怎么保护你的爆金币能力了</p>
+<p>但是在这之前，Lave 需要先给你讲讲一些基础常识</p>
+<p>不过呢… 如果已经想要直接看看如何利用这些投资标的保护你的资产</p>
+<p>可以先空降到 <a href="#1-%E6%8A%95%E8%B5%84%E6%A0%87%E7%9A%84">投资标的</a> 板块哦 😋</p>
+<h1 id="二、基本经济常识"><a href="#二、基本经济常识" class="headerlink" title="二、基本经济常识"></a>二、基本经济常识</h1><blockquote>
+<p>温馨提示：大量经济基本知识，可以选择细心学习<br>也可直接跳到 <a href="#%E4%B8%89%E6%8A%95%E8%B5%84">投资</a> 先看案例，我会对大部分概念添加空降索引，遇到陌生概念可以直接点击空降</p>
+</blockquote>
+<h2 id="1-通货膨胀"><a href="#1-通货膨胀" class="headerlink" title="1. 通货膨胀"></a>1. 通货膨胀</h2><p>通货膨胀 是指一国货币供应量增加，导致物价上涨的经济现象。</p>
+<h3 id="1-1-什么导致了通胀"><a href="#1-1-什么导致了通胀" class="headerlink" title="1.1 什么导致了通胀?"></a>1.1 什么导致了通胀?</h3><ol>
+<li><p><strong>货币供应量增加</strong> - 主导因素：<br>当一个国家的中央银行增加货币供应量时，市场上流通的货币变多</p>
+<p>导致货币贬值，物价上涨。这是通胀最常见最主要的原因之一</p>
+<p>俗称：央行（中央银行）开始放水了（印钞机启动了）</p>
+</li>
+<li><p><strong>需求拉动</strong>：<br>当市场需求超过供给时，商品和服务的价格会上涨。</p>
+<p>例如，当经济繁荣时，消费者和企业的购买力增强，导致对商品和服务的需求增加，从而推高价格。</p>
+</li>
+<li><p><strong>成本推动</strong>：<br>当生产成本增加时，企业会将增加的成本转嫁给消费者，导致物价上涨。</p>
+<p>例如，原材料价格上涨、工资上涨、税收增加等都会导致生产成本上升，从而引发通胀。</p>
+</li>
+<li><p><strong>预期通胀</strong>：<br>当人们预期未来物价会持续上涨时，他们会提前购买商品和服务，导致当前需求增加，从而推高物价。</p>
+<p>这种预期本身也会成为通胀的一个因素。</p>
+</li>
+<li><p><strong>国际因素</strong>：<br>国际市场上的商品价格波动也会影响国内的通胀水平。</p>
+<p>例如，国际油价上涨会导致国内燃油价格上涨，从而引发一系列商品和服务价格的上涨</p>
+<p>还有成本这块，因为现在大部分的一个商品都不是靠一个国家生产的</p>
+<p>很少有商品会在一个国家内拥有全部供应链和生产链的啦</p>
+<p>所以国际原材料贸易的价差波动也经常会导致国内商品价格的波动</p>
+</li>
+<li><p><strong>政府政策</strong>：<br>政府的财政政策和货币政策也会影响通胀水平</p>
+<p>例如，政府增加公共支出或减税，会增加市场上的货币流通量，从而推高物价。</p>
+</li>
+</ol>
+<h3 id="1-2-通胀的影响"><a href="#1-2-通胀的影响" class="headerlink" title="1.2 通胀的影响"></a>1.2 通胀的影响</h3><ol>
+<li><p><strong>购买力下降</strong>：<br> 填坑了也是，<strong>通膨便是导致购买力下降的最关键因素</strong></p>
+<p> 通膨会导致货币的购买力下降，即同样数量的货币能够购买的商品和服务减少</p>
+<p> 其实接下来的众多影响都可以归结进购买力下降的二次结果</p>
+</li>
+<li><p><strong>生活成本增加</strong>：<br> 通膨会导致生活成本增加，特别是对于那些收入固定的人群。</p>
+<p> 例如，退休人员、低收入家庭等，他们的收入无法随着物价的上涨而增加，从而导致生活质量下降。</p>
+</li>
+<li><p><strong>储蓄贬值</strong>：<br> 通膨会导致储蓄的实际价值下降。</p>
+<p> 例如，如果银行存款的利率低于通膨率，那么储户的实际购买力会下降，从而导致储蓄贬值。</p>
+</li>
+<li><p><strong>企业成本增加</strong>：<br> 通膨会导致企业的生产成本增加，例如原材料、劳动力等成本的上涨。</p>
+<p> 这会影响企业的利润率，从而可能导致企业减少投资和扩张计划。</p>
+</li>
+<li><p><strong>经济不稳定</strong>：<br> 高通膨率会导致经济不稳定，增加经济的不确定性。</p>
+<p> 例如，消费者和企业可能会推迟消费和投资决策，从而影响经济增长。</p>
+</li>
+<li><p><strong>收入分配不均</strong>：<br> 通膨可能会加剧收入分配的不均。</p>
+<p> 例如，高收入人群可能更容易通过投资等方式抵御通膨的影响，而低收入人群则更容易受到通膨的冲击。</p>
+</li>
+<li><p><strong>国际竞争力下降</strong>：<br> 通膨会导致一国的商品和服务在国际市场上的竞争力下降。</p>
+<p> 例如，出口商品的价格上涨可能会导致国际市场需求减少，从而影响出口企业的收入。</p>
+</li>
+</ol>
+<h2 id="2-CPI"><a href="#2-CPI" class="headerlink" title="2. CPI"></a>2. CPI</h2><p>CPI（消费者物价指数）</p>
+<p>接着正好就可以聊一聊 CPI 了</p>
+<p>通胀（通货膨胀）和 CPI（消费者物价指数）之间存在着紧密的关系。</p>
+<ul>
+<li><p>通膨是指一国货币供应量增加，导致物价上涨的经济现象。</p>
+</li>
+<li><p>CPI则是衡量通膨水平的重要指标之一。</p>
+</li>
+</ul>
+<p>CPI是通过对一定时期内的物价变化进行统计和分析，来反映通膨水平的。</p>
+<p>通膨率的上涨意味着CPI的上涨，反之亦然。</p>
+<p>在通膨环境下，物价上涨会导致CPI的上涨，降低货币的购买力。</p>
+<p>如果CPI下降，意味着物价下跌，通膨率也会随之下降，货币的购买力会增加。</p>
+<h3 id="2-1-CPI数据对投资市场的影响"><a href="#2-1-CPI数据对投资市场的影响" class="headerlink" title="2.1 CPI数据对投资市场的影响"></a>2.1 CPI数据对投资市场的影响</h3><ol>
+<li><p><strong>股市</strong>：<br>如果CPI数据高于预期，可能表明通胀压力增加，<br>中央银行可能会采取紧缩货币政策，如加息，<br>从而对股市产生负面影响。反之，<br>如果CPI数据低于预期，可能会对股市产生积极影响。</p>
+</li>
+<li><p><strong>债市</strong>：<br>CPI数据对债券市场也有重要影响。<br>高于预期的CPI数据可能导致债券收益率上升，<br>因为投资者预期未来利率会上升，<br>从而降低现有债券的价格。相反，<br>低于预期的CPI数据可能会导致债券收益率下降，<br>债券价格上升。</p>
+</li>
+<li><p><strong>外汇市场</strong>：<br>CPI数据对外汇市场的影响主要体现在货币价值上。<br>高于预期的CPI数据可能导致本国货币升值，<br>因为市场预期中央银行会加息以应对通胀。<br>反之，低于预期的CPI数据可能导致本国货币贬值。</p>
+</li>
+<li><p><strong>大宗商品市场</strong>：<br>CPI数据对大宗商品市场也有影响。<br>高于预期的CPI数据可能表明通胀压力增加，<br>导致大宗商品价格上涨，因为投资者将大宗商品<br>视为对抗通胀的避险资产。相反，<br>低于预期的CPI数据可能导致大宗商品价格下跌。</p>
+</li>
+</ol>
+<h3 id="2-2-CPI数据的解读"><a href="#2-2-CPI数据的解读" class="headerlink" title="2.2 CPI数据的解读"></a>2.2 CPI数据的解读</h3><ul>
+<li><strong>与预期比较</strong>：将实际CPI数据与市场预期进行比较。<br>如果实际数据高于预期，通常被视为通胀压力增加的信号；<br>反之，则被视为通胀压力减轻的信号。</li>
+<li><strong>长期趋势</strong>：观察CPI数据的长期趋势，<br>而不是单月的波动，以获得更准确的通胀水平评估。</li>
+<li><strong>核心CPI</strong>：核心CPI剔除了食品和能源价格的波动，<br>更能反映基础通胀水平，是投资者和政策制定者关注的重要指标。</li>
+</ul>
+<h2 id="3-非农就业人口"><a href="#3-非农就业人口" class="headerlink" title="3. 非农就业人口"></a>3. 非农就业人口</h2><p>非农就业人口是指不包括农业部门的就业人数，<br>通常由政府统计部门每月发布。<br>非农就业人口数据是衡量一个国家经济健康状况的重要指标之一。</p>
+<h3 id="3-1-非农就业人口的影响"><a href="#3-1-非农就业人口的影响" class="headerlink" title="3.1 非农就业人口的影响"></a>3.1 非农就业人口的影响</h3><ol>
+<li><p><strong>经济增长</strong>：<br>非农就业人口的增加通常表明经济在增长，<br>因为更多的人找到了工作，意味着企业在扩张和招聘。</p>
+</li>
+<li><p><strong>消费能力</strong>：<br>就业人数的增加会提高整体消费能力，<br>因为更多的人有了收入，可以进行消费，<br>从而推动经济发展。</p>
+</li>
+<li><p><strong>投资市场</strong>：<br>非农就业人口数据对投资市场有直接影响。<br>数据强劲时，投资者对经济前景更有信心，<br>可能会推动股市上涨；反之，数据疲软时，<br>可能会导致股市下跌。</p>
+</li>
+<li><p><strong>货币政策</strong>：<br>中央银行会根据非农就业人口数据调整货币政策。<br>如果就业数据强劲，可能会考虑加息以防止经济过热；<br>如果数据疲软，可能会降息以刺激经济。</p>
+</li>
+<li><p><strong>通货膨胀</strong>：<br>就业人数增加可能会导致工资上涨，<br>从而推高生产成本，进而引发通货膨胀。<br>因此，非农就业人口数据也是通胀预期的重要参考。</p>
+</li>
+</ol>
+<h3 id="3-2-非农就业人口数据的解读"><a href="#3-2-非农就业人口数据的解读" class="headerlink" title="3.2 非农就业人口数据的解读"></a>3.2 非农就业人口数据的解读</h3><ul>
+<li><strong>与预期比较</strong>：将实际数据与市场预期进行比较。<br>如果实际数据高于预期，通常被视为利好消息；<br>反之，则被视为利空消息。</li>
+<li><strong>长期趋势</strong>：观察数据的长期趋势，<br>而不是单月的波动，以获得更准确的经济健康状况评估。</li>
+<li><strong>行业分布</strong>：分析哪些行业的就业人数增加或减少，<br>以判断哪些行业可能有投资机会或风险。</li>
+</ul>
+<h2 id="4-降息"><a href="#4-降息" class="headerlink" title="4. 降息"></a>4. 降息</h2><p>降息是指中央银行降低基准利率的行为，<br>通常是为了刺激经济增长。基准利率是银行间借贷的利率，<br>也是商业银行向客户提供贷款的参考利率。<br>降息会使借贷成本降低，从而鼓励企业和个人增加借贷和消费，<br>进而推动经济发展。</p>
+<h3 id="4-1-降息对投资市场的影响"><a href="#4-1-降息对投资市场的影响" class="headerlink" title="4.1 降息对投资市场的影响"></a>4.1 降息对投资市场的影响</h3><ol>
+<li><p><strong>股市</strong>：<br>降息通常会对股市产生积极影响。<br>借贷成本降低，企业融资成本减少，利润增加，<br>投资者对企业未来的盈利预期上升，<strong>股价可能上涨</strong></p>
+</li>
+<li><p><strong>债市</strong>：<br>降息会导致债券收益率下降，<br>因为新发行的债券利率较低，<br>现有高利率债券的价格会上升。<br>因此，降息对债券市场也有积极影响。</p>
+</li>
+<li><p><strong>房地产市场</strong>：<br>降息会降低房贷利率，购房成本减少，<br>可能会刺激房地产市场需求增加，房价上涨。</p>
+</li>
+<li><p><strong>外汇市场</strong>：<br>降息会导致本国货币贬值，<br>因为较低的利率使得投资者将资金转移到利率更高的国家，<br>从而减少对本国货币的需求。</p>
+</li>
+<li><p><strong>大宗商品市场</strong>：<br>降息会使得大宗商品价格上涨，<br>因为借贷成本降低，企业和个人的购买力增加，需求上升。</p>
+</li>
+</ol>
+<h3 id="4-2-降息的解读"><a href="#4-2-降息的解读" class="headerlink" title="4.2 降息的解读"></a>4.2 降息的解读</h3><ul>
+<li><strong>经济信号</strong>：降息通常被视为中央银行对经济前景不乐观的信号，<br>可能预示着经济增长放缓或衰退风险增加。</li>
+<li><strong>政策预期</strong>：投资者会根据降息的幅度和频率，<br>预期未来的货币政策走向。如果降息幅度较大，<br>可能预示着未来还会有更多的宽松政策。</li>
+<li><strong>市场反应</strong>：降息后，市场通常会有短期的积极反应，<br>但长期效果取决于经济基本面的改善情况。</li>
+</ul>
+<h2 id="5-加息"><a href="#5-加息" class="headerlink" title="5. 加息"></a>5. 加息</h2><p>加息是指中央银行提高基准利率的行为，通常是为了抑制通货膨胀和防止经济过热。</p>
+<p>基准利率是银行间借贷的利率，也是商业银行向客户提供贷款的参考利率。</p>
+<p>加息会使借贷成本增加，从而抑制企业和个人的借贷和消费，进而减缓经济增长。</p>
+<h3 id="5-1-加息对投资市场的影响"><a href="#5-1-加息对投资市场的影响" class="headerlink" title="5.1 加息对投资市场的影响"></a>5.1 加息对投资市场的影响</h3><ol>
+<li><p><strong>股市</strong>：<br>加息通常会对股市产生负面影响。借贷成本增加，企业融资成本上升，利润减少，投资者对企业未来的盈利预期下降，股价可能下跌。</p>
+</li>
+<li><p><strong>债市</strong>：<br>加息会导致债券收益率上升，因为新发行的债券利率较高，现有低利率债券的价格会下降。因此，加息对债券市场有负面影响。</p>
+</li>
+<li><p><strong>房地产市场</strong>：<br>加息会提高房贷利率，购房成本增加，可能会抑制房地产市场需求，房价可能下跌。</p>
+</li>
+<li><p><strong>外汇市场</strong>：<br>加息会导致本国货币升值，因为较高的利率吸引投资者将资金转移到本国，从而增加对本国货币的需求。</p>
+</li>
+<li><p><strong>大宗商品市场</strong>：<br>加息会使得大宗商品价格下跌，因为借贷成本增加，企业和个人的购买力下降，需求减少。</p>
+</li>
+</ol>
+<h3 id="5-2-加息的解读"><a href="#5-2-加息的解读" class="headerlink" title="5.2 加息的解读"></a>5.2 加息的解读</h3><ul>
+<li><strong>经济信号</strong>：加息通常被视为中央银行对经济前景乐观的信号，可能预示着经济增长强劲或通胀压力增加。</li>
+<li><strong>政策预期</strong>：投资者会根据加息的幅度和频率，预期未来的货币政策走向。如果加息幅度较大，可能预示着未来还会有更多的紧缩政策。</li>
+<li><strong>市场反应</strong>：加息后，市场通常会有短期的负面反应，但长期效果取决于经济基本面的改善情况。</li>
+</ul>
+<h2 id="6-通货紧缩"><a href="#6-通货紧缩" class="headerlink" title="6. 通货紧缩"></a>6. 通货紧缩</h2><p>通货紧缩是指物价水平持续下降的现象，通常伴随着经济活动的萎缩和失业率的上升。</p>
+<h3 id="6-1-通货紧缩对投资市场的影响"><a href="#6-1-通货紧缩对投资市场的影响" class="headerlink" title="6.1 通货紧缩对投资市场的影响"></a>6.1 通货紧缩对投资市场的影响</h3><ol>
+<li><p><strong>股市</strong>：<br>通货紧缩通常会对股市产生负面影响。企业收入减少，利润下降，投资者对企业未来的盈利预期降低，股价可能下跌。</p>
+</li>
+<li><p><strong>债市</strong>：<br>通货紧缩会导致债券收益率下降，因为市场预期未来利率会进一步降低，现有高利率债券的价格会上升。因此，通货紧缩对债券市场有正面影响。</p>
+</li>
+<li><p><strong>房地产市场</strong>：<br>通货紧缩会导致房价下跌，因为购房需求减少，房贷利率可能下降，但购房者预期房价会继续下跌，从而推迟购房决策。</p>
+</li>
+<li><p><strong>外汇市场</strong>：<br>通货紧缩会导致本国货币升值，因为物价下降使得货币购买力增强，吸引投资者将资金转移到本国，从而增加对本国货币的需求。</p>
+</li>
+<li><p><strong>大宗商品市场</strong>：<br>通货紧缩会使得大宗商品价格下跌，因为需求减少，企业和个人的购买力下降。</p>
+</li>
+</ol>
+<h3 id="6-2-通货紧缩的解读"><a href="#6-2-通货紧缩的解读" class="headerlink" title="6.2 通货紧缩的解读"></a>6.2 通货紧缩的解读</h3><ul>
+<li><strong>经济信号</strong>：通货紧缩通常被视为经济活动萎缩的信号，可能预示着经济增长放缓或衰退风险增加。</li>
+<li><strong>政策预期</strong>：投资者会根据通货紧缩的程度和持续时间，预期未来的货币政策走向。如果通货紧缩严重，可能预示着未来会有更多的宽松政策。</li>
+<li><strong>市场反应</strong>：通货紧缩后，市场通常会有短期的负面反应，但长期效果取决于经济基本面的改善情况。</li>
+</ul>
+<h1 id="三、投资"><a href="#三、投资" class="headerlink" title="三、投资"></a>三、投资</h1><h2 id="0-投资的误区"><a href="#0-投资的误区" class="headerlink" title="0. 投资的误区"></a>0. 投资的误区</h2><h3 id="0-1-对投资的恐惧"><a href="#0-1-对投资的恐惧" class="headerlink" title="0.1 对投资的恐惧"></a>0.1 对投资的恐惧</h3><h3 id="0-2-对投资的误解"><a href="#0-2-对投资的误解" class="headerlink" title="0.2 对投资的误解"></a>0.2 对投资的误解</h3><h3 id="0-3-对投资的轻视"><a href="#0-3-对投资的轻视" class="headerlink" title="0.3 对投资的轻视"></a>0.3 对投资的轻视</h3><p>投资是一个重要的理财手段，但很多人会轻视投资的重要性，认为投资是可有可无的。这种轻视主要体现在：</p>
+<ol>
+<li>认为投资只是富人的游戏，与普通人无关</li>
+<li>觉得工资收入足够，不需要投资理财</li>
+<li>没有意识到通货膨胀会侵蚀购买力</li>
+<li>把投资等同于投机，觉得风险太大</li>
+<li>对投资知识的学习不够重视</li>
+</ol>
+<p>这种轻视往往会导致错失良好的投资机会，也会影响个人的长期财务健康。</p>
+<h2 id="1-投资标的"><a href="#1-投资标的" class="headerlink" title="1. 投资标的"></a>1. 投资标的</h2><blockquote>
+<p><a href="#17-%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81">加密货币</a> 作为压轴出场哦，这是 Lave 最看好且最熟悉的标的</p>
+</blockquote>
+<h3 id="1-1-黄金"><a href="#1-1-黄金" class="headerlink" title="1.1 黄金"></a>1.1 黄金</h3><h3 id="1-2-房产"><a href="#1-2-房产" class="headerlink" title="1.2 房产"></a>1.2 房产</h3><h3 id="1-3-股票"><a href="#1-3-股票" class="headerlink" title="1.3 股票"></a>1.3 股票</h3><h3 id="1-4-基金"><a href="#1-4-基金" class="headerlink" title="1.4 基金"></a>1.4 基金</h3><h3 id="1-5-债券"><a href="#1-5-债券" class="headerlink" title="1.5 债券"></a>1.5 债券</h3><h3 id="1-6-外汇"><a href="#1-6-外汇" class="headerlink" title="1.6 外汇"></a>1.6 外汇</h3><h3 id="1-7-加密货币"><a href="#1-7-加密货币" class="headerlink" title="1.7 加密货币"></a>1.7 加密货币</h3><p><a href="#%E5%9B%9B%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81">跳到 加密货币</a></p>
+<h1 id="四、加密货币"><a href="#四、加密货币" class="headerlink" title="四、加密货币"></a>四、加密货币</h1><h2 id="1-总览"><a href="#1-总览" class="headerlink" title="1. 总览"></a>1. 总览</h2><p>首先要理清的概念是，<strong>投资加密货币的实质是在投资这个币背后的区块链项目</strong><br>所以对于整个基本面的考察，当然也是回落到区块链项目本身</p>
+<h2 id="2-板块竞争力"><a href="#2-板块竞争力" class="headerlink" title="2. 板块竞争力"></a>2. 板块竞争力</h2><h3 id="2-1-优势："><a href="#2-1-优势：" class="headerlink" title="2.1 优势："></a>2.1 优势：</h3><h4 id="基本面（区块链项目本身）"><a href="#基本面（区块链项目本身）" class="headerlink" title="基本面（区块链项目本身）"></a>基本面（区块链项目本身）</h4><ul>
+<li>取代传统金融体系<ul>
+<li>去中心化</li>
+<li>持续性和高效率<ul>
+<li>并非所有地区银行等金融系统都跟中国工作量大导致的的高效一样</li>
+<li>对于未来工作量减小的趋势，依赖人工参与的系统只会越来越慢</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>透明性和安全性<ul>
+<li>所有交易记录都公开透明，难以篡改</li>
+<li>交易审查不由单一国家单一机构控制，不会因为政治等因素导致资产风险</li>
+</ul>
+</li>
+<li>全球流通性<ul>
+<li>无需依赖传统银行系统，跨国交易更加便捷</li>
+<li>适用于无银行账户的群体，促进金融普惠</li>
+</ul>
+</li>
+</ul>
+<h4 id="市场"><a href="#市场" class="headerlink" title="市场"></a>市场</h4><ul>
+<li>新的投资市场<ul>
+<li>现在的加密货币市场，就像 2000 年的互联网市场一样，有很多垃圾项目，但是优质项目也潜藏在其中</li>
+<li>项目都处于早期，有很大的发展空间</li>
+<li>市值、交易量、用户量等上来说，还有很大的发展空间</li>
+</ul>
+</li>
+<li>24h 的交易市场<ul>
+<li>与传统交易体系不同，加密货币市场是 24h 的交易市场</li>
+<li>随时可以买入卖出</li>
+</ul>
+</li>
+<li>波动性<ul>
+<li>波动性大，风险大，但同时也意味着更多的机会扭转人生</li>
+</ul>
+</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://lave.fun/">Lave</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://lave.fun/cn/7542/">http://lave.fun/cn/7542/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="http://lave.fun" target="_blank">Lave's Cabin</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%AC%94%E8%AE%B0/">笔记</a><a class="post-meta__tags" href="/tags/%E6%8A%95%E8%B5%84/">投资</a><a class="post-meta__tags" href="/tags/%E8%AE%A4%E7%9F%A5/">认知</a><a class="post-meta__tags" href="/tags/%E6%8E%A8%E8%8D%90%E6%96%87%E7%AB%A0/">推荐文章</a></div><div class="post-share"><div class="social-share" data-image="https://www.dbs.com.cn/iwov-resources/media/images/investments/unit-trust/unit-trust-service-684x630.png" data-sites="twitter,facebook,qq,wechat,weibo"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>Sponser/打赏！点这里！如果你觉得这对你有帮助或想要施舍下这个小可怜的话 （〃｀ 3′〃）</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/rewardQRcode/wechat.jpg" target="_blank"><img class="post-qr-code-img" src= "/img/Loading.png" data-lazy-src="/img/rewardQRcode/wechat.jpg" alt="微信赞赏码"/></a><div class="post-qr-code-desc">微信赞赏码</div></li><li class="reward-item"><a href="/img/rewardQRcode/TRON.jpg" target="_blank"><img class="post-qr-code-img" src= "/img/Loading.png" data-lazy-src="/img/rewardQRcode/TRON.jpg" alt="Only Accept USDT-TRON(TRC20) !!"/></a><div class="post-qr-code-desc">Only Accept USDT-TRON(TRC20) !!</div></li><li class="reward-item"><a href="/img/rewardQRcode/Optimism.jpg" target="_blank"><img class="post-qr-code-img" src= "/img/Loading.png" data-lazy-src="/img/rewardQRcode/Optimism.jpg" alt="Only Accept USDT-Optimism !!"/></a><div class="post-qr-code-desc">Only Accept USDT-Optimism !!</div></li><li class="reward-item"><a href="/img/rewardQRcode/Polygon.jpg" target="_blank"><img class="post-qr-code-img" src= "/img/Loading.png" data-lazy-src="/img/rewardQRcode/Polygon.jpg" alt="Only Accept USDT-Polygon !!"/></a><div class="post-qr-code-desc">Only Accept USDT-Polygon !!</div></li></ul></div></div><nav class="pagination-post" id="pagination"><a class="prev-post pull-left" href="/cn/28339/" title="我在看的技术指标"><img class="cover" src= "/img/Loading.png" data-lazy-src="https://www.dbs.com.cn/iwov-resources/media/images/investments/unit-trust/unit-trust-service-684x630.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">我在看的技术指标</div></div></a><a class="next-post pull-right" href="/cn/46245/" title="对于炒外汇的认知偏差 - 待更新"><img class="cover" src= "/img/Loading.png" data-lazy-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWbV9MCX3ffjhIJJOZpm75TLEifDIwgB6l5w&amp;s" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">对于炒外汇的认知偏差 - 待更新</div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a href="/cn/60247/" title="个人投资经验记录 - 更新中"><img class="cover" src= "/img/Loading.png" data-lazy-src="https://www.dbs.com.cn/iwov-resources/media/images/investments/unit-trust/unit-trust-service-684x630.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-01-13</div><div class="title">个人投资经验记录 - 更新中</div></div></a><a href="/cn/42312/" title="付鹏汇丰中国经济演讲&#x2F;摘要总结"><img class="cover" src= "/img/Loading.png" data-lazy-src="/gallery/sacilave/GenerativeImg/sakuraNeko3.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-01-01</div><div class="title">付鹏汇丰中国经济演讲&#x2F;摘要总结</div></div></a><a href="/cn/34715/" title="国内经济个人分析小记 - 待更新"><img class="cover" src= "/img/Loading.png" data-lazy-src="/gallery/sacilave/cuties/Lave_CutieYellow.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-12-21</div><div class="title">国内经济个人分析小记 - 待更新</div></div></a><a href="/cn/28339/" title="我在看的技术指标"><img class="cover" src= "/img/Loading.png" data-lazy-src="https://www.dbs.com.cn/iwov-resources/media/images/investments/unit-trust/unit-trust-service-684x630.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-12-04</div><div class="title">我在看的技术指标</div></div></a><a href="/cn/30766/" title="我在看的消息面 - 待更新"><img class="cover" src= "/img/Loading.png" data-lazy-src="https://www.dbs.com.cn/iwov-resources/media/images/investments/unit-trust/unit-trust-service-684x630.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-12-08</div><div class="title">我在看的消息面 - 待更新</div></div></a><a href="/cn/29486/" title="代币经济学笔记"><img class="cover" src= "/img/Loading.png" data-lazy-src="https://www.skrill.com/fileadmin/Personal/Skrill_Crypto_Academy/Beginner/CA_hero_4_beginner.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-11-13</div><div class="title">代币经济学笔记</div></div></a></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comments</span></div><div class="comment-switch"><span class="first-comment">Disqus</span><span id="switch-btn"></span><span class="second-comment">Valine</span></div></div><div class="comment-wrap"><div><div id="disqus_thread"></div></div><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info is-center"><div class="avatar-img"><img src= "/img/Loading.png" data-lazy-src="/img/LavesCabin.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Lave</div><div class="author-info-description">Tech, Web3, Photography, Literature, ACG, IndieDev, GameDev..<br>EN(6/10), CN(10/10), JP(1/50)</div><div class="site-data"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">43</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">30</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">10</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://x.com/Sacilave2"><i class="fa-brands fa-twitter"></i><span>Follow Me!</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/sacilave" target="_blank" title="Github"><i class="fab fa-github" style="color: #hdhfbb;"></i></a><a class="social-icon" href="mailto:work@lave.fun" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #hdhfbb;"></i></a><a class="social-icon" href="https://t.me/sacilave" target="_blank" title="Telegram"><i class="fa-brands fa-telegram" style="color: #hdhfbb;"></i></a><a class="social-icon" href="https://steamcommunity.com/id/sacilave" target="_blank" title="Steam"><i class="fa-brands fa-steam" style="color: #hdhfbb;"></i></a><a class="social-icon" href="https://x.com/Sacilave2" target="_blank" title="Twitter/X"><i class="fa-brands fa-twitter" style="color: #hdhfbb;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">Thanks for the visit o(*°▽°*)o<br>Lave probably will post some blogs in the future.<br>可以在 右上角的Gallery 中找到我的摄影集~<br>还可以使用右上角语言切换来看特定语言的帖子，然后...有些帖子可能只是开坑了还没写或没写完哦~</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E8%B5%84%E4%BA%A7%E8%AE%A4%E7%9F%A5"><span class="toc-number">1.</span> <span class="toc-text">一、资产认知</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E8%B4%AD%E4%B9%B0%E5%8A%9B"><span class="toc-number">1.1.</span> <span class="toc-text">1. 购买力</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%AF%B9%E8%B5%84%E4%BA%A7%E7%9A%84%E8%AE%A4%E7%9F%A5%E5%81%8F%E5%B7%AE"><span class="toc-number">1.2.</span> <span class="toc-text">2. 对资产的认知偏差</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E8%B5%84%E4%BA%A7%E4%BF%9D%E6%8A%A4"><span class="toc-number">1.3.</span> <span class="toc-text">3. 资产保护</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%9F%BA%E6%9C%AC%E7%BB%8F%E6%B5%8E%E5%B8%B8%E8%AF%86"><span class="toc-number">2.</span> <span class="toc-text">二、基本经济常识</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E9%80%9A%E8%B4%A7%E8%86%A8%E8%83%80"><span class="toc-number">2.1.</span> <span class="toc-text">1. 通货膨胀</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-%E4%BB%80%E4%B9%88%E5%AF%BC%E8%87%B4%E4%BA%86%E9%80%9A%E8%83%80"><span class="toc-number">2.1.1.</span> <span class="toc-text">1.1 什么导致了通胀?</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-%E9%80%9A%E8%83%80%E7%9A%84%E5%BD%B1%E5%93%8D"><span class="toc-number">2.1.2.</span> <span class="toc-text">1.2 通胀的影响</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-CPI"><span class="toc-number">2.2.</span> <span class="toc-text">2. CPI</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-CPI%E6%95%B0%E6%8D%AE%E5%AF%B9%E6%8A%95%E8%B5%84%E5%B8%82%E5%9C%BA%E7%9A%84%E5%BD%B1%E5%93%8D"><span class="toc-number">2.2.1.</span> <span class="toc-text">2.1 CPI数据对投资市场的影响</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-CPI%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A7%A3%E8%AF%BB"><span class="toc-number">2.2.2.</span> <span class="toc-text">2.2 CPI数据的解读</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E9%9D%9E%E5%86%9C%E5%B0%B1%E4%B8%9A%E4%BA%BA%E5%8F%A3"><span class="toc-number">2.3.</span> <span class="toc-text">3. 非农就业人口</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-%E9%9D%9E%E5%86%9C%E5%B0%B1%E4%B8%9A%E4%BA%BA%E5%8F%A3%E7%9A%84%E5%BD%B1%E5%93%8D"><span class="toc-number">2.3.1.</span> <span class="toc-text">3.1 非农就业人口的影响</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-%E9%9D%9E%E5%86%9C%E5%B0%B1%E4%B8%9A%E4%BA%BA%E5%8F%A3%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A7%A3%E8%AF%BB"><span class="toc-number">2.3.2.</span> <span class="toc-text">3.2 非农就业人口数据的解读</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E9%99%8D%E6%81%AF"><span class="toc-number">2.4.</span> <span class="toc-text">4. 降息</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-%E9%99%8D%E6%81%AF%E5%AF%B9%E6%8A%95%E8%B5%84%E5%B8%82%E5%9C%BA%E7%9A%84%E5%BD%B1%E5%93%8D"><span class="toc-number">2.4.1.</span> <span class="toc-text">4.1 降息对投资市场的影响</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-%E9%99%8D%E6%81%AF%E7%9A%84%E8%A7%A3%E8%AF%BB"><span class="toc-number">2.4.2.</span> <span class="toc-text">4.2 降息的解读</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E5%8A%A0%E6%81%AF"><span class="toc-number">2.5.</span> <span class="toc-text">5. 加息</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#5-1-%E5%8A%A0%E6%81%AF%E5%AF%B9%E6%8A%95%E8%B5%84%E5%B8%82%E5%9C%BA%E7%9A%84%E5%BD%B1%E5%93%8D"><span class="toc-number">2.5.1.</span> <span class="toc-text">5.1 加息对投资市场的影响</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-2-%E5%8A%A0%E6%81%AF%E7%9A%84%E8%A7%A3%E8%AF%BB"><span class="toc-number">2.5.2.</span> <span class="toc-text">5.2 加息的解读</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E9%80%9A%E8%B4%A7%E7%B4%A7%E7%BC%A9"><span class="toc-number">2.6.</span> <span class="toc-text">6. 通货紧缩</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#6-1-%E9%80%9A%E8%B4%A7%E7%B4%A7%E7%BC%A9%E5%AF%B9%E6%8A%95%E8%B5%84%E5%B8%82%E5%9C%BA%E7%9A%84%E5%BD%B1%E5%93%8D"><span class="toc-number">2.6.1.</span> <span class="toc-text">6.1 通货紧缩对投资市场的影响</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-2-%E9%80%9A%E8%B4%A7%E7%B4%A7%E7%BC%A9%E7%9A%84%E8%A7%A3%E8%AF%BB"><span class="toc-number">2.6.2.</span> <span class="toc-text">6.2 通货紧缩的解读</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E6%8A%95%E8%B5%84"><span class="toc-number">3.</span> <span class="toc-text">三、投资</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#0-%E6%8A%95%E8%B5%84%E7%9A%84%E8%AF%AF%E5%8C%BA"><span class="toc-number">3.1.</span> <span class="toc-text">0. 投资的误区</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#0-1-%E5%AF%B9%E6%8A%95%E8%B5%84%E7%9A%84%E6%81%90%E6%83%A7"><span class="toc-number">3.1.1.</span> <span class="toc-text">0.1 对投资的恐惧</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#0-2-%E5%AF%B9%E6%8A%95%E8%B5%84%E7%9A%84%E8%AF%AF%E8%A7%A3"><span class="toc-number">3.1.2.</span> <span class="toc-text">0.2 对投资的误解</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#0-3-%E5%AF%B9%E6%8A%95%E8%B5%84%E7%9A%84%E8%BD%BB%E8%A7%86"><span class="toc-number">3.1.3.</span> <span class="toc-text">0.3 对投资的轻视</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E6%8A%95%E8%B5%84%E6%A0%87%E7%9A%84"><span class="toc-number">3.2.</span> <span class="toc-text">1. 投资标的</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-%E9%BB%84%E9%87%91"><span class="toc-number">3.2.1.</span> <span class="toc-text">1.1 黄金</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-%E6%88%BF%E4%BA%A7"><span class="toc-number">3.2.2.</span> <span class="toc-text">1.2 房产</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-%E8%82%A1%E7%A5%A8"><span class="toc-number">3.2.3.</span> <span class="toc-text">1.3 股票</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-%E5%9F%BA%E9%87%91"><span class="toc-number">3.2.4.</span> <span class="toc-text">1.4 基金</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-5-%E5%80%BA%E5%88%B8"><span class="toc-number">3.2.5.</span> <span class="toc-text">1.5 债券</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-6-%E5%A4%96%E6%B1%87"><span class="toc-number">3.2.6.</span> <span class="toc-text">1.6 外汇</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-7-%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81"><span class="toc-number">3.2.7.</span> <span class="toc-text">1.7 加密货币</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81"><span class="toc-number">4.</span> <span class="toc-text">四、加密货币</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E6%80%BB%E8%A7%88"><span class="toc-number">4.1.</span> <span class="toc-text">1. 总览</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E6%9D%BF%E5%9D%97%E7%AB%9E%E4%BA%89%E5%8A%9B"><span class="toc-number">4.2.</span> <span class="toc-text">2. 板块竞争力</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E4%BC%98%E5%8A%BF%EF%BC%9A"><span class="toc-number">4.2.1.</span> <span class="toc-text">2.1 优势：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E9%9D%A2%EF%BC%88%E5%8C%BA%E5%9D%97%E9%93%BE%E9%A1%B9%E7%9B%AE%E6%9C%AC%E8%BA%AB%EF%BC%89"><span class="toc-number">4.2.1.1.</span> <span class="toc-text">基本面（区块链项目本身）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B8%82%E5%9C%BA"><span class="toc-number">4.2.1.2.</span> <span class="toc-text">市场</span></a></li></ol></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Posts</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/cn/44363/" title="python2"><img src= "/img/Loading.png" data-lazy-src="/gallery/sacilave/cuties/Lave_CutieDogs.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="python2"/></a><div class="content"><a class="title" href="/cn/44363/" title="python2">python2</a><time datetime="2025-04-11T23:58:04.000Z" title="Updated 2025-04-12 07:58:04">2025-04-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/cn/5613/" title="pythonRevive"><img src= "/img/Loading.png" data-lazy-src="/gallery/tomosaki_TimeTravel.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="pythonRevive"/></a><div class="content"><a class="title" href="/cn/5613/" title="pythonRevive">pythonRevive</a><time datetime="2025-04-11T16:19:10.000Z" title="Updated 2025-04-12 00:19:10">2025-04-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/cn/22493/" title="Python 康复训练"><img src= "/img/Loading.png" data-lazy-src="https://www.python.org/static/img/python-logo.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Python 康复训练"/></a><div class="content"><a class="title" href="/cn/22493/" title="Python 康复训练">Python 康复训练</a><time datetime="2025-03-06T03:47:08.000Z" title="Updated 2025-03-06 11:47:08">2025-03-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/cn/46722/" title="五人定律的闲谈 - 更新中"><img src= "/img/Loading.png" data-lazy-src="/gallery/tomosaki_AfterClass.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="五人定律的闲谈 - 更新中"/></a><div class="content"><a class="title" href="/cn/46722/" title="五人定律的闲谈 - 更新中">五人定律的闲谈 - 更新中</a><time datetime="2025-01-23T18:07:01.000Z" title="Updated 2025-01-24 02:07:01">2025-01-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/cn/33368/" title="C# 中传参关键字 ref 和 out 笔记"><img src= "/img/Loading.png" data-lazy-src="https://www.jetbrains.com/guide/assets/csharp-logo-265a149e.svg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C# 中传参关键字 ref 和 out 笔记"/></a><div class="content"><a class="title" href="/cn/33368/" title="C# 中传参关键字 ref 和 out 笔记">C# 中传参关键字 ref 和 out 笔记</a><time datetime="2025-01-15T08:46:29.000Z" title="Updated 2025-01-15 16:46:29">2025-01-15</time></div></div></div></div></div></div></main><footer id="footer" style="background: transparent;"><div id="footer-wrap"><div class="copyright">&copy;2024 - 2025 By Lave</div><div class="footer_custom_text">Wish u all the best ❤</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script>(() => {
+  const panguFn = () => {
+    if (typeof pangu === 'object') pangu.autoSpacingPage()
+    else {
+      btf.getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+        .then(() => {
+          pangu.autoSpacingPage()
+        })
+    }
+  }
+
+  const panguInit = () => {
+    if (false){
+      GLOBAL_CONFIG_SITE.isPost && panguFn()
+    } else {
+      panguFn()
+    }
+  }
+
+  btf.addGlobalFn('pjaxComplete', panguInit, 'pangu')
+  document.addEventListener('DOMContentLoaded', panguInit)
+})()</script><div class="js-pjax"><script>(() => {
+  const disqus_config = function () {
+    this.page.url = 'http://lave.fun/cn/7542/'
+    this.page.identifier = '/cn/7542/'
+    this.page.title = '投资笔记 & 任何人都要学的经济认知'
+  }
+
+  const disqusReset = () => {
+    window.DISQUS && window.DISQUS.reset({
+      reload: true,
+      config: disqus_config
+    })
+  }
+
+  btf.addGlobalFn('themeChange', disqusReset, 'disqus')
+
+  const loadDisqus = () =>{
+    if (window.DISQUS) disqusReset()
+    else {
+      const script = document.createElement('script')
+      script.src = 'https://sacilave.disqus.com/embed.js'
+      script.setAttribute('data-timestamp', +new Date())
+      document.head.appendChild(script)
+    }
+  }
+
+  const getCount = async() => {
+    try {
+      const eleGroup = document.querySelector('#post-meta .disqus-comment-count')
+      if (!eleGroup) return
+      const cleanedLinks = eleGroup.href.replace(/#post-comment$/, '')
+
+      const res = await fetch(`https://disqus.com/api/3.0/threads/set.json?forum=sacilave&api_key=TvqBZmQi3EWmbZEvSbeGzwL32DNT4VRgl73gfZ3UDyFPbZ76HiqFi4FTX3FQ5nVL&thread:link=${cleanedLinks}`,{
+        method: 'GET'
+      })
+      const result = await res.json()
+
+      const count = result.response.length ? result.response[0].posts : 0
+      eleGroup.textContent = count
+    } catch (err) {
+      console.error(err)
+    }
+  }
+
+  if ('Disqus' === 'Disqus' || !false) {
+    if (false) btf.loadComment(document.getElementById('disqus_thread'), loadDisqus)
+    else {
+      loadDisqus()
+      GLOBAL_CONFIG_SITE.isPost && getCount()
+    }
+  } else {
+    window.loadOtherComment = loadDisqus
+  }
+})()</script><script>(() => {
+  const initValine = () => {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'sKkm0Gi7MK26SEaJ56AoMrc7-MdYXbMMI',
+      appKey: 'eBgo9In4J7FRfpbhp65VzVVZ',
+      avatar: 'monsterid',
+      serverURLs: '',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, null))
+  }
+
+  const loadValine = async () => {
+    if (typeof Valine === 'function') initValine()
+    else {
+      await btf.getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js')
+      initValine()
+    }
+  }
+
+  if ('Disqus' === 'Valine' || !false) {
+    if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+    else setTimeout(loadValine, 0)
+  } else {
+    window.loadOtherComment = loadValine
+  }
+})()</script></div><script>window.newestComments = {
+  changeContent: content => {
+    if (content === '') return content
+
+    content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[Image]') // replace image link
+    content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[Link]') // replace url
+    content = content.replace(/<pre><code>.*?<\/pre>/gi, '[Code]') // replace code
+    content = content.replace(/<code>.*?<\/code>/gi, '[Code]') // replace code      
+    content = content.replace(/<[^>]+>/g, "") // remove html tag
+
+    if (content.length > 150) {
+      content = content.substring(0, 150) + '...'
+    }
+    return content
+  },
+
+  generateHtml: (array, ele) => {
+    let result = ''
+
+    if (array.length) {
+      for (let i = 0; i < array.length; i++) {
+        result += '<div class="aside-list-item">'
+
+        if (true && array[i].avatar) {
+          const imgAttr = 'data-lazy-src'
+          result += `<a href="${array[i].url}" class="thumbnail"><img ${imgAttr}="${array[i].avatar}" alt="${array[i].nick}"></a>`
+        }
+
+        result += `<div class="content">
+        <a class="comment" href="${array[i].url}" title="${array[i].content}">${array[i].content}</a>
+        <div class="name"><span>${array[i].nick} / </span><time datetime="${array[i].date}">${btf.diffDate(array[i].date, true)}</time></div>
+        </div></div>`
+      }
+    } else {
+      result += 'No comments'
+    }
+
+    ele.innerHTML = result
+    window.lazyLoadInstance && window.lazyLoadInstance.update()
+    window.pjax && window.pjax.refresh(ele)
+  },
+
+  newestCommentInit: (name, getComment) => {
+    const $dom = document.querySelector('#card-newest-comments .aside-list')
+    if ($dom) {
+      const data = btf.saveToLocal.get(name)
+      if (data) {
+        newestComments.generateHtml(JSON.parse(data), $dom)
+      } else {
+        getComment($dom)
+      }
+    }
+  },
+
+  run: (name, getComment) => {
+    newestComments.newestCommentInit(name, getComment)
+    btf.addGlobalFn('pjaxComplete', () => newestComments.newestCommentInit(name, getComment), name)
+  }
+}</script><script>window.addEventListener('load', () => {
+  const keyName = 'disqus-newest-comments'
+  const { changeContent, generateHtml, run } = window.newestComments
+
+  const getComment = ele => {
+    fetch('https://disqus.com/api/3.0/forums/listPosts.json?forum=sacilave&related=thread&limit=3&api_key=TvqBZmQi3EWmbZEvSbeGzwL32DNT4VRgl73gfZ3UDyFPbZ76HiqFi4FTX3FQ5nVL')
+      .then(response => response.json())
+      .then(data => {
+        const disqusArray = data.response.map(item => {
+          return {
+            'avatar': item.author.avatar.cache,
+            'content': changeContent(item.message),
+            'nick': item.author.name,
+            'url': item.url,
+            'date': item.createdAt
+          }
+        })
+
+        btf.saveToLocal.set(keyName, JSON.stringify(disqusArray), 10/(60*24))
+        generateHtml(disqusArray, ele)
+      }).catch(e => {
+        console.error(e)
+        ele.textContent= "Unable to retrieve comments, please check the configuration"
+      })
+  }
+
+  run(keyName, getComment)
+})</script><script src="/js/tagcanvas.js"></script><script src="/js/tagcloud.js"></script><script defer src="/js/cursor-effects.js"></script><script defer src="/js/loading.js"></script><script defer src="/js/transition.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = false;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js" data-mobile="false" data-text="贴贴♡,揉揉♡,抱抱♡,捏捏♡,٩(๑&gt; ₃ &lt;)۶,(´•ω•)♡" data-fontsize="12px" data-random="true" async="async"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>(() => {
+  const pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+  window.pjax = new Pjax({
+    elements: 'a:not([target="_blank"]):not([href="/link/"]):not([href="/music/"]):not([href="/no-pjax/"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: true,
+    scrollRestoration: false
+  })
+
+  const triggerPjaxFn = (val) => {
+    if (!val) return
+    Object.values(val).forEach(fn => fn())
+  }
+
+  document.addEventListener('pjax:send', () => {
+    // removeEventListener
+    btf.removeGlobalFnEvent('pjaxSendOnce')
+    btf.removeGlobalFnEvent('themeChange')
+
+    // reset readmode
+    const $bodyClassList = document.body.classList
+    if ($bodyClassList.contains('read-mode')) $bodyClassList.remove('read-mode')
+
+    triggerPjaxFn(window.globalFn.pjaxSend)
+  })
+
+  document.addEventListener('pjax:complete', () => {
+    btf.removeGlobalFnEvent('pjaxCompleteOnce')
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || item.innerHTML || ""
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+    })
+
+    triggerPjaxFn(window.globalFn.pjaxComplete)
+  })
+
+  document.addEventListener('pjax:error', e => {
+    if (e.request.status === 404) {
+      pjax.loadUrl('/404')
+    }
+  })
+})()</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">Search</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  Loading Database</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>

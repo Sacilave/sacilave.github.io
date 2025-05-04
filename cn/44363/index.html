@@ -1,0 +1,638 @@
+<!DOCTYPE html><html lang="[&quot;en&quot;,&quot;cn&quot;]" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>python2 | Lave's Cabin</title><meta name="author" content="Lave"><meta name="copyright" content="Lave"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffa3bD"><meta name="description" content="‘’’pythonclass basics: # 一、获取多行输入组成二维数组 n &#x3D; 3  # 表示接下来有 3 行输入 arr &#x3D; [list(map(int, input().split())) for _ in range(n)]  &quot;&quot;&quot; 说明： - input().split()：把一行字符串按空格切分成列表，例如 &quot;1 2 3&quot; -&amp;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python2">
+<meta property="og:url" content="http://lave.fun/cn/44363/">
+<meta property="og:site_name" content="Lave&#39;s Cabin">
+<meta property="og:description" content="‘’’pythonclass basics: # 一、获取多行输入组成二维数组 n &#x3D; 3  # 表示接下来有 3 行输入 arr &#x3D; [list(map(int, input().split())) for _ in range(n)]  &quot;&quot;&quot; 说明： - input().split()：把一行字符串按空格切分成列表，例如 &quot;1 2 3&quot; -&amp;">
+<meta property="og:locale">
+<meta property="og:image" content="http://lave.fun/gallery/sacilave/cuties/Lave_CutieDogs.jpg">
+<meta property="article:published_time" content="2025-04-11T23:58:04.000Z">
+<meta property="article:modified_time" content="2025-04-11T23:58:04.000Z">
+<meta property="article:author" content="Lave">
+<meta property="article:tag" content="sacilave, lave, tech, otaku, photography, anime, indiedev, gamer, gamedev, depression, explore, 技术宅, 二次元, 个人网站, hexo, butterfly, 前端, 抑郁">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://lave.fun/gallery/sacilave/cuties/Lave_CutieDogs.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://lave.fun/cn/44363/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!true && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        if (name && globalFn[key][name]) return
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#430311')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffa3bD')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          const mediaQueryDark = window.matchMedia('(prefers-color-scheme: dark)')
+          const mediaQueryLight = window.matchMedia('(prefers-color-scheme: light)')
+          
+          if (theme === undefined) {
+            if (mediaQueryLight.matches) activateLightMode()
+            else if (mediaQueryDark.matches) activateDarkMode()
+            else {
+              const hour = new Date().getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            mediaQueryDark.addEventListener('change', () => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else {
+            theme === 'light' ? activateLightMode() : activateDarkMode()
+          }
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=[object Object]"></script><script>window.dataLayer = window.dataLayer || []
+function gtag(){dataLayer.push(arguments)}
+gtag('js', new Date())
+gtag('config', '[object Object]')
+btf.addGlobalFn('pjaxComplete', () => {
+  gtag('config', '[object Object]', {'page_path': window.location.pathname})
+}, 'google_analytics')
+</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"No results found for: ${query}","hits_stats":"${hits} articles found"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Failed',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: 'days',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: {"limitCount":250,"languages":{"author":"Author: Lave","link":"Link: ","source":"Source: Lave's Cabin","info":"Copyright belongs to the author. For commercial use, please contact the author for authorization. For non-commercial use, please indicate the source."}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isAnchor: true,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'python2',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-04-12 07:58:04'
+}</script><link rel="stylesheet" href="/css/custom.css"><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="Lave's Cabin" type="application/rss+xml">
+</head><body><div id="web_bg" style="background-image: url(img/topImg.jpg);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "/img/Loading.png" data-lazy-src="/img/LavesCabin.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">43</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">30</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">10</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/bio/"><i class="fa-fw fa-solid fa-id-card"></i><span> 名片</span></a></div><div class="menus_item"><a class="site-page" href="/v/"><i class="fa-fw fas fa-terminal"></i><span> 终端</span></a></div><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-solid fa-newspaper"></i><span> 文章</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 类别</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-solid fa-sitemap"></i><span> 本站</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/old/"><i class="fa-fw fa-regular fa-window-restore"></i><span> 旧版</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></li><li><a class="site-page child" href="/shuoshuo/"><i class="fa-fw fa-brands fa-rocketchat"></i><span> 说说</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> 图册</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://www.travellings.cn/go.html"><i class="fa-fw fa-solid fa-bus"></i><span> 开往</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-solid fa-language"></i><span> Lang</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/cn/"><span> 中文</span></a></li><li><a class="site-page child" href="/en/"><span> English</span></a></li><li><a class="site-page child" href="/"><span> Global</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg fixed" id="page-header" style="background-image: url(/gallery/sacilave/cuties/Lave_CutieDogs.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><img class="site-icon" src= "/img/Loading.png" data-lazy-src="/img/logo.png" alt="Logo"><span class="site-name">Lave's Cabin</span></a><a class="nav-page-title" href="/"><span class="site-name">python2</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/bio/"><i class="fa-fw fa-solid fa-id-card"></i><span> 名片</span></a></div><div class="menus_item"><a class="site-page" href="/v/"><i class="fa-fw fas fa-terminal"></i><span> 终端</span></a></div><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-solid fa-newspaper"></i><span> 文章</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 类别</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-solid fa-sitemap"></i><span> 本站</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/old/"><i class="fa-fw fa-regular fa-window-restore"></i><span> 旧版</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></li><li><a class="site-page child" href="/shuoshuo/"><i class="fa-fw fa-brands fa-rocketchat"></i><span> 说说</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> 图册</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://www.travellings.cn/go.html"><i class="fa-fw fa-solid fa-bus"></i><span> 开往</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-solid fa-language"></i><span> Lang</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/cn/"><span> 中文</span></a></li><li><a class="site-page child" href="/en/"><span> English</span></a></li><li><a class="site-page child" href="/"><span> Global</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">python2</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-04-11T23:58:04.000Z" title="发表于 2025-04-12 07:58:04">2025-04-12</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-04-11T23:58:04.000Z" title="更新于 2025-04-12 07:58:04">2025-04-12</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">2.6k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>10分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">评论数:</span><a class="disqus-comment-count" href="http://lave.fun/cn/44363/#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>‘’’python<br>class basics:</p>
+<pre><code># 一、获取多行输入组成二维数组
+n = 3  # 表示接下来有 3 行输入
+arr = [list(map(int, input().split())) for _ in range(n)]
+
+&quot;&quot;&quot;
+说明：
+- input().split()：把一行字符串按空格切分成列表，例如 &quot;1 2 3&quot; -&gt; [&quot;1&quot;, &quot;2&quot;, &quot;3&quot;]
+- map(int, ...)：将列表中的每个字符串转成整数
+- list(...)：将 map 返回的迭代器转为列表
+- [ ... for _ in range(n)]：执行 n 次输入，构成二维列表
+- _ 是变量名的占位符，表示“我不关心这个变量”，也可写成 i 或 line 等
+&quot;&quot;&quot;
+
+# 二、获取一行输入并分别赋值给多个变量
+a, b = map(int, input().split())
+
+&quot;&quot;&quot;
+说明：
+- input()：获取如 &quot;3 5&quot; 的输入
+- .split()：分割为 [&quot;3&quot;, &quot;5&quot;]
+- map(int, ...)：转换为整数 [3, 5]
+- a, b = ...：拆包赋值给变量
+&quot;&quot;&quot;
+
+# 三、map 是什么？
+&quot;&quot;&quot;
+map 是 Python 的内置函数，用法为 map(function, iterable)
+- 会将 function 作用于 iterable 的每个元素
+- 返回一个“懒计算”的迭代器对象（map 类型）
+
+例如：
+nums = [&quot;1&quot;, &quot;2&quot;, &quot;3&quot;]
+mapped = map(int, nums)      # 返回 map 对象
+print(list(mapped))          # 输出 [1, 2, 3]
+&quot;&quot;&quot;
+</code></pre>
+<p>class algorizm:<br>    # 冒泡排序<br>    def bubble(nums):<br>        “””<br>        一层循环用于确定循环次数<br>        每次循环中，两两确认大小直至将最大的元素放在末尾<br>        每放一个元素到末尾，下次两两确认循环就不需要遍历到最后面已经排序号的区间<br>        :param nums:<br>        :return:<br>        “””<br>        for i in range(len(nums) - 1):<br>            for j in range(len(nums) - i - 1):<br>                if nums[j] &gt; nums[j+1]: nums[j], nums[j + 1] &#x3D; nums[j+1], nums[j]<br>        return nums</p>
+<pre><code># 选择排序
+def select(nums):
+    &quot;&quot;&quot;
+    分两侧，一侧是排序完的，一侧没有
+    先将第一个元素默认当成最小的，取其索引赋值为 min_i
+    遍历当前 i 元素右侧全部元素，找有没有比这个更小的值，有则这两个交换位置
+    :param nums:
+    :return:
+    &quot;&quot;&quot;
+    for i in range(len(nums) - 1):
+        min_i = i  # 开始记录当前索引
+        for j in range(i + 1, len(nums)):
+            if nums[j] &lt; nums[min_i]: min_i = j  # 出现更小的值，重新把更小值的索引给到 min_i
+        if i != min_i:  # 发现跟当前索引不同，说明有更小值，需要进行交换
+            nums[i], nums[min_i] = nums[min_i], nums[i]  # 交换两者位置
+    return nums
+</code></pre>
+<p>‘’’</p>
+<h1 id="task"><a href="#task" class="headerlink" title="task"></a>task</h1><p>‘’’<br>import os<br>import sys</p>
+<p>from datetime import datetime, timedelta</p>
+<p>def last_bell_time():<br>    “””<br>    某个设备每隔 x 分钟响一次铃，问在给定时间前最后一次响铃的具体时间。</p>
+<pre><code>【输入说明】
+- 第一行输入一个整数 T，表示有 T 组测试数据
+- 每组测试数据输入一行：一个时间字符串 + 一个整数 x（分钟）
+
+【输出说明】
+- 每组输出最近一次响铃的时间，格式为 yyyy-MM-dd HH:MM:SS
+
+【样例输入】
+2
+1973-12-06 00:08:38 5
+2001-01-01 00:00:01 1
+
+【样例输出】
+1973-12-06 00:05:00
+2001-01-01 00:00:00
+
+【解题思路】
+- 目标是找到当前时间之前最近一次响铃的时间。
+- 可以将时间统一转化为“从1970-01-01 00:00:00开始的总秒数”
+- 时间间隔为 x 分钟，即 x × 60 秒
+- 使用整除运算 `(totalsec // interval) * interval` 找到最近一次响铃的秒数
+- 然后将这个秒数再转回时间格式并输出
+
+【重点函数】
+- datetime.strptime(str, fmt)：将字符串转换为 datetime 对象
+- datetime.strftime(fmt)：将 datetime 对象格式化为字符串
+- timedelta(seconds=n)：创建一个时间差（可加减时间）
+- total_seconds()：计算两个时间对象之间的差值，返回秒数
+
+【完整代码】
+&quot;&quot;&quot;
+
+T = int(input())
+for _ in range(T):
+    line = input()
+    strtime, x = line.rsplit(&quot; &quot;, 1)  # 拆分出时间字符串 和 响铃间隔分钟数
+
+    start = datetime(1970, 1, 1, 0, 0, 0)  # 以 1970年为基准
+    objtime = datetime.strptime(strtime, &quot;%Y-%m-%d %H:%M:%S&quot;)  # 字符串 -&gt; 时间对象
+    totalsec = int((objtime - start).total_seconds())  # 当前时间距离1970的总秒数
+
+    interval = int(x) * 60  # 响铃间隔（单位：秒）
+    lasttimesec = (totalsec // interval) * interval  # 上一次响铃时刻的秒数
+
+    lasttime = start + timedelta(seconds=lasttimesec)  # 秒数转回时间对象
+    print(lasttime.strftime(&quot;%Y-%m-%d %H:%M:%S&quot;))  # 输出格式化后的时间字符串
+</code></pre>
+<h1 id="对角线格子值相同的对数统计"><a href="#对角线格子值相同的对数统计" class="headerlink" title="对角线格子值相同的对数统计"></a>对角线格子值相同的对数统计</h1><p>def count_diagonal_pairs():<br>    “””<br>    小蓝正在和朋友们玩一种新的连连看游戏。</p>
+<pre><code>在一个 n × m 的矩形网格中，每个格子中都有一个整数，第 i 行第 j 列上的整数为 A[i][j]。
+玩家需要寻找一对格子 (a,b)-(c,d)，使得：
+    1. A[a][b] == A[c][d]
+    2. |a - c| == |b - d| &gt; 0
+
+问有多少对格子满足以上条件。
+
+---------------------------------------
+✅ 条件转化为：
+满足 |a - c| == |b - d| 的点，表示它们在 ↘ 或 ↙ 方向上的对角线上。
+所以我们按如下方式判断是否在同一对角线上：
+    - ↘ 方向：i - j 相同（从左上到右下）
+    - ↙ 方向：i + j 相同（从右上到左下）
+
+---------------------------------------
+解题思路：
+- 用两个字典 diag1, diag2，分别记录 ↘ 和 ↙ 对角线上每个数字 val 出现的次数。
+- 遍历每个格子，如果当前数值 val 在该对角线上已出现 k 次，就可以与前面 k 个 val 组成 k 个合法格子对。
+- 每次发现就累计 k，之后把 val 的出现次数 +1。
+
+数据结构：
+diag1[i - j][val] -&gt; 统计↘方向上该值出现次数
+diag2[i + j][val] -&gt; 统计↙方向上该值出现次数
+
+注意：只能使用 os 和 sys 标准库，所以不用 collections.defaultdict
+&quot;&quot;&quot;
+
+import sys
+input = sys.stdin.readline
+
+n, m = map(int, input().split())
+grid = [list(map(int, input().split())) for _ in range(n)]
+
+diag1 = &#123;&#125;  # ↘：i - j 为键
+diag2 = &#123;&#125;  # ↙：i + j 为键
+ans = 0
+
+for i in range(n):
+    for j in range(m):
+        val = grid[i][j]
+
+        # 处理 ↘ 方向 (i - j)
+        key1 = i - j
+        if key1 not in diag1:
+            diag1[key1] = &#123;&#125;
+        if val in diag1[key1]:
+            ans += diag1[key1][val]
+            diag1[key1][val] += 1
+        else:
+            diag1[key1][val] = 1
+
+        # 处理 ↙ 方向 (i + j)
+        key2 = i + j
+        if key2 not in diag2:
+            diag2[key2] = &#123;&#125;
+        if val in diag2[key2]:
+            ans += diag2[key2][val]
+            diag2[key2][val] += 1
+        else:
+            diag2[key2][val] = 1
+
+print(ans * 2)
+</code></pre>
+<h1 id="数字字符串计数（包含3和7）"><a href="#数字字符串计数（包含3和7）" class="headerlink" title="数字字符串计数（包含3和7）"></a>数字字符串计数（包含3和7）</h1><p>def count_valid_strings():<br>    “””<br>    小蓝要构造一个长度为 10000 的数字字符串，有以下要求：</p>
+<pre><code>1. 不能出现数字 0；
+2. 必须包含数字 3 和数字 7。
+
+求满足要求的字符串个数，结果对 10^9 + 7 取模。
+
+解题思路：
+- 所有可能的字符串总数为 9^10000（每位可选1~9）
+- 使用容斥原理排除不合法情况：
+    - 不含3的有 8^10000 种
+    - 不含7的有 8^10000 种
+    - 同时不含3和7的有 7^10000 种
+- 合法数量 = 9^10000 - 2 * 8^10000 + 7^10000
+- 使用快速幂计算大指数，最后对 10^9 + 7 取模
+&quot;&quot;&quot;
+MOD = 10 ** 9 + 7
+
+total = pow(9, 10000, MOD)  # 所有字符串
+no_3 = pow(8, 10000, MOD)  # 不包含3
+no_7 = pow(8, 10000, MOD)  # 不包含7
+no_3_and_7 = pow(7, 10000, MOD)  # 同时不包含3和7
+
+# 使用容斥原理计算合法数量
+result = (total - 2 * no_3 + no_3_and_7) % MOD
+
+print(result)
+</code></pre>
+<h1 id="硬币兑换"><a href="#硬币兑换" class="headerlink" title="硬币兑换"></a>硬币兑换</h1><p>def max_coin_count():<br>    “””<br>    小蓝手中有 2023 种不同面值的新版硬币，<br>    第 i 种硬币面值为 i，数量也为 i。<br>    可以使用两个新版硬币兑换一个面值为 coin1 + coin2 的旧版硬币。<br>    问：通过任意兑换后，某个面值的硬币最多能有多少个？<br>    “””<br>    # 初始化一个结果数组，result[x] 表示面值为 x 的旧硬币最多能获得多少个<br>    result &#x3D; [0 for _ in range(4047)]  # 最大面值是 2023 + 2023 &#x3D; 4046</p>
+<pre><code># 枚举所有面值的组合 i 和 j（i &lt; j），避免重复组合
+for i in range(1, 2024):
+    for j in range(i + 1, 2024):
+        # 由于第 i 面值有 i 个硬币，所以可以和 j 面值的硬币兑换 i 次
+        result[i + j] += i
+
+# 最终取兑换后任意面值中数量最多的那个
+print(max(result))
+</code></pre>
+<h1 id="2023"><a href="#2023" class="headerlink" title="2023"></a>2023</h1><p>“””<br>12345678 到 98765432 有多少个数完全不包含2023<br>def findIt(i):<br>  find01 &#x3D; i.find(‘2’)<br>  if find01 &#x3D;&#x3D; -1: return 0</p>
+<p>  find02 &#x3D; i.find(‘0’, find01+1)<br>  if find02 &#x3D;&#x3D; -1: return 0</p>
+<p>  find03 &#x3D; i.find(‘2’, find02+1)<br>  if find03 &#x3D;&#x3D; -1: return 0</p>
+<p>  find04 &#x3D; i.find(‘3’, find03+1)<br>  if find04 &#x3D;&#x3D; -1: return 0</p>
+<p>  return 1</p>
+<p>count &#x3D; 0<br>for i in range(12345678, 98765432 + 1):<br>  if findIt(str(i)) &#x3D;&#x3D; 0: count +&#x3D; 1<br>print(count)<br>“””</p>
+<h1 id="轮转数组"><a href="#轮转数组" class="headerlink" title="轮转数组"></a>轮转数组</h1><p>def rotate(self, nums, k: int) -&gt; None:<br>    “””<br>    给定一个整数数组 nums，将数组中的元素向右轮转 k 个位置，其中 k 是非负数。<br>    “””<br>    def reverse(left: int, right: int):<br>        while left &lt; right:<br>            nums[left], nums[right] &#x3D; nums[right], nums[left]<br>            left +&#x3D; 1<br>            right -&#x3D; 1<br>    n &#x3D; len(nums)<br>    k %&#x3D; n  # 防止轮转次数超过元素数量<br>    reverse(0, n-1)  # 先整体翻转<br>    reverse(0, k-1)  # 再把前 k 个翻转<br>    reverse(k, n-1)  # 再反转后面几个</p>
+<h1 id="加一"><a href="#加一" class="headerlink" title="加一"></a>加一</h1><p>def plusOne(self, digits):</p>
+<pre><code>for i in range(len(digits) - 1, -1, -1):  # 倒叙遍历到 0
+    if digits[i] &lt; 9:  # 如果小于9直接加1返回
+        digits[i] += 1
+        return digits
+    digits[i] = 0  # 否则进一位
+    return [1] + [0] * len(digits)
+</code></pre>
+<h1 id="寻找数组的中心下标"><a href="#寻找数组的中心下标" class="headerlink" title="寻找数组的中心下标"></a>寻找数组的中心下标</h1><p>def pivotIndex(self, nums) -&gt; int:<br>    “””<br>    给你一个整数数组 nums ，请计算数组的 中心下标 。<br>    数组 中心下标 是数组的一个下标，其左侧所有元素相加的和等于右侧所有元素相加的和。<br>    如果中心下标位于数组最左端，那么左侧数之和视为 0 ，因为在下标的左侧不存在元素。这一点对于中心下标位于数组最右端同样适用。<br>    如果数组有多个中心下标，应该返回 最靠近左边 的那一个。如果数组不存在中心下标，返回 -1 。<br>    “””<br>    suml, sumr &#x3D; 0, sum(nums)<br>    for i in range(len(nums)):<br>        sumr -&#x3D; nums[i]<br>        if sumr &#x3D;&#x3D; suml:<br>            return i<br>        suml +&#x3D; nums[i]<br>    return -1</p>
+<h1 id="前后缀"><a href="#前后缀" class="headerlink" title="!!!前后缀"></a>!!!前后缀</h1><p>def prefixSuffix(nums):<br>    “””<br>    给你一个整数数组 nums，返回一个新的数组 answer，其中 answer[i] 等于 nums 中 左侧所有元素的和 与 右侧所有元素的和 之和。<br>    要求：不要使用额外的数组（即 O(1) 额外空间，除了 answer 本身）。时间复杂度为 O(n)。<br>    “””<br>    n &#x3D; len(nums)<br>    pre &#x3D; [0] * n<br>    suf &#x3D; [0] * n<br>    for i in range(1, n):<br>        pre[i] &#x3D; pre[i - 1] + nums[i - 1]<br>    for i in range(n - 2, -1, -1):<br>        suf[i] &#x3D; suf[i + 1] + nums[i + 1]<br>    return [p + s for p, s in zip(pre, suf)]<br>‘’’</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://lave.fun/">Lave</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://lave.fun/cn/44363/">http://lave.fun/cn/44363/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="http://lave.fun" target="_blank">Lave's Cabin</a>！</span></div></div><div class="tag_share"><div class="post-share"><div class="social-share" data-image="/gallery/sacilave/cuties/Lave_CutieDogs.jpg" data-sites="twitter,facebook,qq,wechat,weibo"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>Sponser/打赏！点这里！如果你觉得这对你有帮助或想要施舍下这个小可怜的话 （〃｀ 3′〃）</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/rewardQRcode/wechat.jpg" target="_blank"><img class="post-qr-code-img" src= "/img/Loading.png" data-lazy-src="/img/rewardQRcode/wechat.jpg" alt="微信赞赏码"/></a><div class="post-qr-code-desc">微信赞赏码</div></li><li class="reward-item"><a href="/img/rewardQRcode/TRON.jpg" target="_blank"><img class="post-qr-code-img" src= "/img/Loading.png" data-lazy-src="/img/rewardQRcode/TRON.jpg" alt="Only Accept USDT-TRON(TRC20) !!"/></a><div class="post-qr-code-desc">Only Accept USDT-TRON(TRC20) !!</div></li><li class="reward-item"><a href="/img/rewardQRcode/Optimism.jpg" target="_blank"><img class="post-qr-code-img" src= "/img/Loading.png" data-lazy-src="/img/rewardQRcode/Optimism.jpg" alt="Only Accept USDT-Optimism !!"/></a><div class="post-qr-code-desc">Only Accept USDT-Optimism !!</div></li><li class="reward-item"><a href="/img/rewardQRcode/Polygon.jpg" target="_blank"><img class="post-qr-code-img" src= "/img/Loading.png" data-lazy-src="/img/rewardQRcode/Polygon.jpg" alt="Only Accept USDT-Polygon !!"/></a><div class="post-qr-code-desc">Only Accept USDT-Polygon !!</div></li></ul></div></div><nav class="pagination-post" id="pagination"><a class="next-post pull-full" href="/cn/5613/" title="pythonRevive"><img class="cover" src= "/img/Loading.png" data-lazy-src="/gallery/tomosaki_TimeTravel.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">pythonRevive</div></div></a></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comments</span></div><div class="comment-switch"><span class="first-comment">Disqus</span><span id="switch-btn"></span><span class="second-comment">Valine</span></div></div><div class="comment-wrap"><div><div id="disqus_thread"></div></div><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info is-center"><div class="avatar-img"><img src= "/img/Loading.png" data-lazy-src="/img/LavesCabin.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Lave</div><div class="author-info-description">Tech, Web3, Photography, Literature, ACG, IndieDev, GameDev..<br>EN(6/10), CN(10/10), JP(1/50)</div><div class="site-data"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">43</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">30</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">10</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://x.com/Sacilave2"><i class="fa-brands fa-twitter"></i><span>Follow Me!</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/sacilave" target="_blank" title="Github"><i class="fab fa-github" style="color: #hdhfbb;"></i></a><a class="social-icon" href="mailto:work@lave.fun" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #hdhfbb;"></i></a><a class="social-icon" href="https://t.me/sacilave" target="_blank" title="Telegram"><i class="fa-brands fa-telegram" style="color: #hdhfbb;"></i></a><a class="social-icon" href="https://steamcommunity.com/id/sacilave" target="_blank" title="Steam"><i class="fa-brands fa-steam" style="color: #hdhfbb;"></i></a><a class="social-icon" href="https://x.com/Sacilave2" target="_blank" title="Twitter/X"><i class="fa-brands fa-twitter" style="color: #hdhfbb;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">Thanks for the visit o(*°▽°*)o<br>Lave probably will post some blogs in the future.<br>可以在 右上角的Gallery 中找到我的摄影集~<br>还可以使用右上角语言切换来看特定语言的帖子，然后...有些帖子可能只是开坑了还没写或没写完哦~</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#task"><span class="toc-number">1.</span> <span class="toc-text">task</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AF%B9%E8%A7%92%E7%BA%BF%E6%A0%BC%E5%AD%90%E5%80%BC%E7%9B%B8%E5%90%8C%E7%9A%84%E5%AF%B9%E6%95%B0%E7%BB%9F%E8%AE%A1"><span class="toc-number">2.</span> <span class="toc-text">对角线格子值相同的对数统计</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E5%AD%97%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%AE%A1%E6%95%B0%EF%BC%88%E5%8C%85%E5%90%AB3%E5%92%8C7%EF%BC%89"><span class="toc-number">3.</span> <span class="toc-text">数字字符串计数（包含3和7）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%A1%AC%E5%B8%81%E5%85%91%E6%8D%A2"><span class="toc-number">4.</span> <span class="toc-text">硬币兑换</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2023"><span class="toc-number">5.</span> <span class="toc-text">2023</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BD%AE%E8%BD%AC%E6%95%B0%E7%BB%84"><span class="toc-number">6.</span> <span class="toc-text">轮转数组</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8A%A0%E4%B8%80"><span class="toc-number">7.</span> <span class="toc-text">加一</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AF%BB%E6%89%BE%E6%95%B0%E7%BB%84%E7%9A%84%E4%B8%AD%E5%BF%83%E4%B8%8B%E6%A0%87"><span class="toc-number">8.</span> <span class="toc-text">寻找数组的中心下标</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E5%90%8E%E7%BC%80"><span class="toc-number">9.</span> <span class="toc-text">!!!前后缀</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Posts</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/cn/44363/" title="python2"><img src= "/img/Loading.png" data-lazy-src="/gallery/sacilave/cuties/Lave_CutieDogs.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="python2"/></a><div class="content"><a class="title" href="/cn/44363/" title="python2">python2</a><time datetime="2025-04-11T23:58:04.000Z" title="Updated 2025-04-12 07:58:04">2025-04-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/cn/5613/" title="pythonRevive"><img src= "/img/Loading.png" data-lazy-src="/gallery/tomosaki_TimeTravel.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="pythonRevive"/></a><div class="content"><a class="title" href="/cn/5613/" title="pythonRevive">pythonRevive</a><time datetime="2025-04-11T16:19:10.000Z" title="Updated 2025-04-12 00:19:10">2025-04-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/cn/22493/" title="Python 康复训练"><img src= "/img/Loading.png" data-lazy-src="https://www.python.org/static/img/python-logo.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Python 康复训练"/></a><div class="content"><a class="title" href="/cn/22493/" title="Python 康复训练">Python 康复训练</a><time datetime="2025-03-06T03:47:08.000Z" title="Updated 2025-03-06 11:47:08">2025-03-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/cn/46722/" title="五人定律的闲谈 - 更新中"><img src= "/img/Loading.png" data-lazy-src="/gallery/tomosaki_AfterClass.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="五人定律的闲谈 - 更新中"/></a><div class="content"><a class="title" href="/cn/46722/" title="五人定律的闲谈 - 更新中">五人定律的闲谈 - 更新中</a><time datetime="2025-01-23T18:07:01.000Z" title="Updated 2025-01-24 02:07:01">2025-01-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/cn/33368/" title="C# 中传参关键字 ref 和 out 笔记"><img src= "/img/Loading.png" data-lazy-src="https://www.jetbrains.com/guide/assets/csharp-logo-265a149e.svg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C# 中传参关键字 ref 和 out 笔记"/></a><div class="content"><a class="title" href="/cn/33368/" title="C# 中传参关键字 ref 和 out 笔记">C# 中传参关键字 ref 和 out 笔记</a><time datetime="2025-01-15T08:46:29.000Z" title="Updated 2025-01-15 16:46:29">2025-01-15</time></div></div></div></div></div></div></main><footer id="footer" style="background: transparent;"><div id="footer-wrap"><div class="copyright">&copy;2024 - 2025 By Lave</div><div class="footer_custom_text">Wish u all the best ❤</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script>(() => {
+  const panguFn = () => {
+    if (typeof pangu === 'object') pangu.autoSpacingPage()
+    else {
+      btf.getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+        .then(() => {
+          pangu.autoSpacingPage()
+        })
+    }
+  }
+
+  const panguInit = () => {
+    if (false){
+      GLOBAL_CONFIG_SITE.isPost && panguFn()
+    } else {
+      panguFn()
+    }
+  }
+
+  btf.addGlobalFn('pjaxComplete', panguInit, 'pangu')
+  document.addEventListener('DOMContentLoaded', panguInit)
+})()</script><div class="js-pjax"><script>(() => {
+  const disqus_config = function () {
+    this.page.url = 'http://lave.fun/cn/44363/'
+    this.page.identifier = '/cn/44363/'
+    this.page.title = 'python2'
+  }
+
+  const disqusReset = () => {
+    window.DISQUS && window.DISQUS.reset({
+      reload: true,
+      config: disqus_config
+    })
+  }
+
+  btf.addGlobalFn('themeChange', disqusReset, 'disqus')
+
+  const loadDisqus = () =>{
+    if (window.DISQUS) disqusReset()
+    else {
+      const script = document.createElement('script')
+      script.src = 'https://sacilave.disqus.com/embed.js'
+      script.setAttribute('data-timestamp', +new Date())
+      document.head.appendChild(script)
+    }
+  }
+
+  const getCount = async() => {
+    try {
+      const eleGroup = document.querySelector('#post-meta .disqus-comment-count')
+      if (!eleGroup) return
+      const cleanedLinks = eleGroup.href.replace(/#post-comment$/, '')
+
+      const res = await fetch(`https://disqus.com/api/3.0/threads/set.json?forum=sacilave&api_key=TvqBZmQi3EWmbZEvSbeGzwL32DNT4VRgl73gfZ3UDyFPbZ76HiqFi4FTX3FQ5nVL&thread:link=${cleanedLinks}`,{
+        method: 'GET'
+      })
+      const result = await res.json()
+
+      const count = result.response.length ? result.response[0].posts : 0
+      eleGroup.textContent = count
+    } catch (err) {
+      console.error(err)
+    }
+  }
+
+  if ('Disqus' === 'Disqus' || !false) {
+    if (false) btf.loadComment(document.getElementById('disqus_thread'), loadDisqus)
+    else {
+      loadDisqus()
+      GLOBAL_CONFIG_SITE.isPost && getCount()
+    }
+  } else {
+    window.loadOtherComment = loadDisqus
+  }
+})()</script><script>(() => {
+  const initValine = () => {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'sKkm0Gi7MK26SEaJ56AoMrc7-MdYXbMMI',
+      appKey: 'eBgo9In4J7FRfpbhp65VzVVZ',
+      avatar: 'monsterid',
+      serverURLs: '',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, null))
+  }
+
+  const loadValine = async () => {
+    if (typeof Valine === 'function') initValine()
+    else {
+      await btf.getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js')
+      initValine()
+    }
+  }
+
+  if ('Disqus' === 'Valine' || !false) {
+    if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+    else setTimeout(loadValine, 0)
+  } else {
+    window.loadOtherComment = loadValine
+  }
+})()</script></div><script>window.newestComments = {
+  changeContent: content => {
+    if (content === '') return content
+
+    content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[Image]') // replace image link
+    content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[Link]') // replace url
+    content = content.replace(/<pre><code>.*?<\/pre>/gi, '[Code]') // replace code
+    content = content.replace(/<code>.*?<\/code>/gi, '[Code]') // replace code      
+    content = content.replace(/<[^>]+>/g, "") // remove html tag
+
+    if (content.length > 150) {
+      content = content.substring(0, 150) + '...'
+    }
+    return content
+  },
+
+  generateHtml: (array, ele) => {
+    let result = ''
+
+    if (array.length) {
+      for (let i = 0; i < array.length; i++) {
+        result += '<div class="aside-list-item">'
+
+        if (true && array[i].avatar) {
+          const imgAttr = 'data-lazy-src'
+          result += `<a href="${array[i].url}" class="thumbnail"><img ${imgAttr}="${array[i].avatar}" alt="${array[i].nick}"></a>`
+        }
+
+        result += `<div class="content">
+        <a class="comment" href="${array[i].url}" title="${array[i].content}">${array[i].content}</a>
+        <div class="name"><span>${array[i].nick} / </span><time datetime="${array[i].date}">${btf.diffDate(array[i].date, true)}</time></div>
+        </div></div>`
+      }
+    } else {
+      result += 'No comments'
+    }
+
+    ele.innerHTML = result
+    window.lazyLoadInstance && window.lazyLoadInstance.update()
+    window.pjax && window.pjax.refresh(ele)
+  },
+
+  newestCommentInit: (name, getComment) => {
+    const $dom = document.querySelector('#card-newest-comments .aside-list')
+    if ($dom) {
+      const data = btf.saveToLocal.get(name)
+      if (data) {
+        newestComments.generateHtml(JSON.parse(data), $dom)
+      } else {
+        getComment($dom)
+      }
+    }
+  },
+
+  run: (name, getComment) => {
+    newestComments.newestCommentInit(name, getComment)
+    btf.addGlobalFn('pjaxComplete', () => newestComments.newestCommentInit(name, getComment), name)
+  }
+}</script><script>window.addEventListener('load', () => {
+  const keyName = 'disqus-newest-comments'
+  const { changeContent, generateHtml, run } = window.newestComments
+
+  const getComment = ele => {
+    fetch('https://disqus.com/api/3.0/forums/listPosts.json?forum=sacilave&related=thread&limit=3&api_key=TvqBZmQi3EWmbZEvSbeGzwL32DNT4VRgl73gfZ3UDyFPbZ76HiqFi4FTX3FQ5nVL')
+      .then(response => response.json())
+      .then(data => {
+        const disqusArray = data.response.map(item => {
+          return {
+            'avatar': item.author.avatar.cache,
+            'content': changeContent(item.message),
+            'nick': item.author.name,
+            'url': item.url,
+            'date': item.createdAt
+          }
+        })
+
+        btf.saveToLocal.set(keyName, JSON.stringify(disqusArray), 10/(60*24))
+        generateHtml(disqusArray, ele)
+      }).catch(e => {
+        console.error(e)
+        ele.textContent= "Unable to retrieve comments, please check the configuration"
+      })
+  }
+
+  run(keyName, getComment)
+})</script><script src="/js/tagcanvas.js"></script><script src="/js/tagcloud.js"></script><script defer src="/js/cursor-effects.js"></script><script defer src="/js/loading.js"></script><script defer src="/js/transition.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = false;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js" data-mobile="false" data-text="贴贴♡,揉揉♡,抱抱♡,捏捏♡,٩(๑&gt; ₃ &lt;)۶,(´•ω•)♡" data-fontsize="12px" data-random="true" async="async"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>(() => {
+  const pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+  window.pjax = new Pjax({
+    elements: 'a:not([target="_blank"]):not([href="/link/"]):not([href="/music/"]):not([href="/no-pjax/"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: true,
+    scrollRestoration: false
+  })
+
+  const triggerPjaxFn = (val) => {
+    if (!val) return
+    Object.values(val).forEach(fn => fn())
+  }
+
+  document.addEventListener('pjax:send', () => {
+    // removeEventListener
+    btf.removeGlobalFnEvent('pjaxSendOnce')
+    btf.removeGlobalFnEvent('themeChange')
+
+    // reset readmode
+    const $bodyClassList = document.body.classList
+    if ($bodyClassList.contains('read-mode')) $bodyClassList.remove('read-mode')
+
+    triggerPjaxFn(window.globalFn.pjaxSend)
+  })
+
+  document.addEventListener('pjax:complete', () => {
+    btf.removeGlobalFnEvent('pjaxCompleteOnce')
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || item.innerHTML || ""
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+    })
+
+    triggerPjaxFn(window.globalFn.pjaxComplete)
+  })
+
+  document.addEventListener('pjax:error', e => {
+    if (e.request.status === 404) {
+      pjax.loadUrl('/404')
+    }
+  })
+})()</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">Search</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  Loading Database</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>

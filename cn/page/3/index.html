@@ -1,0 +1,448 @@
+<!DOCTYPE html><html lang="[&quot;en&quot;,&quot;cn&quot;]" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Lave's Cabin - 贴贴~</title><meta name="author" content="Lave"><meta name="copyright" content="Lave"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffa3bD"><meta name="description" content="Tech, Web3, Photography, Literature, ACG, IndieDev, GameDev..EN(6&#x2F;10), CN(10&#x2F;10), JP(1&#x2F;50)">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Lave&#39;s Cabin">
+<meta property="og:url" content="http://lave.fun/cn/page/3/">
+<meta property="og:site_name" content="Lave&#39;s Cabin">
+<meta property="og:description" content="Tech, Web3, Photography, Literature, ACG, IndieDev, GameDev..EN(6&#x2F;10), CN(10&#x2F;10), JP(1&#x2F;50)">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://lave.fun/img/LavesCabin.png">
+<meta property="article:author" content="Lave">
+<meta property="article:tag" content="sacilave, lave, tech, otaku, photography, anime, indiedev, gamer, gamedev, depression, explore, 技术宅, 二次元, 个人网站, hexo, butterfly, 前端, 抑郁">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://lave.fun/img/LavesCabin.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://lave.fun/cn/page/3/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!true && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        if (name && globalFn[key][name]) return
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#430311')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffa3bD')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          const mediaQueryDark = window.matchMedia('(prefers-color-scheme: dark)')
+          const mediaQueryLight = window.matchMedia('(prefers-color-scheme: light)')
+          
+          if (theme === undefined) {
+            if (mediaQueryLight.matches) activateLightMode()
+            else if (mediaQueryDark.matches) activateDarkMode()
+            else {
+              const hour = new Date().getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            mediaQueryDark.addEventListener('change', () => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else {
+            theme === 'light' ? activateLightMode() : activateDarkMode()
+          }
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=[object Object]"></script><script>window.dataLayer = window.dataLayer || []
+function gtag(){dataLayer.push(arguments)}
+gtag('js', new Date())
+gtag('config', '[object Object]')
+btf.addGlobalFn('pjaxComplete', () => {
+  gtag('config', '[object Object]', {'page_path': window.location.pathname})
+}, 'google_analytics')
+</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"No results found for: ${query}","hits_stats":"${hits} articles found"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Failed',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: 'days',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: {"limitCount":250,"languages":{"author":"Author: Lave","link":"Link: ","source":"Source: Lave's Cabin","info":"Copyright belongs to the author. For commercial use, please contact the author for authorization. For non-commercial use, please indicate the source."}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isAnchor: true,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Lave\'s Cabin',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2025-05-05 01:16:39'
+}</script><link rel="stylesheet" href="/css/custom.css"><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="Lave's Cabin" type="application/rss+xml">
+</head><body><div id="web_bg" style="background-image: url(img/topImg.jpg);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "/img/Loading.png" data-lazy-src="/img/LavesCabin.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">43</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">30</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">10</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/bio/"><i class="fa-fw fa-solid fa-id-card"></i><span> 名片</span></a></div><div class="menus_item"><a class="site-page" href="/v/"><i class="fa-fw fas fa-terminal"></i><span> 终端</span></a></div><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-solid fa-newspaper"></i><span> 文章</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 类别</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-solid fa-sitemap"></i><span> 本站</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/old/"><i class="fa-fw fa-regular fa-window-restore"></i><span> 旧版</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></li><li><a class="site-page child" href="/shuoshuo/"><i class="fa-fw fa-brands fa-rocketchat"></i><span> 说说</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> 图册</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://www.travellings.cn/go.html"><i class="fa-fw fa-solid fa-bus"></i><span> 开往</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-solid fa-language"></i><span> Lang</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/cn/"><span> 中文</span></a></li><li><a class="site-page child" href="/en/"><span> English</span></a></li><li><a class="site-page child" href="/"><span> Global</span></a></li></ul></div></div></div></div><div class="page" id="body-wrap"><header class="full_page fixed" id="page-header" style="background-image: url(/img/topImg.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><img class="site-icon" src= "/img/Loading.png" data-lazy-src="/img/logo.png" alt="Logo"><span class="site-name">Lave's Cabin</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/bio/"><i class="fa-fw fa-solid fa-id-card"></i><span> 名片</span></a></div><div class="menus_item"><a class="site-page" href="/v/"><i class="fa-fw fas fa-terminal"></i><span> 终端</span></a></div><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-solid fa-newspaper"></i><span> 文章</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 类别</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-solid fa-sitemap"></i><span> 本站</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/old/"><i class="fa-fw fa-regular fa-window-restore"></i><span> 旧版</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></li><li><a class="site-page child" href="/shuoshuo/"><i class="fa-fw fa-brands fa-rocketchat"></i><span> 说说</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> 图册</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://www.travellings.cn/go.html"><i class="fa-fw fa-solid fa-bus"></i><span> 开往</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-solid fa-language"></i><span> Lang</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/cn/"><span> 中文</span></a></li><li><a class="site-page child" href="/en/"><span> English</span></a></li><li><a class="site-page child" href="/"><span> Global</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="site-info"><h1 id="site-title">Lave's Cabin</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/sacilave" target="_blank" title="Github"><i class="fab fa-github" style="color: #hdhfbb;"></i></a><a class="social-icon" href="mailto:work@lave.fun" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #hdhfbb;"></i></a><a class="social-icon" href="https://t.me/sacilave" target="_blank" title="Telegram"><i class="fa-brands fa-telegram" style="color: #hdhfbb;"></i></a><a class="social-icon" href="https://steamcommunity.com/id/sacilave" target="_blank" title="Steam"><i class="fa-brands fa-steam" style="color: #hdhfbb;"></i></a><a class="social-icon" href="https://x.com/Sacilave2" target="_blank" title="Twitter/X"><i class="fa-brands fa-twitter" style="color: #hdhfbb;"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts nc" id="recent-posts"><div class="recent-post-items"><div class="recent-post-item"><div class="post_cover left"><a href="/cn/59758/" title="对Four-dimensionalSpace的一些想法"><img class="post-bg" src= "/img/Loading.png" data-lazy-src="https://p3.itc.cn/q_70/images03/20221107/1c2965ea7f5b42f3adf5be6bba6f265d.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="对Four-dimensionalSpace的一些想法"></a></div><div class="recent-post-info"><a class="article-title" href="/cn/59758/" title="对Four-dimensionalSpace的一些想法">对Four-dimensionalSpace的一些想法</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-11-05T08:34:22.000Z" title="Created 2024-11-05 16:34:22">2024-11-05</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%A0%94%E7%A9%B6/">研究</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="disqus-count" href="http://lave.fun/cn/59758/#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span class="article-meta-label"> comments</span></span></div><div class="content">对Four-dimensionalSpace的一些想法 前段时间跟朋友聊天提到了个游戏叫 “4D Miner”, 他就顺便给我科普了下 当然指的是 Four-Dimensional Space，而不是时间上来说 因为没有参考任何相关资料且无相关领域知识，以下内容均为个人理解  由低维度向高维度引入First Dimensional在 1 维度中，事物仅存在于 单个轴上（例如 X Axis） 即为物体存在于一条直线中。 想像一条单线的铁轨，主角视角为火车视角 主角的运动上限：只有 前和后(即 X++, X–) 所以主角的认知上限：只有 前和后(即 X&#x3D;N) Second Dimensional到了 2 维度中，事物存在于 两个轴上（例如 X Axis, Y Axis） 因为两条轴可以构成一个平面，即为物体存在于一张平面中。 想像一张白纸，主角视角为一个可以移动的黑点 主角的运动上限：只有 上下左右（即 X+N, Y+N） 所以主角的认知上限：只有 上下左右（即为 X&#x3D;N, Y&#x3D;N） Third Dimensional到了 3 维度中，事物存在于...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/cn/48579/" title="抑郁、症与人格分裂"><img class="post-bg" src= "/img/Loading.png" data-lazy-src="/gallery/sacilave/photography/Lave_FerrisWheel.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="抑郁、症与人格分裂"></a></div><div class="recent-post-info"><a class="article-title" href="/cn/48579/" title="抑郁、症与人格分裂">抑郁、症与人格分裂</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-11-04T03:08:36.000Z" title="Created 2024-11-04 11:08:36">2024-11-04</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%A0%94%E7%A9%B6/">研究</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="disqus-count" href="http://lave.fun/cn/48579/#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span class="article-meta-label"> comments</span></span></div><div class="content">预计发布日期 2024-12-X</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/cn/56192/" title="小记"><img class="post-bg" src= "/img/Loading.png" data-lazy-src="/gallery/sacilave/GenerativeImg/sakuraNeko3.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="小记"></a></div><div class="recent-post-info"><a class="article-title" href="/cn/56192/" title="小记">小记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-21T14:25:22.000Z" title="Created 2024-10-21 22:25:22">2024-10-21</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="disqus-count" href="http://lave.fun/cn/56192/#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span class="article-meta-label"> comments</span></span></div><div class="content"> 请无视这篇仅为新坑的预备  一天怎么过的有没有压力产生压力产生来源是否有来自于未来的生活压力工作工作环境薪资待遇满足对未来生活开支的全部需求付出付出方式投入产出比（投入：学习成本，产出：竞争力）投入量付出量时间成本（工作时间，获取工作时间）精力成本（给你情绪带来多大的负面影响）风险率</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/cn/5014/" title="你好吖陌生人，点击查看 Sacilave 写给你的这封信"><img class="post-bg" src= "/img/Loading.png" data-lazy-src="/gallery/sacilave/GenerativeImg/LavesCabin.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="你好吖陌生人，点击查看 Sacilave 写给你的这封信"></a></div><div class="recent-post-info"><a class="article-title" href="/cn/5014/" title="你好吖陌生人，点击查看 Sacilave 写给你的这封信"><i class="fas fa-thumbtack sticky"></i>你好吖陌生人，点击查看 Sacilave 写给你的这封信</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-21T09:02:20.000Z" title="Created 2024-10-21 17:02:20">2024-10-21</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%97%A5%E5%B8%B8/">日常</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="disqus-count" href="http://lave.fun/cn/5014/#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span class="article-meta-label"> comments</span></span></div><div class="content"> hihi 陌生人，感谢你的点开查看 ヾ(•ω•&#96;)o   中心：加密货币投资、游戏开发、独立开发、文学、摄影、创业变现  最近在忙什么呢 开发 Galgame，同时学习其他独游开发（有没有想做游戏的一起做独游呀，快联系我！） （主要偏艺术风格，好的音乐，好的故事，和好的画面，类似OneShot情感叙事风格）  找到了个没人做的细分赛道，尝试用 web app 实现，同时接入大模型，项目比较大，准备做到盈利和去打比赛  打算过段时间深度学学数据结构与算法，已经大二了还没真正的系统学过 （虽然已经大一蓝桥杯拿了省奖，蓝桥杯真水啊www）  想要去散散心了，尝试拍点动态明信片  什么时候去借几本书看看，好久没空闲下来看看书了   Hi There~ ヾ(•ω•&#96;)o 自我介绍我先做个自我介绍？ 这里是 Sacilave 或者… 可以叫我 Lave，我自己起的名字。 Sacilave 的意思是 “Sacrifice for what I love”，而 Lave 是简称啦。 是一个主修计算机的学生，有一点…… 嗯……...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/cn/34303/" title="高校大学生比赛终极指南 - 更新中"><img class="post-bg" src= "/img/Loading.png" data-lazy-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmhc4gxeOyPt4v8ODkyLEroC6cWMO8yDLKwQ&amp;s" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="高校大学生比赛终极指南 - 更新中"></a></div><div class="recent-post-info"><a class="article-title" href="/cn/34303/" title="高校大学生比赛终极指南 - 更新中"><i class="fas fa-thumbtack sticky"></i>高校大学生比赛终极指南 - 更新中</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-20T14:46:38.000Z" title="Created 2024-10-20 22:46:38">2024-10-20</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%AE%9E%E7%94%A8/">实用</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="disqus-count" href="http://lave.fun/cn/34303/#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span class="article-meta-label"> comments</span></span></div><div class="content"> 全部比赛汇总可参考 2024全国普通高校大学生竞赛分析报告.pdf  一、高校大学生比赛终极指南👍必看！！！ 这些，是在准备比赛前，你必须要知道的信息，待更新中  一、报销指南直接跳转到我的另一篇 大学生报销和奖金保姆指南二、竞赛列表 这些是更多面向工科专业的比赛。初版，并使用一定 AI 生成信息，后续会进行信息检查  1....</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/cn/18911/" title="恋爱心理的思考"><img class="post-bg" src= "/img/Loading.png" data-lazy-src="/gallery/sacilave/photography/Lave_FerrisWheel.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="恋爱心理的思考"></a></div><div class="recent-post-info"><a class="article-title" href="/cn/18911/" title="恋爱心理的思考">恋爱心理的思考</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-19T14:06:09.000Z" title="Created 2024-10-19 22:06:09">2024-10-19</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%A0%94%E7%A9%B6/">研究</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="disqus-count" href="http://lave.fun/cn/18911/#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span class="article-meta-label"> comments</span></span></div><div class="content">一、对恋爱的理解情感行为恋爱是一个愈加强烈的情感行为，想要为对方付出，依偎在对方身边，占有对方的行为 最能诠释出这样行为的，或许是初高中彼此皆是初恋的那段恋爱。 两个善良纯洁的人顺着彼此对着对方的冲动和青涩的小心翼翼逐渐和彼此一起做的一件又一件事。 最初恋爱的样子或许就是借着情感的驱动，将自己的一部分逐渐交付给对方，也想着守护着对方。 多重的状态恋爱也是一个在漫无目的，有目的，多变的目的等等状态中切换的状态。 这或许是一个很令人费解的状态，但仔细想想自己对 Ta 产生恋爱的冲动或许就有从分析了。 一开始为何对 Ta 有好感，逐渐熟络之后开始思考的未来，选择是否继续下去，是否为了什么而接受 Ta 的各个方面。 一路下来，如果自己没有隐约的目的性或许早会不再爱慕。 为了满足自己而和 Ta 的开始；为了能得到 Ta 的陪伴而接受了 Ta 的缺点。 新鲜感过去后平静下来的自己或许又成了漫无目的，选择结束重开一个，亦或是选择打破喜新厌旧。 重新喜欢上为了 Ta...</div></div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/cn/page/2/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/cn/">1</a><a class="page-number" href="/cn/page/2/#content-inner">2</a><span class="page-number current">3</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info is-center"><div class="avatar-img"><img src= "/img/Loading.png" data-lazy-src="/img/LavesCabin.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Lave</div><div class="author-info-description">Tech, Web3, Photography, Literature, ACG, IndieDev, GameDev..<br>EN(6/10), CN(10/10), JP(1/50)</div><div class="site-data"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">43</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">30</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">10</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://x.com/Sacilave2"><i class="fa-brands fa-twitter"></i><span>Follow Me!</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/sacilave" target="_blank" title="Github"><i class="fab fa-github" style="color: #hdhfbb;"></i></a><a class="social-icon" href="mailto:work@lave.fun" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #hdhfbb;"></i></a><a class="social-icon" href="https://t.me/sacilave" target="_blank" title="Telegram"><i class="fa-brands fa-telegram" style="color: #hdhfbb;"></i></a><a class="social-icon" href="https://steamcommunity.com/id/sacilave" target="_blank" title="Steam"><i class="fa-brands fa-steam" style="color: #hdhfbb;"></i></a><a class="social-icon" href="https://x.com/Sacilave2" target="_blank" title="Twitter/X"><i class="fa-brands fa-twitter" style="color: #hdhfbb;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">Thanks for the visit o(*°▽°*)o<br>Lave probably will post some blogs in the future.<br>可以在 右上角的Gallery 中找到我的摄影集~<br>还可以使用右上角语言切换来看特定语言的帖子，然后...有些帖子可能只是开坑了还没写或没写完哦~</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Posts</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/cn/44363/" title="python2"><img src= "/img/Loading.png" data-lazy-src="/gallery/sacilave/cuties/Lave_CutieDogs.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="python2"/></a><div class="content"><a class="title" href="/cn/44363/" title="python2">python2</a><time datetime="2025-04-11T23:58:04.000Z" title="Updated 2025-04-12 07:58:04">2025-04-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/cn/5613/" title="pythonRevive"><img src= "/img/Loading.png" data-lazy-src="/gallery/tomosaki_TimeTravel.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="pythonRevive"/></a><div class="content"><a class="title" href="/cn/5613/" title="pythonRevive">pythonRevive</a><time datetime="2025-04-11T16:19:10.000Z" title="Updated 2025-04-12 00:19:10">2025-04-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/cn/22493/" title="Python 康复训练"><img src= "/img/Loading.png" data-lazy-src="https://www.python.org/static/img/python-logo.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Python 康复训练"/></a><div class="content"><a class="title" href="/cn/22493/" title="Python 康复训练">Python 康复训练</a><time datetime="2025-03-06T03:47:08.000Z" title="Updated 2025-03-06 11:47:08">2025-03-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/cn/46722/" title="五人定律的闲谈 - 更新中"><img src= "/img/Loading.png" data-lazy-src="/gallery/tomosaki_AfterClass.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="五人定律的闲谈 - 更新中"/></a><div class="content"><a class="title" href="/cn/46722/" title="五人定律的闲谈 - 更新中">五人定律的闲谈 - 更新中</a><time datetime="2025-01-23T18:07:01.000Z" title="Updated 2025-01-24 02:07:01">2025-01-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/cn/33368/" title="C# 中传参关键字 ref 和 out 笔记"><img src= "/img/Loading.png" data-lazy-src="https://www.jetbrains.com/guide/assets/csharp-logo-265a149e.svg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C# 中传参关键字 ref 和 out 笔记"/></a><div class="content"><a class="title" href="/cn/33368/" title="C# 中传参关键字 ref 和 out 笔记">C# 中传参关键字 ref 和 out 笔记</a><time datetime="2025-01-15T08:46:29.000Z" title="Updated 2025-01-15 16:46:29">2025-01-15</time></div></div></div></div><div class="card-widget" id="card-newest-comments"><div class="item-headline"><i class="fas fa-comment-dots"></i><span>Latest Comments</span></div><div class="aside-list"><span>Loading...</span></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>Categories</span>
+            <a class="card-more-btn" href="/categories/" title="View More">
+      <i class="fas fa-angle-right"></i></a>
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Casual/"><span class="card-category-list-name">Casual</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Investment/"><span class="card-category-list-name">Investment</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Learning/"><span class="card-category-list-name">Learning</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Studing/"><span class="card-category-list-name">Studing</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0/"><span class="card-category-list-name">学习</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%AE%9E%E7%94%A8/"><span class="card-category-list-name">实用</span><span class="card-category-list-count">10</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%8A%80%E6%9C%AF/"><span class="card-category-list-name">技术</span><span class="card-category-list-count">4</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%8A%95%E8%B5%84/"><span class="card-category-list-name">投资</span><span class="card-category-list-count">9</span></a></li>
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><div id="myCanvasContainer"><canvas id="tagCanvas" width="200" height="200"></canvas><div id="tagList"><a href="/tags/%E4%BF%A1%E6%81%AF/">信息</a><a href="/tags/%E5%AE%9E%E7%94%A8/">实用</a><a href="/tags/%E7%AC%94%E8%AE%B0/">笔记</a><a href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a><a href="/tags/%E8%BD%AF%E4%BB%B6/">软件</a><a href="/tags/%E6%8A%95%E8%B5%84/">投资</a><a href="/tags/%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81/">加密货币</a><a href="/tags/Unity/">Unity</a><a href="/tags/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/">游戏开发</a><a href="/tags/%E5%BC%80%E5%8F%91/">开发</a><a href="/tags/%E6%8A%80%E6%9C%AF/">技术</a><a href="/tags/%E7%94%9F%E6%B4%BB/">生活</a><a href="/tags/%E8%AF%84%E6%B5%8B/">评测</a><a href="/tags/%E8%AE%A4%E7%9F%A5/">认知</a><a href="/tags/%E6%8E%A8%E8%8D%90%E6%96%87%E7%AB%A0/">推荐文章</a><a href="/tags/%E6%80%9D%E8%80%83/">思考</a><a href="/tags/%E8%87%AA%E6%88%91%E6%8F%90%E9%AB%98/">自我提高</a><a href="/tags/%E7%AB%9E%E8%B5%9B/">竞赛</a><a href="/tags/%E8%AE%BE%E5%AE%9A%E7%81%B5%E6%84%9F/">设定灵感</a><a href="/tags/%E5%A4%96%E6%B1%87/">外汇</a><a href="/tags/%E5%BF%83%E7%90%86/">心理</a><a href="/tags/Learning/">Learning</a><a href="/tags/Useful/">Useful</a><a href="/tags/Living/">Living</a><a href="/tags/Thinking/">Thinking</a><a href="/tags/SettingsInspiration/">SettingsInspiration</a><a href="/tags/Investment/">Investment</a><a href="/tags/Notes/">Notes</a><a href="/tags/Recommend/">Recommend</a><a href="/tags/Mental/">Mental</a></div></div></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>Archives</span>
+      
+    </div>
+    <ul class="card-archive-list">
+  
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2025/04/">
+          <span class="card-archive-list-date">April 2025</span>
+          <span class="card-archive-list-count">2</span>
+        </a>
+      </li>
+    
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2025/03/">
+          <span class="card-archive-list-date">March 2025</span>
+          <span class="card-archive-list-count">1</span>
+        </a>
+      </li>
+    
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2025/01/">
+          <span class="card-archive-list-date">January 2025</span>
+          <span class="card-archive-list-count">7</span>
+        </a>
+      </li>
+    
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2024/12/">
+          <span class="card-archive-list-date">December 2024</span>
+          <span class="card-archive-list-count">16</span>
+        </a>
+      </li>
+    
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2024/11/">
+          <span class="card-archive-list-date">November 2024</span>
+          <span class="card-archive-list-count">12</span>
+        </a>
+      </li>
+    
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2024/10/">
+          <span class="card-archive-list-date">October 2024</span>
+          <span class="card-archive-list-count">5</span>
+        </a>
+      </li>
+    </ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Website Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article Count :</div><div class="item-count">43</div></div><div class="webinfo-item"><div class="item-name">Runtime :</div><div class="item-count" id="runtimeshow" data-publishDate="2024-10-28T00:00:00.000Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Total Word Count :</div><div class="item-count">58.3k</div></div><div class="webinfo-item"><div class="item-name">Unique Visitors :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Page Views :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Update :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-05-04T17:16:38.949Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background: transparent;"><div id="footer-wrap"><div class="copyright">&copy;2024 - 2025 By Lave</div><div class="footer_custom_text">Wish u all the best ❤</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="Toggle Between Traditional and Simplified Chinese">繁</button><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle Between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script>(() => {
+  const panguFn = () => {
+    if (typeof pangu === 'object') pangu.autoSpacingPage()
+    else {
+      btf.getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+        .then(() => {
+          pangu.autoSpacingPage()
+        })
+    }
+  }
+
+  const panguInit = () => {
+    if (false){
+      GLOBAL_CONFIG_SITE.isPost && panguFn()
+    } else {
+      panguFn()
+    }
+  }
+
+  btf.addGlobalFn('pjaxComplete', panguInit, 'pangu')
+  document.addEventListener('DOMContentLoaded', panguInit)
+})()</script><div class="js-pjax"><script>(() => {
+  const getCount = async () => {
+    try {
+      const eleGroup = document.querySelectorAll('#recent-posts .disqus-count')
+      const cleanedLinks = Array.from(eleGroup).map(i => `thread:link=${i.href.replace(/#post-comment$/, '')}`);
+
+      const res = await fetch(`https://disqus.com/api/3.0/threads/set.json?forum=sacilave&api_key=TvqBZmQi3EWmbZEvSbeGzwL32DNT4VRgl73gfZ3UDyFPbZ76HiqFi4FTX3FQ5nVL&${cleanedLinks.join('&')}`,{
+        method: 'GET'
+      })
+      const result = await res.json()
+
+      eleGroup.forEach(i => {
+        const cleanedLink = i.href.replace(/#post-comment$/, '')
+        const urlData = result.response.find(data => data.link === cleanedLink) || { posts: 0 }
+        i.textContent = urlData.posts
+      })
+    } catch (err) {
+      console.error(err)
+    }
+  }
+
+  window.pjax ? getCount() : window.addEventListener('load', getCount)
+})()</script><script>window.typedJSFn = {
+  init: str => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, null))
+  },
+  run: subtitleType => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
+      } else {
+        btf.getScript('https://cdn.jsdelivr.net/npm/typed.js/dist/typed.umd.min.js').then(subtitleType)
+      }
+    } else {
+      subtitleType()
+    }
+  }
+}
+btf.addGlobalFn('pjaxSendOnce', () => { typed.destroy() }, 'typedDestroy')
+</script><script>function subtitleType () {
+  fetch('https://v1.hitokoto.cn')
+    .then(response => response.json())
+    .then(data => {
+      if (true) {
+        const from = '出自 ' + data.from
+        const sub = ["人生是曠野，Live for fun and Have fun. - lave.fun","Hi sweetie~ Still keep updating the site. But thanks for the visit !ヾ(•ω•`)o","安安~ 持续更新中哦，感谢访问~ ヾ(•ω•`)o","お疲れ様！","心に花を咲かせ、夢を追い続けることができますように。","生きるとは、呼吸をすることではない。心が震える瞬間を待つことだ。- 芥川龍之介","Sacrifice for what I love... Sacilave"]
+        sub.unshift(data.hitokoto, from)
+        typedJSFn.init(sub)
+      } else {
+        document.getElementById('subtitle').textContent = data.hitokoto
+      }
+    })
+}
+typedJSFn.run(subtitleType)
+</script></div><script>window.newestComments = {
+  changeContent: content => {
+    if (content === '') return content
+
+    content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[Image]') // replace image link
+    content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[Link]') // replace url
+    content = content.replace(/<pre><code>.*?<\/pre>/gi, '[Code]') // replace code
+    content = content.replace(/<code>.*?<\/code>/gi, '[Code]') // replace code      
+    content = content.replace(/<[^>]+>/g, "") // remove html tag
+
+    if (content.length > 150) {
+      content = content.substring(0, 150) + '...'
+    }
+    return content
+  },
+
+  generateHtml: (array, ele) => {
+    let result = ''
+
+    if (array.length) {
+      for (let i = 0; i < array.length; i++) {
+        result += '<div class="aside-list-item">'
+
+        if (true && array[i].avatar) {
+          const imgAttr = 'data-lazy-src'
+          result += `<a href="${array[i].url}" class="thumbnail"><img ${imgAttr}="${array[i].avatar}" alt="${array[i].nick}"></a>`
+        }
+
+        result += `<div class="content">
+        <a class="comment" href="${array[i].url}" title="${array[i].content}">${array[i].content}</a>
+        <div class="name"><span>${array[i].nick} / </span><time datetime="${array[i].date}">${btf.diffDate(array[i].date, true)}</time></div>
+        </div></div>`
+      }
+    } else {
+      result += 'No comments'
+    }
+
+    ele.innerHTML = result
+    window.lazyLoadInstance && window.lazyLoadInstance.update()
+    window.pjax && window.pjax.refresh(ele)
+  },
+
+  newestCommentInit: (name, getComment) => {
+    const $dom = document.querySelector('#card-newest-comments .aside-list')
+    if ($dom) {
+      const data = btf.saveToLocal.get(name)
+      if (data) {
+        newestComments.generateHtml(JSON.parse(data), $dom)
+      } else {
+        getComment($dom)
+      }
+    }
+  },
+
+  run: (name, getComment) => {
+    newestComments.newestCommentInit(name, getComment)
+    btf.addGlobalFn('pjaxComplete', () => newestComments.newestCommentInit(name, getComment), name)
+  }
+}</script><script>window.addEventListener('load', () => {
+  const keyName = 'disqus-newest-comments'
+  const { changeContent, generateHtml, run } = window.newestComments
+
+  const getComment = ele => {
+    fetch('https://disqus.com/api/3.0/forums/listPosts.json?forum=sacilave&related=thread&limit=3&api_key=TvqBZmQi3EWmbZEvSbeGzwL32DNT4VRgl73gfZ3UDyFPbZ76HiqFi4FTX3FQ5nVL')
+      .then(response => response.json())
+      .then(data => {
+        const disqusArray = data.response.map(item => {
+          return {
+            'avatar': item.author.avatar.cache,
+            'content': changeContent(item.message),
+            'nick': item.author.name,
+            'url': item.url,
+            'date': item.createdAt
+          }
+        })
+
+        btf.saveToLocal.set(keyName, JSON.stringify(disqusArray), 10/(60*24))
+        generateHtml(disqusArray, ele)
+      }).catch(e => {
+        console.error(e)
+        ele.textContent= "Unable to retrieve comments, please check the configuration"
+      })
+  }
+
+  run(keyName, getComment)
+})</script><script src="/js/tagcanvas.js"></script><script src="/js/tagcloud.js"></script><script defer src="/js/cursor-effects.js"></script><script defer src="/js/loading.js"></script><script defer src="/js/transition.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = false;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js" data-mobile="false" data-text="贴贴♡,揉揉♡,抱抱♡,捏捏♡,٩(๑&gt; ₃ &lt;)۶,(´•ω•)♡" data-fontsize="12px" data-random="true" async="async"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>(() => {
+  const pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+  window.pjax = new Pjax({
+    elements: 'a:not([target="_blank"]):not([href="/link/"]):not([href="/music/"]):not([href="/no-pjax/"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: true,
+    scrollRestoration: false
+  })
+
+  const triggerPjaxFn = (val) => {
+    if (!val) return
+    Object.values(val).forEach(fn => fn())
+  }
+
+  document.addEventListener('pjax:send', () => {
+    // removeEventListener
+    btf.removeGlobalFnEvent('pjaxSendOnce')
+    btf.removeGlobalFnEvent('themeChange')
+
+    // reset readmode
+    const $bodyClassList = document.body.classList
+    if ($bodyClassList.contains('read-mode')) $bodyClassList.remove('read-mode')
+
+    triggerPjaxFn(window.globalFn.pjaxSend)
+  })
+
+  document.addEventListener('pjax:complete', () => {
+    btf.removeGlobalFnEvent('pjaxCompleteOnce')
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || item.innerHTML || ""
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+    })
+
+    triggerPjaxFn(window.globalFn.pjaxComplete)
+  })
+
+  document.addEventListener('pjax:error', e => {
+    if (e.request.status === 404) {
+      pjax.loadUrl('/404')
+    }
+  })
+})()</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">Search</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  Loading Database</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>
